@@ -1,0 +1,35 @@
+.show-for-mobile {
+    display: block;
+}
+
+.lightbox-info-block
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+
+	.modal-overlay
+	{
+		width: 80%;
+		margin-left: -40%;
+	}
+}
+
+#share-modal-display .close-overlay {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 52px; // QC 1386 fix.
+	height: 52px; // QC 1386 fix.
+	border-radius: 26px;
+	behavior: url(/gng/css/PIE.htc);
+	cursor: pointer;
+	@include cart-sprite(modal-close-icon, false, 16px, 15px);
+	background-position: 16px -859px; // QC 1386 fix.
+	background-color: #333;
+}
+
+#share-modal-display .overlay-content .share-fig img {
+	margin: 15px;
+}

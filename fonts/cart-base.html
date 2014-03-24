@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile
+  <meta name="viewport" content="width=device-width" /> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale AND prevent zoom -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+
+
+
+  <title>Product Name | Verizon MLS</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+
+  <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/styles-blessed1.css"><link rel="stylesheet" href="css/styles-blessed2.css">
+
+  <script src="js/foundation/modernizr.foundation.js"></script>
+
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+  <script type="text/javascript" src="js/HANDOFF-FUNCTIONS.js"></script>
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+
+</head>
+<body id="shopping-cart">
+
+  <?php include('inc/header.html'); ?>
+
+
+
+<section id="cart-header">
+	<div class="section-wrap">
+		<h1 class="cart-title">Shopping <span>Cart</span></h1>
+	</div>
+</section><!-- end cart header -->
+
+<section id="cart-data">
+	<div class="section-wrap">
+		<div class="cart-table">
+
+			<div class="table-header">
+				<div class="desc-block">
+					<h5>Item Description</h5>
+				</div><!-- end desc block -->
+
+				<div class="sub-block">
+					<h5>Subtotal</h5>
+				</div><!-- end sub block -->
+			</div><!-- end table header -->
+
+			<div class="table-row">
+				<div class="desc-block">
+
+					<div class="cart-product-image">
+						<img src="" title="Beats by Dre Pro On-Ear Headphones" class="cart-img">
+					</div><!-- end product image -->
+
+					<div class="cart-product-info">
+						<h2>Beats by Dre Pro On-Ear Headphones</h2>
+
+						<div class="unit-price">
+
+							<span class="original-price">$399.99</span>
+							<span class="actual-price">$299.99</span>
+							<span class="discount">10% off</span>
+
+						</div><!-- end unit price -->
+
+						<div class="remove-block">
+							<button class="button remove-from-cart" type="button" title="Remove">
+      							<span>Remove</span>
+      						</button>
+						</div>
+					</div><!-- end product info -->
+
+					<div class="cart-order-details">
+						<div class="detail-panel">
+
+							<div class="detail-box qty">
+								<span class="cart-label">Qty:</span>
+								<span class="item-data">1</span>
+							</div><!-- end qty detail -->
+
+							<div class="detail-box color">
+								<span class="cart-label">Color:</span>
+								<span class="item-data">black</span>
+							</div><!-- end qty detail -->
+
+
+							<div class="detail-box size">
+								<span class="cart-label">Size:</span>
+								<span class="item-data">small</span>
+							</div><!-- end qty detail -->
+
+							<button class="button edit-cart" type="button" title="Edit">
+      							<span>Edit</span>
+      							<span class="updated">Updated</span>
+      						</button><!-- end edit button -->
+
+						</div><!-- end detail panel -->
+
+						<div class="edit-panel"><!-- slides in -->
+
+							<div class="edit-panel-close"></div>
+
+							<div class="edit-box qty">
+								<input type="number" name="quantity" class="cart-item-qty">
+							</div><!-- end qty detail -->
+
+							<div class="edit-box color">
+								<select name="color" class="cart-item-color">
+									<option value="black">Black</option>
+									<option value="grey">Grey</option>
+									<option value="white">White</option>
+									<option value="blue">Blue</option>
+
+								</select>
+							</div><!-- end qty detail -->
+
+							<div class="edit-box size">
+								<select name="size" class="cart-item-color">
+									<option value="small">Small</option>
+									<option value="medium">Medium</option>
+									<option value="large">Large</option>
+								</select>
+							</div><!-- end qty detail -->
+
+
+							<button class="button save-cart-changes" type="button" title="Update">
+      							<span>Update</span>
+      						</button>
+
+						</div><!-- end slide in edit panel -->
+
+					</div><!-- end order-details -->
+
+				</div><!-- end desc block -->
+
+				<div class="sub-block">
+					<h4 class="subtotal">$299<span class="cents">99</span></h4>
+				</div><!-- end sub block -->
+			</div><!-- end table row -->
+
+		</div><!-- end cart-table -->
+
+
+
+
+		<div class="cart-sidebar">
+			<div class="cart-sidebar-wrap">
+
+				<div class="special-header">
+				</div>
+
+				<div class="proceed">
+
+					<div id="cart-total-box">
+						<div class="total-label">Grand Total:</div>
+						<div id="grand-total">599<span class="cents">97</span></div>
+						<span class="ship-tax"><span>*</span> Shipping and Taxes not yet calculated</span>
+					</div><!-- end cart total box -->
+
+					<div id="checkout-box">
+						<button id="checkout-button" class="button" type="button" title="Checkout">
+      						<span>Checkout</span>
+      					</button>
+					</div><!-- end checkout box-->
+
+					<div id="keep-shopping-box">
+						<button class="button" id="continue-shopping-button" type="button" title="Continue Shopping">
+      						<span>Continue Shopping</span>
+      					</button>
+					</div><!-- end keep shopping box -->
+
+				</div><!-- end proceed -->
+			</div><!-- end sidebar wrap -->
+		</div><!-- end cart-sidebar -->
+
+
+
+
+
+	</div>
+</section><!-- end cart data -->
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<?php include('inc/footer.html');?>
+</body>
+</html>

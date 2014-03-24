@@ -1,0 +1,114 @@
+
+html {
+    background-color: $colorVzwNavBrd;
+    #fourofour {
+        background-color: $colorVzwNavBrd;
+        #site-header {
+            @include boxBrdrB;
+            background-color: #f0f3f3;
+            .mls-nav {
+                #nav-tabs-primary {
+                    li {
+                        border: none;
+                    }
+                }
+                #nav-search-cat {
+                    #nav-help {
+                        border: none;
+                    }
+                    #nav-cart {
+                        display: none;
+                    }
+                }
+            }
+        }
+        #breadcrumb-container {
+            margin: 15px 25px 15px 25px;
+            #breadcrumb {
+                width: 100%;
+                #back {
+                    padding: 10px 0 0 0;
+                    text-transform: uppercase;
+                    font: bold 10px $fontArial;
+                    color: $colorCategoryCTA;
+                }
+            }
+        }
+        #main-column {
+            display: block;
+            margin: 0 auto 0 auto;
+            width: 83.333%;
+            padding: 0 0 150px 0;
+            #message-module {
+                width: 100%;
+                margin-bottom: 80px;
+                padding: 0;
+                .message {
+                    text-align: left;
+                    color: $colorTxtGray;
+                    font: normal 56px $fontVzwLight;
+                }
+            }
+            #best-sellers-section {
+                .similar-products-module.category-section {
+                    width: 100%;
+                }
+            }
+        }
+
+        #quick-view-overlay
+        {
+            margin-top: -17px;
+        }
+    }
+}
+
+/* Similar Products | ToDo: Move to global stylesheet */
+
+.similar-products-module.category-section {
+    .content-header {
+        h1.title {
+            a {
+                display: inline;
+            }
+        }
+    }
+    .content-items {
+        form { margin: 0 !important; }
+    }
+    .flex-viewport {
+        .content-grid {
+            border: 0;
+            .content-item {
+                border: 0;
+                padding: 0;
+                margin: 0;
+                .simple-slider-item {
+                    .simple-detail {
+                        .simple-price {
+                            .sale {
+                                font-weight: normal;
+                                text-decoration: line-through;
+                                color: #727272;
+                                padding: 0 0 0 0;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $screenSmall) {
+    @import "_404_max768";
+}
+
+@media only screen and (max-width: $screenMobileLarge - 50) {
+    @import "_404_max590";
+}
+
+@media only screen and (max-width: $screenMobileSmall) {
+    @import "_404_max320";
+}

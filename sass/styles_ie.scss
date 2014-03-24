@@ -1,0 +1,371 @@
+@import "compass";
+@import "app";                      // Zurb Foundation and Compass
+@import "foundation-overrides";     // Any Functionality we need to override in foundation
+@import "sprites";
+@import "_variables";
+@import "mixins";
+
+// global
+.ie {
+    .max1280.min1024{
+        @import "_global_max1280min1024";
+    }
+    .max767{
+    	@import "_global_max767";
+    }
+	.max640{
+    	@import "_global_max767";
+    }
+    .max439.min320{
+    	@import "_global_max439min320";
+    }
+}
+
+// mega-menu
+.ie {
+	.min1280{
+		@import "globals/_mega-menu_min1280";
+	}
+
+	.max1023 {
+	    @import "globals/_mega-menu_max1023";
+	}
+	.max767 {
+	    @import "globals/_mega-menu_max767";
+	}
+	.max639 {
+	    @import "globals/_mega-menu_max639";
+	}
+}
+
+// 404
+.ie {
+	.min1230 {
+    	@import "pages/_404_min1230";
+	}
+
+	.max1229 {
+	    @import "pages/_404_max1229";
+	}
+
+	.max990{
+	    @import "pages/_404_max990";
+	}
+
+	.max768.min640{
+	    @import "pages/_404_max768min640";
+	}
+
+	.max768 {
+	    @import "pages/_404_max768";
+	}
+
+	.max590 {
+	    @import "pages/_404_max590";
+	}
+
+	.max320 {
+	    @import "pages/_404_max320";
+	}
+}
+
+// brand-landing
+.ie {
+	.max1023.min768 {
+    	@import "pages/_brand-landing_max1023min768";
+	}
+
+	.min767 {
+	    @import "pages/_brand-landing_min767";
+	}
+
+	.max640.min320{
+	    @import "pages/_brand-landing_max640min320";
+	}
+}
+
+// cart
+.ie{
+	.min1024 {
+		@import "pages/_cart_min1024"
+	}
+
+	.min1095 {
+		@import "pages/_cart_min1095"
+
+	}
+
+	.min1280 {
+		@import "pages/_cart_min1280"
+	}
+}
+
+// category-landing
+.ie{
+    .max1280 {
+        @import "pages/_category-landing_max1280";
+    }
+
+    .max1280.min1024 {
+        @import "pages/_category-landing_max1280min1024";
+    }
+
+    .max1023.min768 {
+        @import "pages/_category-landing_max1023min768";
+    }
+
+    .max767 {
+        @import "pages/_category-landing_max767";
+    }
+
+    .max767.min641 {
+        @import "pages/_category-landing_max767min641";
+    }
+
+    .max640 {
+        @import "pages/_category-landing_max640";
+    }
+
+    .max640.min480 {
+        @import "pages/_category-landing_max640min320";
+    }
+}
+
+// checkout success
+.ie {
+	.max1024.min768 {
+		@import "pages/_checkout-success_max1024min768";
+	}
+
+	.max767.min320 {
+		@import "pages/_checkout-success_max767min320";
+	}
+}
+
+// content-landing
+.ie {
+	.max1280.min1024 {
+	    @import "pages/_content-landing_max1280min1024";
+	}
+	.max1023.min768 {
+	    @import "pages/_content-landing_max1023min768";
+	}
+	.max767.min641 {
+	    @import "pages/_content-landing_max767min641";
+	}
+	.max640.min320 {
+	    @import "pages/_content-landing_max640min320";
+	}
+}
+
+// home
+.ie {
+	.max1023.min768 {
+	    @import "pages/_home_max1023min768";
+	}
+	.max767.min641 {
+	    @import "pages/_home_max767min641";
+	}
+	.max640.min320 {
+	    @import "pages/_home_max640min320";
+	}
+}
+
+// lifestyle
+.ie {
+	.max1023 {
+	    @import "pages/_lifestyle_max1023";
+	}
+
+	.max767 {
+	    @import "pages/_lifestyle_max767";
+	}
+
+	.max640 {
+	    @import "pages/_lifestyle_max640";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pdp-plus
+.ie {
+	.max767 {
+		@import "pages/_pdp-plus_max767";
+	}
+
+	.max1279.min960 {
+		@import "pages/_pdp-plus_max1279min960";
+	}
+
+	.max959.min768 {
+		@import "pages/_pdp-plus_max959min768";
+	}
+}
+
+// product-detail
+.ie {
+	.min1280 {
+		@import "pages/_product-detail_max1280";
+	}
+
+	.min1132 {
+		@import "pages/_product-detail_min1132";
+	}
+
+	.max1280.min1024 {
+		 @import "pages/_product-detail_max1280min1024";
+	}
+	.max1024.min768 {
+		 @import "pages/_product-detail_max1024min768";
+	}
+	.max768.min640 {
+		@import "pages/_product-detail_max768min640";
+	}
+	.max752.min640 {
+		@import "pages/_product-detail_max752min640";
+	}
+	.max640 {
+		 @import "pages/_product-detail_max640";
+	}
+	.max639 {
+		 @import "pages/_product-detail_max639";
+	}
+}
+
+// product-listing
+.ie {
+
+	.max1280.min1024 {
+		@import "pages/_product-listing_max1280min1024";
+	}
+
+	.max1024.min768 {
+		@import "pages/_product-listing_max1024min768";
+	}
+
+	.max767.min641 {
+		@import "pages/_product-listing_max767min641";
+	}
+
+	.max640.min320 {
+		@import "pages/_product-listing_max640min320";
+	}
+}
+
+// search-results
+.ie {
+
+	.max1023.min768 {
+		@import "pages/_search-results_max1023min768";
+	}
+	.max640.min320 {
+		@import "pages/_search-results_max640min320";
+	}
+	.max767.min321 {
+		 @import "pages/_search-results_max767min321";
+	}
+}
+
+// special-offers-landing
+.ie {
+	.max1024.min768 {
+		 @import "pages/_special-offers-landing_max1024min768";
+	}
+
+	.max768.min320 {
+		@import "pages/_special-offers-landing_max768min320";
+	}
+
+	.max1280 {
+		 @import "pages/_special-offers-landing_max1280";
+	}
+
+	.max1280.min1024 {
+		@import "pages/_special-offers-landing_max1280min1024";
+	}
+	.max1023.min768 {
+		@import "pages/_special-offers-landing_max1023min768";
+	}
+	.max767 {
+		 @import "pages/_special-offers-landing_max767";
+	}
+	.max767.min641 {
+		@import "pages/_special-offers-landing_max767min641";
+	}
+	.max640 {
+		@import "pages/_special-offers-landing_max640";
+	}
+	.max640.min320 {
+		@import "pages/_special-offers-landing_max640min320";
+	}
+}

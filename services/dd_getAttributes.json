@@ -1,0 +1,14 @@
+{
+    "success" : {
+        "responseHTML" : {
+        	"sizes": "<option value=\"0\">Size</option><option value=\"99\">Small (tiny)</option>",
+            "productName": "Fitbit One&trade; Wireless Activity plus Sleep Tracker - Black",
+    		"carouselID": "BeatsOverEarWhite_A",
+            "view360ID": "",
+            "imageID": "BeatsOverEarWhite_A",
+    		"thumbnails": "<li><img src=\"img/product-detail-page/pdp-plus/dre-beats-2-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-1-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-3-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li>",
+			"sku": "768328",
+			"price": "<div class=\"original-price offer\"><span class=\"sale\">Sale&nbsp;</span>Reg.  $<span id=\"pdp-cart-original-price\" class=\"strike\">399.99</span></div><div class=\"actual-price\">$<span id=\"pdp-cart-actual-price\">349<span class=\"cents\">99</span></span></div>"
+    	}
+    }
+}

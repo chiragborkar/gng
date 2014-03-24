@@ -1,0 +1,106 @@
+.home-page {
+
+    width:100%;
+    overflow-x:hidden;
+     /*===========================================
+    =            Trending Categories            =
+    ===========================================*/
+     .madlib .content-header, // MyMobileLife
+     .trending-categories, // Trending Categories
+     .trending-products-module .content-header, // Trending Products
+     .trending-lifestyles-module .content-header, // FeaturedLifestyles header
+     .featured-reviews-module .content-header // FeaturedReviews header
+     {
+        // max-width: 431px;
+        // min-width: 431px;
+     }
+
+
+
+    .home-hero {
+        #home-hero-slider {
+            .slides{
+                height: 302px;
+                li{
+                    &.alt {
+                        .hero-info {
+                            h1, h2 {
+                                &.story-title {
+                                    padding: 0 0 0 29px;
+                                    line-height: 45px;
+                                    letter-spacing: -.07em;
+                                    text-align: left;
+                                    font: {
+                                        family: $fontVzwBoldItalic;
+                                        size: 48px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-hero {
+                        width: 100%;
+                        h1 {
+                            color: $colorVzwNavBrd;
+                            display: inline-block;
+                            float: left;
+                            text-align: left;
+                            width: 60%;
+                            line-height: 28px;
+                            padding: 15px 0 0 15px;
+                            font: {
+                                family: $fontVzwBoldItalic;
+                                size: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+
+    	    .flex-control-nav {
+    	    	padding: 27px 0 0 0;
+    	    }
+
+            &.wow
+            {
+                .slides 
+                {
+                    height: auto;
+                }
+
+                .hero-title 
+                {
+                    bottom: 180px;
+                    font-size: 22px;
+
+                    strong
+                    {
+                        font-size: 62px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home-mobile {
+    article.category-section {
+        .content-header
+        {
+            padding-bottom: 0;
+            height: auto;
+
+            .title
+            {
+                font-size: 19px;
+                letter-spacing: -1px;
+
+                a {
+                    float: right;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import "compass/css3/font-face";
+
+@include font-face(
+    'Verizon Apex Bold',
+    font-files(
+        '../fonts/VerizonApex-Bold.woff', woff,
+        '../fonts/VerizonApex-Bold.ttf', ttf,
+        '../fonts/VerizonApex-Bold.svg', svg,
+        '../fonts/VerizonApex-Bold.otf', otf
+    ), '../fonts/VerizonApex-Bold.eot'
+);
+@include font-face(
+    'Verizon Apex Bold Italic',
+    font-files(
+        '../fonts/VerizonApex-BoldItalic.woff', woff,
+        '../fonts/VerizonApex-BoldItalic.ttf', ttf,
+        '../fonts/VerizonApex-BoldItalic.svg', svg,
+        '../fonts/VerizonApex-BoldItalic.otf', otf
+    ), '../fonts/VerizonApex-BoldItalic.eot'
+);
+@include font-face(
+    'Verizon Apex Book',
+    font-files(
+        '../fonts/VerizonApex-Book.woff', woff,
+        '../fonts/VerizonApex-Book.ttf', ttf,
+        '../fonts/VerizonApex-Book.svg', svg,
+        '../fonts/VerizonApex-Book.otf', otf
+    ), '../fonts/VerizonApex-Book.eot'
+);
+@include font-face(
+    'Verizon Apex Book Italic',
+    font-files(
+        '../fonts/VerizonApex-BookItalic.woff', woff,
+        '../fonts/VerizonApex-BookItalic.ttf', ttf,
+        '../fonts/VerizonApex-BookItalic.svg', svg,
+        '../fonts/VerizonApex-BookItalic.otf', otf
+    ), '../fonts/VerizonApex-BookItalic.eot'
+);
+@include font-face(
+    'Verizon Apex Extra Bold',
+    font-files(
+        '../fonts/VerizonApex-Extrabold.woff', woff,
+        '../fonts/VerizonApex-Extrabold.ttf', ttf,
+        '../fonts/VerizonApex-Extrabold.svg', svg,
+        '../fonts/VerizonApex-Extrabold.otf', otf
+    ), '../fonts/VerizonApex-Extrabold.eot'
+);
+@include font-face(
+    'Verizon Apex Extra Bold Italic',
+    font-files(
+        '../fonts/VerizonApex-ExtraboldItalic.woff', woff,
+        '../fonts/VerizonApex-ExtraboldItalic.ttf', ttf,
+        '../fonts/VerizonApex-ExtraboldItalic.svg', svg,
+        '../fonts/VerizonApex-ExtraboldItalic.otf', otf
+    ), '../fonts/VerizonApex-ExtraboldItalic.eot'
+);
+@include font-face(
+    'Verizon Apex Light',
+    font-files(
+        '../fonts/VerizonApex-Light.woff', woff,
+        '../fonts/VerizonApex-Light.ttf', ttf,
+        '../fonts/VerizonApex-Light.svg', svg,
+        '../fonts/VerizonApex-Light.otf', otf
+    ), '../fonts/VerizonApex-Light.eot'
+);
+@include font-face(
+    'Verizon Apex Light Italic',
+    font-files(
+        '../fonts/VerizonApex-LightItalic.woff', woff,
+        '../fonts/VerizonApex-LightItalic.ttf', ttf,
+        '../fonts/VerizonApex-LightItalic.svg', svg,
+        '../fonts/VerizonApex-LightItalic.otf', otf
+    ), '../fonts/VerizonApex-LightItalic.eot'
+);
+@include font-face(
+    'Verizon Apex Medium',
+    font-files(
+        '../fonts/VerizonApex-Medium.woff', woff,
+        '../fonts/VerizonApex-Medium.ttf', ttf,
+        '../fonts/VerizonApex-Medium.svg', svg,
+        '../fonts/VerizonApex-Medium.otf', otf
+    ), '../fonts/VerizonApex-Medium.eot'
+);
+@include font-face(
+    'Verizon Apex Medium Italic',
+    font-files(
+        '../fonts/VerizonApex-MediumItalic.woff', woff,
+        '../fonts/VerizonApex-MediumItalic.ttf', ttf,
+        '../fonts/VerizonApex-MediumItalic.svg', svg,
+        '../fonts/VerizonApex-MediumItalic.otf', otf
+    ), '../fonts/VerizonApex-MediumItalic.eot'
+);
+// UNUSED (no woff, ttf, svg, eot versions for these):
+// @include font-face('Verizon Apex Extra Light', font-files('../fonts/VerizonApex-Extralight.otf'));
+// @include font-face('Verizon Apex Extra Light Italic', font-files('../fonts/VerizonApex-ExtralightItalic.otf'));

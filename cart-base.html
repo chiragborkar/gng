@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile
+  <meta name="viewport" content="width=device-width" /> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale AND prevent zoom -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+
+
+
+  <title>Shopping Cart | Verizon MLS</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css/uniform.vzn.css" type="text/css">
+
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/foundation/modernizr.foundation.js"></script>
+
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+  <script type="text/javascript" src="js/HANDOFF-FUNCTIONS.js"></script>
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+
+</head>
+<body id="shopping-cart" class="cart-page">
+<div id='site-container'>
+<!-- BEGIN TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+  <div class="temp-pdp-header">
+		<script type="text/javascript">
+    		includeFragment('inc/header.html');
+  		</script>
+  </div><!-- end temp header -->
+<!-- END TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+
+<!-- End Header and Nav -->
+
+  <!-- Main Grid Section -->
+
+
+
+<section id="cart-header">
+	<div class="section-wrap">
+		<div class="go-back show-for-mobile">
+			<a href="#">&lt; back</a>
+		</div>
+
+		<h1 class="cart-title">
+			Shopping <span>Cart</span>
+			<div class="summary">(<span id="cart-header-summary">5</span> <span>Items</span>)</div>
+		</h1>
+
+		<div class="save-cart">
+			<a href="#" class="save-cart-link" data-modal-ID="#save-cart-modal">Save Your Cart</a>
+		</div>
+
+
+	</div>
+</section><!-- end cart header -->
+
+<section id="cart-data">
+
+	<div class="section-wrap">
+
+		<div class="cart-table">
+			<div class="table-header">
+				<div class="desc-block">
+
+					<h5 class="cart-label cart-product-image">Item Description</h5>
+					<h5 class="cart-label cart-product-info"></h5>
+					<h5 class="cart-label cart-order-details">Quantity</h5>
+
+				</div><!-- end desc block -->
+
+				<div class="sub-block">
+					<h5 class="cart-label">Price</h5>
+				</div><!-- end sub block -->
+			</div><!-- end table header -->
+
+
+			<div class="table-row empty-cart">
+				There are no items in your cart.
+				<div class="empty-cart-continue">
+					<a href="#" title="Continue Shopping">
+						<span>Continue Shopping</span>
+					</a>
+				</div>
+				<div class="empty-cart-signin">
+					<a href="#" title="Sign-In">
+						<span>Sign In</span>
+					</a>
+				</div>
+			</div>
+
+		<!-- PRODUCTS IN CART -->
+			<!-- BEGIN TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+        		<script type="text/javascript">
+          			includeFragment('inc/fragments/products-in-cart.html');
+        		</script>
+        	<!-- END TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+		<!-- END PRODUCTS IN CART -->
+
+		</div><!-- end cart-table -->
+
+
+		<div class="cart-sidebar"><!--  begin sidebar  -->
+			<div class="cart-sidebar-wrap">
+
+				<div class="special-offer-block shipping">
+					<img src="http://scache.vzw.com/gng/img/cart/minicart-truck-icon.png" alt="img" />
+						
+					<div class="dropdown-link">
+						<div class="cart-offer-text">
+							Free Shipping Available on Every Gadgets &amp; Gear Orders!
+						</div>
+					</div>
+
+					<div class="dropdown-panel">
+						<div class="dropdown-pointer"></div>
+						Lorem ipsum dolor sequitat nes serva dos.
+					</div>
+				</div>
+
+				<div class="special-offer-block returns">
+					<img src="http://scache.vzw.com/gng/img/cart/large-boxes-icon.png" alt="img" />
+					<div class="dropdown-link">
+						<div class="cart-offer-text">
+							<span>14 Day</span> Return Policy!
+						</div>
+					</div>
+					<div class="dropdown-panel">
+						<div class="dropdown-pointer"></div>
+						Lorem ipsum dolor sequitat nes serva dos.
+					</div>
+				</div>
+
+				<div class="proceed-block">
+
+					<div class="tax-calculator">
+						<p>Estimate Your Tax</p>
+						<form>
+							<div class="zip-code">
+								<input type="text" placeholder="Zip Code" name="zip" />
+							</div>
+							<div class="calc-tax-wrapper">
+								<input type="submit" class="calc-tax" value="Calculate" />
+							</div>
+						</form>
+
+					</div>
+
+					<div class="totals">
+
+						<ul>
+							<li class = "cart-subtotal" >
+								<div class="label">Sub Total:</div>
+
+								<div class="data">
+									$<span id="cart-subtotal">399.99</span>
+								</div>
+							</li><!-- end subtotal -->
+
+							<li class = "cart-discount" >
+								<div class="label dropdown-link">Employee Discount:</div>
+								<div class="dropdown-panel">
+									<div class="dropdown-pointer"></div>
+									We will always give you the deepest discount, considering eligibility and if greater discounts are available.
+								</div>
+
+								<div class="data">
+									- $<span id="cart-discount">29.99</span>
+								</div>
+							</li><!-- end subtotal -->
+
+							<li class = "cart-ship" >
+								<div class="label">Shipping:</div>
+
+								<div class="data">
+									<span class="no-offer">$<span id="cart-shipping">16.95</span></span>
+									<span class="offer">FREE!</span>
+								</div>
+							</li>
+
+							<li class = "cart-tax" >
+								<div class="label">Estimated Tax:</div>
+
+								<div class="data">
+									$<span id="cart-tax">____</span>
+								</div>
+							</li><!-- end tax -->
+
+							<li class = "cart-total" >
+								<div class="label">Total:</div>
+
+								<div class="data">
+									$<span id="cart-total">399.99</span>
+								</div>
+							</li>
+						</ul>
+					</div><!-- end totals -->
+
+					<div class ="checkout-box">
+						<input id="checkout-button" class="button" type="submit" title="Check out" value="check out">
+					</div><!-- end checkout box-->
+
+					<div class ="keep-shopping-box selector save-your-cart">
+						<a href="#" title="Save your cart" class="arial save-cart-link" data-modal-id="#save-cart-modal"><span>Save your cart</span></a>
+					</div><!-- end checkout box-->
+
+					<div class="keep-shopping-box">
+						<a href="#" title="Continue Shopping" class="arial"><span>Continue Shopping</span></a>
+					</div><!-- end keep shopping box -->
+
+				</div><!-- end proceed block -->
+
+			</div><!-- end sidebar wrap -->
+		</div><!-- end cart-sidebar -->
+	</div><!-- end section wrap -->
+</section><!-- end cart data -->
+
+<section id="cart-also-bought">
+	<form id="shopping-cart-upsell" name="cart-form" method="GET" action="cart.jsp">
+	<div class="section-wrap">
+		<div id="also-bought-block">
+			<div class="header">
+				<h3 class="title">Customers Also Bought</h3>
+			</div>
+
+			<ul>
+
+				<li class="also-bought-product"><!-- first product -->
+					<div class="product-image">
+						<img src="img/cart/cart-also-product.png" title="Product Title" alt="Product Title" class="also-img" >
+					</div><!-- end image -->
+					<div class="product-info">
+						<h5 class="title">
+							Lorem Ipsum Product Name by Brand
+						</h5>
+
+						<div class="price">
+							$29.99
+						</div>
+
+						<div class="secondary-add-to-cart">
+      						<input class="secondary-add-cart" type="submit" title="Add to Cart" value="Add to Cart" />
+      					</div><!-- end add-also-bought -->
+					</div><!-- end product info -->
+				</li><!-- end first product -->
+
+				<li class="also-bought-product"><!-- second product -->
+					<div class="product-image">
+						<img src="img/cart/cart-also-product.png" title="Product Title" alt="Product Title" class="also-img" >
+					</div><!-- end image -->
+					<div class="product-info">
+						<h5 class="title">
+							Lorem Ipsum Product Name by Brand
+						</h5>
+
+						<div class="price">
+							$29.99
+						</div>
+
+						<div class="secondary-add-to-cart">
+      						<input class="secondary-add-cart" type="submit" title="Add to Cart" value="Add to Cart" />
+      					</div><!-- end add-also-bought -->
+					</div><!-- end product info -->
+				</li><!-- end second product -->
+
+				<li class="also-bought-product"><!-- third product -->
+					<div class="product-image">
+						<img src="img/cart/cart-also-product.png" title="Product Title" alt="Product Title" class="also-img" >
+					</div><!-- end image -->
+					<div class="product-info">
+						<h5 class="title">
+							Lorem Ipsum Product Name by Brand
+						</h5>
+
+						<div class="price">
+							$29.99
+						</div>
+
+						<div class="secondary-add-to-cart">
+      						<input class="secondary-add-cart" type="submit" title="Add to Cart" value="Add to Cart" />
+      					</div><!-- end add-also-bought -->
+					</div><!-- end product info -->
+				</li><!-- end third product -->
+
+				<li class="also-bought-product"><!-- fourth product -->
+					<div class="product-image">
+						<img src="img/cart/cart-also-product.png" title="Product Title" alt="Product Title" class="also-img" >
+					</div><!-- end image -->
+					<div class="product-info">
+						<h5 class="title">
+							Lorem Ipsum Product Name by Brand
+						</h5>
+
+						<div class="price">
+							$29.99
+						</div>
+
+						<div class="secondary-add-to-cart">
+      						<input class="secondary-add-cart" type="submit" title="Add to Cart" value="Add to Cart" />
+      					</div><!-- end add-also-bought -->
+					</div><!-- end product info -->
+				</li><!-- end fourth product -->
+
+
+			</ul>
+		</div><!-- end also bought block -->
+	</div><!-- end section wrap -->
+	</form><!-- end upsell form -->
+</section><!-- end also bought section -->
+
+
+<section id="cart-fine-print">
+	<div class="section-wrap">
+
+	<p class="preorders">**** Pre-orders will ship when item(s) becomes available.  We reserve the right to limit pre-order quantities.</p>
+
+	<p class="sales-tax">* Total Due Today does not include taxes, which will be added upon confirmation of your shipping address.
+		In California, sales tax is calculated on the full retail price of the device, not any discounted price you may actually pay.
+		In Massachusetts and Nevada, sales tax is calculated on the VZW cost of the device.
+		Also during the credit check process, a deposit may be added to the total amount due.
+		Pre-orders will be charges to your credit card when the items are actually shipped.</p>
+
+	<p class="accuracy">
+		Verizon Wireless makes every reasonable effort to ensure the accuracy of the information found on our web site.
+		Unfortunately, on occasion, typographical errors, inaccuracies and omissions may occur.
+		In the event that a listed price is incorrect due to a typographical error, inaccuracy or omission, Verizon Wireless reserves the right to refuse or cancel the order you placed, even if the order has already been confirmed and your credit card charged.
+		If your card has been charged, Verizon Wireless will refund the entire charged amount to the card you used.
+		We apologize for any inconvenience this may cause you.
+	</p>
+
+
+	</div>
+</section>
+
+
+
+
+<section id="save-cart-modal" class="lightbox">
+	<div class="lightbox-info-block">
+
+		<h3 class="lightbox-headline">Save these items for later.</h3>
+
+		<div class="lightbox-details">
+			Not ready to check out?  Just enter your email address below and we'll send you a link to quickly get back to your cart.
+		</div>
+
+		<div class="lightbox-close">close</div>
+
+		<form id="save-cart-form" name="cartForm" method="GET" action="cart.jsp">
+			<!-- IF (USER IS NOT LOGGED IN)
+			<div class="lightbox-input-wrap">
+				<h5 class="lightbox-input-title">Email</h5>
+				<input name="saveCartEmail" type="email" id="save-cart-email" placeholder="Email Address" class="hasPlaceholder" >
+			</div>
+			END IF -->
+
+			<!-- IF (USER IS LOGGED IN ) -->
+			<div class="lightbox-input-wrap logged-in">
+				<input type="radio" checked="checked" name="saveCartTo" value="1" />
+				<h5 class="lightbox-input-title">Email we'll send to</h5>
+				<span>some-long-email-to-check-space@very-long-domain.com</span>
+			</div>
+
+			<div class="lightbox-input-wrap logged-in">
+				<input id="save-cart-to-email" type="radio" name="saveCartTo" value="2" />
+				<h5 class="lightbox-input-title">Enter new email</h5>
+				<input name="saveCartEmail" type="email" id="save-cart-email" placeholder="Email Address" class="hasPlaceholder" >
+			</div>
+			<!-- END IF -->
+
+			<div class="lightbox-fineprint">
+				<ul>
+					<li class="save-avail">
+						<a href="#" class="dropdown-link avail">Offer Availability</a>
+						<div class="dropdown-panel">
+							<div class="dropdown-pointer"></div>
+							<p>The availability of offers saved in your shopping cart- including products, services, prices and discounts- may change at any time.</p>
+						</div>
+					</li>
+
+					<li class="save-notify">
+						<a href="#" class="dropdown-link notify">Subscriber Notifications</a>
+						<div class="dropdown-panel">
+							<div class="dropdown-pointer"></div>
+							<p>You'll get exclusive online offers, promotions, and the latest info on our products and services.  You can unsubscribe at anytime.</p>
+						</div>
+					</li>
+
+					<li class="save-privacy">
+						<a href="#" class="privacy-link" title="Read Our Privacy Policy">Privacy Policy</a>
+					</li>
+
+				</ul>
+			</div>
+
+
+			<div class="lightbox-cta">
+				<input type="submit" value="Save Cart" id="save-cart-submit" name="saveCart">
+			</div>
+		</form>
+
+	</div><!-- end block -->
+</section>
+
+<section id="too-many-modal" class="lightbox">
+	<div class="lightbox-info-block">
+
+		<h3 class="lightbox-headline">Sorry, our cart only holds 15 items.</h3>
+
+		<div class="lightbox-details">
+			We love your business and hope you'll add this item after you check out (or remove other items) in your current cart.
+		</div>
+
+		<div class="lightbox-fineprint">
+			<h5 class="headline">Questions?</h5>
+			<div class="call">
+				<span>Call:</span>
+				<a href="#" title="Call Verizon Customer Service" class="modal-call-link">1-800-555-6789</a>
+			</div>
+			<div class="chat">
+				<a href="#" title="Chat with Verizon Customer Service" class="modal-chat-link">Chat</a>
+			</div>
+
+		</div>
+
+		<div class="lightbox-close"></div>
+
+		<div class="lightbox-cta">
+			<div class="lightbox-back">
+				<span>back to cart</span>
+			</div>
+		</div>
+
+	</div><!-- end block -->
+</section>
+
+
+
+
+
+<!-- Footer -->
+<script type="text/javascript">
+	includeFragment('inc/footer.html');
+</script>
+
+
+</div><!-- end site-container -->
+</body>
+</html>

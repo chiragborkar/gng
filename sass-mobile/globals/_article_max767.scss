@@ -1,0 +1,156 @@
+.article-detail {
+	a.close
+	{
+		@include actionLink;
+		text-transform: uppercase;
+		font-size:10px;
+		line-height:10px;
+		width:auto;
+		height: auto;
+		left: auto;
+		margin-left: auto;
+		font-size:10px;
+		text-transform:uppercase;
+		background: $pdpGreyMd url(../img/sprites/cart/blue-close-x.png) no-repeat right center;
+		border-right: 13px solid $pdpGreyMd;
+		border-radius: 0;
+		display: block;
+		width: 100%;
+		text-align: right;
+		padding-right: 15px;
+		line-height: 40px;
+		text-indent: 0;
+		position: static;
+	}
+
+	a#prev-article,
+	a#next-article
+	{
+		display: none;
+	}
+
+	.content-grid.inline-item
+	{
+		display: block;
+		margin-left: -25px;
+    	margin-right: -25px;
+    	border: 0;
+    	margin-bottom: 17px;	
+
+    	.content-item
+    	{
+    		float: none;
+    		width: auto;
+
+    		border: {
+    			left: 0;
+    			right: 0;
+    			top: 1px solid #CCC;
+    		}
+
+    		h2
+    		{
+    			@include actionLink;
+				text-transform: uppercase;
+				font-size:10px;
+				line-height:10px;
+				color: #222222;
+                margin: 0 0 12px 0;
+				//margin: 0 0 -10px;
+    		}
+
+    		.content-detail .name
+    		{
+    			color: $actLinkBlue;
+                margin: 0 0 5px 0;
+    		}
+    	}
+	}
+
+	.article-header-image
+	{
+		margin: 15px;
+		max-height: 180px;
+		overflow: hidden;
+
+		img 
+		{
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.ribbon {
+        background-image: url("../img/content-landing/hot_story_mobile.jpg");
+        height: 41px;
+	    left: 0;
+	    top: 65px;
+	    width: 54px;
+    }
+
+    .article-header
+    {
+    	margin: 30px 0;
+
+    	hgroup
+    	{
+    		padding: 0 25px;
+    		width: auto;
+    	}
+    }
+
+    .article-main-content
+    {
+		float: none;
+		border: 0;
+		margin: 0 25px;
+		padding: 0;
+		width: auto;
+
+		> p
+		{
+			padding: 0;
+			border: 0;
+		}
+    }
+
+    .article-highlights
+    {
+    	display: none;
+    }
+
+    .article-footer 
+    {
+    	.article-tag-share 
+    	{
+    		@include clearfix();
+    		height: auto;
+
+			ul.tags,
+    		.article-share
+    		{
+    			float: none;
+    			width: auto;
+    			padding: 0 20px;
+    			margin-left: 0;
+    			@include clearfix();
+    		}
+
+    		ul.tags
+    		{
+    			padding: 33px 30px 15px;
+
+    			li
+    			{
+    				display: inline-block;
+    				padding-right: 10px;
+    			}
+
+    			.title
+    			{
+    				padding-right: 40px;
+    			}
+    		}
+    	}
+    }
+}

@@ -1,0 +1,1949 @@
+.home-page {
+/************* homepage - dropdown UI Changes begins *************/
+    #homePageCompatibility {
+        &.madlib {
+            .section-wrap {
+                .content-header {
+                    width: 100%;
+                }
+            }
+        }
+        #phntbltwrapper {
+            text-align: left;
+            height: auto;
+            min-width: 500px;
+            padding: 0 0 40px 0;
+            width:70%;
+            float:left;
+            #phntblselectors{
+                width:100%;
+                height: 50px;
+                > select {
+                    display: block;
+                    position: relative;
+                    float: left;
+                }
+                > div {
+                    width: 30%;
+                    margin: 0 1.5%;
+                    float: left;
+                    .select2-container {
+                        width: 100%;
+                        .select2-choice {
+                            background-color: #fff;
+                            background-image: none;
+                            border: 1px solid #000;
+                            color: #000;
+                            border-radius: 0 0 0 0;
+                            .select2-arrow {
+                                background: none;
+                                border-left: none;
+                            }
+                        }
+                        &.select2-container-disabled {
+                            .select2-choice {
+                                background-color: #f4f4f4;
+                                background-image: none;
+                                border: 1px solid #ddd;
+                                cursor: default;
+                                .select2-arrow {
+                                    background-color: #f4f4f4;
+                                    background-image: none;
+                                    border-left: 0;
+                                }
+                                abbr {
+                                    display:none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                #selectedPhoneDetails {
+                    width:60% !important;
+                    .item-details {
+                        background-color: #FFFFFF;
+                        border: 1px solid #000;
+                        height:35px;
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 100% !important;
+                        .product-image {
+                            float:left;
+                            height:35px;
+                            width: 35%;
+                            text-align: right;
+                            margin-right: 0;
+                            img {
+                                height: 32px;
+                            }
+
+                        }
+                        .product-info {
+                            float:left;
+                            height: 35px;
+                            position:relative;
+                            width: 65%;
+                            margin-right: 0;
+                            padding-left: 8px;
+                            h5.product-title {
+                                float:left;
+                                font-size: 13px;
+                                width: 90%;
+                                margin:8px 0 0 0;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                            a {
+                                background: url("../img/sprites/product-filter-se694b36ee3.png") no-repeat scroll 0 -381px transparent;
+                                font-weight: bold;
+                                height: 10px;
+                                position: absolute;
+                                right: 10px;
+                                top: 10px;
+                                width: 10px;
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    /************* homepage - dropdown UI Changes ends ***************/
+
+
+
+
+     /*===========================================
+    =            Trending Categories            =
+    ===========================================*/
+     .madlib, // MyMobileLife
+     .madlib .content-header,
+     .trending-categories, // Trending Categories
+     .trending-products-module, // Trending Products
+     .trending-lifestyles-module .content-header, // FeaturedLifestyles header
+     .featured-reviews-module .content-header // FeaturedReviews header
+     {
+
+        // Shared styling for all breakpoints
+        display: block;
+        width: 83.333%;
+        // padding: 0 0 150px 0;
+        margin: 0 auto 0 auto;
+    }
+
+    // Patches
+    .trending-categories .content-header {
+        margin-bottom: 25px;
+    }
+    .featured-reviews-module .slide-nav {
+        margin-top: -65px;
+    }
+    .trending-lifestyles-module .flex-direction-nav {
+        top: -75px;
+    }
+    .madlib .content-header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    /*-----  End of Trending Categories  ------*/
+
+    .viewcompprodbtn {
+        text:{
+          decoration: none;
+          align: left;
+        }
+        font: {
+          family: arial, helvetica, sans-serif;
+          size: 14px;
+          weight:600;
+        }
+        color: white;
+        line-height: 25px;
+        padding: 12px 10px 4px 10px;
+        border: 1px solid;
+        border-bottom-color: rgba(0,0,0,0.4);
+        border-left-color: rgba(0,0,0,0.2);
+        border-right-color: rgba(0,0,0,0.2);
+        border-top-color: rgba(0,0,0,0);
+        @include background( linear-gradient(#ff0000, #cc0000) ); // multiple: comma-delimited
+        @include text-shadow( 0px -1px 1px rgba(0,0,0,0.3) ); // multiple: comma-delimited
+        @include border-radius(3px);
+        @include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.4), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+      
+        &:hover {
+          @include background( linear-gradient(#e50000, #b30000) ); // multiple: comma-delimited
+        }
+      
+        &:active{
+          @include background( linear-gradient(#990000, #cc0000) );
+          border-bottom-color: rgba(0,0,0,0.2);
+          border-left-color: rgba(0,0,0,0.2);
+          border-right-color: rgba(0,0,0,0.2);
+          border-top-color: rgba(0,0,0,0.5);
+          @include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) );
+        }
+    }
+
+    /*-----  End of Trending Categories  ------*/
+    
+    /*-----  Begin of Top Brands  ------*/
+
+    .topbrandsRow { 
+      display: table-row;
+      
+      span {
+        list-style:none;
+        display: table-cell;
+        border: 1px solid #C9CDCE;
+        padding: 15px 25px;
+        text-align: center;
+        vertical-align: middle;
+        
+        &:hover {
+          box-shadow: 0 0 0 5px #8B8B8B inset;
+          border: none;
+          cursor: pointer;
+          background-color: #ECF0F1;
+        }            
+      }
+      
+    }
+
+    /*-----  End of Top Brands  ------*/
+   
+    .numberCircle {
+      float: left;
+      -webkit-border-radius: 999px;
+      -moz-border-radius: 999px;
+      border-radius: 999px;
+      width: 35px;
+      height: 35px;
+      padding: 1px; 
+      background: #fff;
+      border: 2px solid red;
+      color: #FF0000;
+      text-align: center;
+      font-size: 25px;
+    }
+
+
+    .special-offers{
+        position:relative;
+        margin: 0 auto;
+        max-width:1024px;
+        .flex-viewport{
+            padding:14px 0 14px 14px;
+            border:1px solid #ccc;
+        }
+        .slides{
+            margin: 0 auto;
+            overflow:hidden;
+            li{
+                float:left;
+                width:252px;
+                height:215px;
+                position:relative;
+                ul{
+                    margin:0;
+                    @include clearfix();
+                    li{
+                        float:left;
+                        // width:252px;
+                        width:33%;
+                        height:215px;
+                        overflow:hidden;
+                        padding-right:14px;
+
+                        .item-wrapper{
+                            height:100%;
+                            display:block;
+                            overflow:hidden;
+                            position:relative;
+                            background-color:#eb182b;
+                            a{
+                                width:100%;
+                                height:100%;
+                                padding:10px;
+                                display:block;
+                            }
+                            .shop {
+                                display: block;
+                                color: #fff;
+                                font-size: 10px;
+                                font-weight: bold;
+                                font-family: arial;
+                            }
+                            .splash{
+                                display:block;
+                                position:relative;
+                                height:80px;
+                                width:152px;
+                                border-bottom:3px solid #fff;
+                                .digits{
+                                    float:left;
+                                    color: #fff;
+                                    display:block;
+                                    font-size: 90px;
+                                    line-height: 54px;
+                                    letter-spacing: -5px;
+                                    margin-right:8px;
+                                    font-family: "Verizon Apex Medium", Helvetica, Arial, sans-serif;
+                                }
+                                .measure{
+                                    display:block;
+                                    padding-top:8px;
+                                    .unit{
+                                        display:block;
+                                        font-size: 42px;
+                                        position:static;
+                                        font-weight: 400;
+                                        line-height: 30px;
+                                        font-family: "Verizon Apex Book", Helvetica, Arial, sans-serif;;
+                                    }
+                                    .words{
+                                        display:block;
+                                        font-size: 20px;
+                                        position:static;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        font-family: "Verizon Apex Bold", Helvetica, Arial, sans-serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .sale-details{
+                    color: $colorVzwNavBrd;
+                    display:block;
+                    margin:20px 0 0 0;
+                    h2 {
+                        color: $colorVzwNavBrd;
+                        font: normal 18px/21px $fontVzwBookItalic;
+                        letter-spacing: -.05em;
+                        padding: 60px 0 0 0;
+                        margin: 0;
+                    }
+                    p{
+                        margin:0;
+                        height:80px;
+                        padding:6px 0 0 0;
+                        &.details {
+                            font-style: italic;
+                        }
+                        &.description {
+                            @include checkoutContent;
+                            color: $colorVzwNavBrd;
+                            line-height: 15px;
+                        }
+                    }
+                }
+                .sale-link{
+                    a{
+                        font-size:10px;
+                        font-weight:700;
+                        color:#fff;
+                    }
+                }
+                img{
+                    position:absolute;
+                    top:0;
+                }
+            }
+        }
+    }
+    #site-container{
+        padding-bottom: 100px;
+        .content-grid-section {
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+    .content-grid .content-item {
+        .productStatus {
+            background-color: rgb(140, 140, 140);
+            color: white;
+            display: inline-block;
+            font-family: Verizon Apex Book;
+            padding: 10px;
+        }
+        .outOfStock {
+            position: absolute;
+            top: 25%;
+            z-index: 980;
+            margin-left: 20%;
+        }
+        .content-fig img{
+            max-width:115px;
+            max-height:115px;
+        }
+        a.see-all-cta{
+            width:100%;
+            height:187px;
+            display: table;
+            font-weight: bold;
+            color:#0066CC;
+            span{
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .tabbed-wrapper {
+        @include clearfix();
+        width:100%;
+
+
+
+        dd {
+            height: 27px;
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+
+            h2 {
+                display:block;
+                width:auto;
+                height: auto;
+                font-family: $fontVzwMedium;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 13px;
+                margin: 0px;
+                font-weight:normal;
+                padding-bottom: 3px;
+                } /* end h2 */
+
+            a { color: $cartGreyDk;
+                height:auto;
+                width:auto; }
+            a:hover {
+                color: $colorVzwRed;
+            }
+            &:hover{
+                .vzn-active{
+                    width:100%;
+                }
+            }
+            .vzn-active {
+                @include slideFast;
+                display:block;
+                width:0px; height:0px;
+                background: $colorVzwRed;
+                border-bottom: 2px solid $colorVzwRed;
+                position:absolute;
+                bottom:3px;
+            }
+            &.active{
+                .vzn-active{
+                    width:100%;
+                }
+            }
+        }
+
+            dd.active a h2,
+            dd a h2:hover { color: $colorVzwRed;} /* end active tab */
+
+        .tabs-content {
+
+            .show { display:block !important; }
+
+            .active { display:block !important; }
+            }
+
+        } /* end tabbed-wrapper */
+
+
+
+
+    /* ----------- end universal tab styles ------------------ */
+
+
+    .home-hero {
+        overflow: hidden;
+        max-width: 1400px;
+
+    #home-hero-slider {
+        height: 420px;
+        min-height: 420px;
+    }
+
+        width: 100%;
+        @include breakpoint(desktop){
+            #home-hero-slider {
+                min-height: 340px;
+                height: 340px;
+            }
+        }
+        @include breakpoint(tablet){
+            #home-hero-slider {
+                min-height: 280px;
+                height: 280px;
+            }
+        }
+        @include breakpoint(mobileLarge){
+            #home-hero-slider {
+                min-height: 340px;
+                height: 340px;
+            }
+        }
+        @include breakpoint(mobile){
+            #home-hero-slider {
+                min-height: 340px;
+                height: 340px;
+            }
+        }
+        #home-hero-slider{
+            .flex-control-nav {
+                width: 100%;
+                padding: 10px 0 0 0;
+                margin: 0;
+                text-align: center;
+                line-height: 6px;
+                li {
+                    margin: 0 6px;
+                    display: inline-block;
+                    zoom: 1;
+                    a {
+                        width: 8px;
+                        height: 8px;
+                        display: block;
+                        background-color: $colorNavAccountLinks;
+                        cursor: pointer;
+                        text-indent: -9999px;
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        -o-border-radius: 20px;
+                        border-radius: 20px;
+                        box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+                        &:hover {
+                            background-color: #9a0008;
+                        }
+                        &.flex-active {
+                            background-color: #9a0008;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+            .hero-info {
+                @include ctaDarkButton;
+            }
+            .promo-cta {
+                 // margin: 20px 0;
+                 position: absolute;
+                 bottom: 20px;
+
+                 + .promo-cta {
+                    margin-left: 140px;
+                 }
+            }
+            // .promo-cta {
+            //     clear: both;
+            //     cursor: pointer;
+            //     background-color: rgb(84,90,98);
+            //     @include border-radius(3px);
+            //     @include background-image(linear-gradient(rgba(84, 90, 98, 1.0), rgba(59, 63, 69, 1.0)));
+            //     border: 1px solid #3B3F45;
+            //     display: table;
+            //     margin: 20px 0;
+            //     width: auto;
+            //     min-width:130px;
+            //     height:43px;
+            //     color: #FFF;
+            //     font-size: 14px;
+            //     font-family: Arial;
+            //     font-weight: bold;
+            //     span {
+            //         display: table-cell;
+            //         vertical-align: bottom;
+            //         padding: 3px 5px;
+            //         line-height: 40px;
+            //     }
+            // }
+            .slides{
+                margin:0;
+                @include clearfix();
+                li{
+                    display:none;
+                    &:first-child { display: block; }
+                    height: 400px;
+                    min-height: 400px;
+                    position: relative;
+                    @include breakpoint(desktop){
+                        height: 320px;
+                        min-height: 320px;
+                    }
+                    @include breakpoint(tablet){
+                        height: 260px;
+                        min-height: 260px;
+                    }
+                    @include breakpoint(mobileLarge){
+                        height: 178px;
+                        min-height: 178px;
+                    }
+                    @include breakpoint(mobile){
+                        height: 178px;
+                        min-height: 178px;
+                    }
+                    .banner {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.alt{
+                        .hero-info{
+                            width:100%;
+                            // padding: 40px 0 0 0;
+                            // HPQC 6094
+                            padding: 20px 0 0 0;
+
+                            background:transparent;
+                            @include breakpoint(tablet){
+                                text-align: right;
+                            }
+                            .story-title {
+                                color:#fff;
+                                margin-right: 40px;
+                                text-align: right;
+                                font: {
+                                    family: $fontVzwBoldItalic;
+                                    size: 90px;
+                                }
+                                @include breakpoint(tablet){
+                                    font-size: 70px;
+                                }
+                            }
+                            .hero-sub{
+                                float:right;
+                                text-align: left;
+                                // width:284px;
+                                // padding-right: 88px;
+
+                                // HPQC 6094
+                                width: 354px;
+                                padding-right: 88px;
+                                @include ctaDarkButton;
+
+                                .hero-copy {
+                                    line-height: 24px; // HPQC 6094
+                                    margin-top: -7px;
+
+                                    .bullet{
+                                        background: #fff;
+                                        width: 20px;
+                                        height: 10px;
+                                        display: block;
+                                        position: absolute;
+                                        top: 12px;
+                                        left: -30px;
+                                    }
+                                    @include breakpoint(tablet){
+                                        text-align: left;
+                                    }
+                                    position: relative;
+                                    color:#fff;
+                                    font: {
+                                        family: $fontVzwBookItalic;
+                                        size:18px;
+                                    }
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mobile-hero-info{
+                    position: relative;
+                    background: #2a2d32;
+                    color: $colorVzwNavBrd;
+                    padding: 15px;
+                    margin-top: -5px;
+                    min-height: 124px;
+                    p.mobile-copy {
+                        color: $colorVzwNavBrd;
+                        margin: 0 15px;
+                        padding: 4px 0 0 0;
+                        letter-spacing: -.1em;
+                        height: 100px;
+                        overflow: hidden;
+
+                        font: {
+                            family: $fontVzwBookItalic;
+                            size: 18px;
+                        }
+                        .product-title {
+                            font: {
+                                family: $fontVzwBook;
+                            }
+                        }
+                        .price {
+                            color: $colorVzwNavBrd !important;
+                            display: block;
+                            sup{
+                                position: relative;
+                                top: 1px;
+                                font-size: .56em;
+                            }
+                        }
+                    }
+                    p.mobile-cta {
+                        color: $colorVzwNavBrd;
+                        text-transform: uppercase;
+                        margin: 14px 0 4px 15px;
+                        font:  {
+                            family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            weight: bold;
+                            size: 10px;
+                        }
+                        a.see-details {
+                            color: $colorVzwNavBrd;
+                            cursor: pointer;
+                            background: url(../img/sprites/pdp/wht-right.png) no-repeat right center;
+                            padding-right: 10px;
+                            &:hover {
+                                text-decoration:underline;
+                            }
+                        }
+                    }
+                    .carrot{
+                        position: absolute;
+                        top: 7px;
+                        margin-top: -40px;
+                        left: 20px;
+                        display: block;
+                        @include css-triangle("up",20px,#2a2d32);
+                        background: url(../img/home/carrot.png);
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        border: none;
+                        -webkit-border-radius: 0;
+                        padding: 0;
+
+                        &:hover {
+                            background: url(../img/home/carrot.png);
+                            box-shadow: none;
+                            -webkit-box-shadow: none;
+                            border: none;
+                            -webkit-border-radius: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .product-hero{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 66%;
+                height: 100%;
+                padding: 50px 0 0 90px;
+                @include breakpoint(tablet){
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 50%;
+                    height: 93%;
+                    padding: 105px 0 0 33px;
+                }
+                img{
+                    display: inline-block;
+                    float: left;
+                    height: 80%;
+                }
+                h1{
+                    color: #fff;
+                    font-size: 80px;
+                    display: inline-block;
+                    float: left;
+                    text-align: left;
+                    font-family: "Verizon Apex Extra Bold Italic";
+                    width: 60%;
+                    line-height: 70px;
+                    padding-left: 30px;
+                    padding-top: 30px;
+                    @include breakpoint(tablet){
+                        color: #fff;
+                        font-size: 56px;
+                        display: inline-block;
+                        float: left;
+                        text-align: left;
+                        font-family: "Verizon Apex Extra Bold Italic";
+                        width: 60%;
+                        line-height: 42px;
+                        padding-left: 19px;
+                        padding-top: 17px;
+                    }
+                }
+            }
+            .hero-info {
+                position: absolute;
+                right: 0;
+                height: 100%;
+                width: 34%;
+                background: #2a2d32;
+                top: 0;
+                max-height: 500px;
+                padding: 40px 18px 18px 18px;
+                @include breakpoint(tablet){
+                    width: 45%;
+                    padding: 15px 18px 18px 18px;
+                }
+                .carrot{
+                    position: absolute;
+                    left: -24px;
+                    top: 45%;
+                    background: url(../img/home/carrot.png);
+                    display: block;
+                    height: 46px;
+                    width: 24px;
+                    background: url(../img/home/carrot.png);
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    border: none;
+                    -webkit-border-radius: 0;
+                    padding: 0;
+
+                    &:hover {
+                        background: url(../img/home/carrot.png);
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        border: none;
+                        -webkit-border-radius: 0;
+                        padding: 0;
+                    }
+                }
+                a.button{
+                    display:inline-block;
+                    margin-right: 10px;
+                }
+                h3{
+                        color:#fff;
+                        family: $fontVzwBook;
+                        font-size: 18px;
+                    }
+                h2.price{
+                        color:#fff !important;
+                        sup{
+                            position: relative;
+                            top: 3px;
+                        }
+                        @include breakpoint(tablet){
+                            font-size: 32px;
+                        }
+                    }
+                .hero-copy {
+                    color: #fff;
+                    p.hero-copy{
+                        font-size: 14px;
+                        font-family: $fontArial;
+                    }
+
+                }
+            }
+        }
+
+        #home-hero-slider.wow {
+            position: relative;
+            min-height: 320px;
+            height: auto;
+            // Background (Video || Image)
+
+            .mejs-container {
+                .mejs-controls,
+                .mejs-overlay-play
+                {
+                    display: none !important;
+                }
+            }
+
+            li.slide
+            {
+                min-height: 320px;
+                max-height: auto;
+                height: auto;
+            }
+
+            .hero-background {
+                 background-color: gray;
+                 position: relative;
+                 width: 100%;
+                 height: 100%;
+                 z-index: 1;
+                 .background-media {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                 }
+            }
+
+            // Title
+            .hero-title {
+                font-family: "Verizon Apex Bold";
+                font-weight: normal;
+                position: absolute;
+                z-index: 10;
+                left: 8.333%;
+                bottom: 30%;
+
+                color: #fff;
+                font-size: 32px;
+                font-style: italic;
+                strong {
+                    font-style: normal;
+                    font-size: 90px;
+                    text-transform: uppercase;
+                }
+            }
+
+            // Nav
+            .hero-nav {
+                position: absolute;
+                bottom: 15%;
+                left: 8.333%;
+                z-index: 10;
+                color: #fff;
+                right: 260px;
+
+                > h2 {
+                    font-family: "Verizon Apex Bold";
+                    color: inherit;
+                    font-size: 16px;
+                }
+                a {
+                    @include border-radius(4px);
+                    font: {
+                        family: $fontVzwBold;
+                        weight: normal;
+                        size: 12px;
+                    }
+
+                    background-color: #000; // fallback black bg color
+                    background: rgba(0,0,0,0.5);
+                    float: left;
+                    clear: none;
+                    width: auto;
+                    padding: 3px 10px;
+                    margin-bottom: 15px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin-right: 5px;
+                    &:after {
+                        content: " >";
+                    }
+
+                    &:hover
+                    {
+                        border: 2px solid #fff;
+                        padding: 1px 8px;
+                    }
+                }
+            }
+
+
+            // Sidebar
+            .hero-sidebar {
+                position: absolute;
+                z-index: 10;
+                bottom: 0;
+                right: 0;
+                z-index: 10;
+                background-color: #ecedee;
+                padding-bottom : 28px;
+
+                header {
+                    padding: 18px 28px;
+                    color: #fff;
+                    background-color: #ed1c24;
+                    > h3 {
+                        margin: 0;
+                        color: inherit;
+                        font-size: 24px;
+                        font-family: "Verizon Apex Bold";
+                        font-weight: normal;
+                        font-style: italic;
+                    }
+                    strong {
+                        font-family: "Arial", sans-serif;
+                        color: inherit;
+                        font-size: 12px;
+                        font-weight: 800;
+                    }
+                }
+
+
+                .bullet {
+                    color: #666;
+                    padding: 14px 28px 0;
+                    font-size: 12px;
+                    font-family: "Arial", sans-serif;
+                    strong {
+                        font-family: "Verizon Apex Bold";
+                        font-weight: normal;
+                        font-size: 16px;
+                        display: block;
+                        color: #333;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+    .category-section{
+        padding-top: 60px;
+        position: relative;
+
+        // .content-header{
+        //     padding:0 0 30px 0;
+        // }
+        .flex-direction-nav {
+            float: right;
+            margin: 35px 0 0;
+            li {
+                float: left; margin-left: 15px;
+                .flex-prev,
+                .flex-next {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    text-indent: -9999px;
+                    &.flex-disabled {
+                        cursor: default;
+                        opacity: 0.35;
+                    }
+                }
+                .flex-prev {
+                    @include pdp-sprite(btf-carousel-left, false, 0 ,0);
+                }
+                .flex-next {
+                    @include pdp-sprite(btf-carousel-right, false, 0 ,0);
+                }
+            }
+    }
+    }
+
+    .madlib{
+        position: relative;
+
+        .content-grid .content-item{
+            width:25%;
+        }
+
+        .madlib-header{
+            min-height:80px;
+            padding-bottom: 1px;
+            background:#d9dfdf;
+            margin-top:10px;
+            text-align:center;
+
+            h2{
+                font-size: 29px; 
+                font-family: "Verizon Apex Bold"; 
+                color: #333333;
+                input{
+                    @include opacity(1);
+                    color: #D2D3D4;
+                    width: 173px;
+                    max-width: 323px;
+                    /*height: 37px;*/
+                    background: none;
+                    border: none;
+                    outline: none;
+                    font-size: 22px;
+                    /*line-height: 28px;*/
+                    border-bottom: 1px solid #515459;
+                    /*padding-bottom: 7px;*/
+                    font-family: "Verizon Apex Book";
+                    vertical-align: inherit !important;
+                    margin-bottom: 10px;
+                    font-weight:700;
+                    padding: 0;
+                    &:focus{
+                        background: #fff !important;
+                        border: none;
+                        border-radius: 3px;
+                        padding: 5px;
+                        font-size: 22px;
+                    }
+                    &:-moz-placeholder{
+                        opacity: 1;
+                        color: #7e7e7e;
+                    }
+                    &::-moz-placeholder{
+                        opacity: 1;
+                        color: #7e7e7e;
+                    }
+                    &::-webkit-input-placeholder{
+                        opacity: 1;
+                        color: #7e7e7e;
+                    }
+                    &:-ms-input-placeholder{
+                        opacity: 1;
+                        color: #7e7e7e;
+                    }
+                }
+
+                #madlib-device,
+                .madlib-select {
+                    color: #7e7e7e;
+                    font-weight: 700;
+                }
+                .category {
+                    background: url("../img/select-carrot.png") no-repeat scroll right center transparent;
+                    border-color: -moz-use-text-color -moz-use-text-color #515459;
+                    border-style: none none solid;
+                    border-width: medium medium 1px;
+                    color: #7e7e7e !important;
+                    display: inline-block;
+                    font-family: "VerizonApexBook";
+                    font-size: 19px;
+                    line-height: 28px;
+                    width: 150px;
+                }
+                .madlib-select{
+                    display:inline-block;
+                    position: relative;
+                    label{
+                        font-family: "Verizon Apex Book";
+                        font-size: 29px;
+                        color:#7e7e7e;
+                        line-height: 28px;
+                        border-bottom: 1px solid #515459;
+                        padding-bottom: 7px;
+                        background: url(../img/select-carrot.png) no-repeat right;
+                        padding-right: 20px;
+                        font-weight: 700;
+                        &.open{
+                            //display: none;
+                        }
+                    }
+                    ul{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #fff;
+                        padding: 0;
+                        min-width: 235px;
+                        -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                        -moz-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                        box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                        border-radius: 2px;
+                        border-top: 1px solid #e4e5e5;
+                        border-left: 1px solid #e4e5e5;
+                        display: inline-block;
+                        z-index: 100;
+
+                        li{
+                            //margin: 0 15px;
+                            border-top: 1px solid #f8f8f8;
+                            text-align: left;
+                            font-size: 27px;
+                            font-weight: normal;
+                            font-family: "Verizon Apex Book";
+                            padding: 5px;
+                            color: #9f9fa0;
+                            &.active{
+                                background: #3b3e45;
+                            }
+                            &:hover{
+                                background: #3b3e45;
+                            }
+                        }
+
+                    }
+                }
+                .tt-hint{
+                    display: none;
+                }
+                .tt-dropdown-menu{
+                    background: #fff;
+                    padding: 0;
+                    min-width:320px;
+                     -webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                     -moz-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                     box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+                     border-radius: 2px;
+                     border-top: 1px solid #e4e5e5;
+                     border-left: 1px solid #e4e5e5;
+                    .tt-suggestions{
+                        .tt-suggestion{
+                            text-align:left;
+                            &.tt-is-under-cursor{
+                                background: #3b3e45;
+
+                                p{
+                                    border:0;
+                                    color: #f6f6f6;
+                                }
+                            }
+
+                            p{
+                                margin: 0 15px;
+                                font-size:26px;
+                                // color: #ddddde;
+                                color: #999;
+                                display:inline;
+                                margin-bottom:0;
+                                text-align:left;
+                                padding-bottom:0;
+                                font-weight:normal;
+                                font-family: "Verizon Apex Book";
+                                border-top: 1px solid #f8f8f8;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .section-wrap{max-width: 1024px;margin: 0 auto;}
+        .content-grid{border-top:none;}
+        .content-grid .content-item {
+            .content-fig img{
+                max-width:115px;
+            }
+        }
+    }
+
+    .mobile-community,.lifestyles,.featured-reviews-module,.trending-products-module,.trending-categories{
+        // .section-wrap{max-width:1024px;margin: 0 auto;}
+    }
+
+    .mobile-community{
+        ul.tiles{
+            max-width:1024px;
+            margin:10px auto;
+            li{
+                float: left; height: 255px; width: 255px; margin-top: 1px; margin-right: 1px;position: relative;
+                .icon{position: absolute;bottom:10px;right:10px;}
+                &.twitter{
+                    background:#692145;
+                    p{
+                        font-family: "Verizon Apex Book Italic";
+                        font-size: 20px;
+                        color: #fff;
+                        line-height: 1.2em;
+                        font-weight: 600;
+                        padding: 30px;
+                    }
+                    .icon{
+                        width: 26px;
+                        height:19px;
+                        background: url(../img/home/twitter.png);}
+                }
+                &.twitter-alt{
+                    background:#29a0cd;
+                    p{
+                        font-family: "Verizon Apex Book Italic";
+                        font-size: 20px;
+                        color: #fff;
+                        line-height: 1.2em;
+                        font-weight: 600;
+                        padding: 30px;
+                    }
+                    .icon{
+                        width: 26px;
+                        height:19px;
+                        background: url(../img/home/twitter.png);}
+                }
+                &.facebook{
+                    .icon{
+                        width:13px;
+                        height:23px;
+                        background: url(../img/home/facebook.png);}
+                }
+                &.pinterest{
+                    .icon{
+                        width:20px;
+                        height: 24px;
+                        background: url(../img/home/pinterest.png);}
+                }
+                &.instagram{
+                    .icon{
+                        width:24px;
+                        height:25px;
+                        background: url(../img/home/instagram.png);}
+                }
+                &.youtube{
+                    .icon{
+                        width:22px;
+                        height: 28px;
+                        background: url(../img/home/youtube.png);}
+                }
+            }
+        }
+    }
+    .featured-reviews-module{
+        max-width: 1280px;
+        max-height: auto;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        .featuredReviewSlider{
+            height: 511px;
+            overflow: hidden;
+        }
+        /*
+        .flex-direction-nav{
+            position: absolute;
+            top: 35px;
+            right: 9%;
+        }
+        */
+        .slides{
+            .slide{
+                //width: 995px !important;
+                height: 100%;
+                max-height: 511px;
+                display: inline;
+            }
+        }
+        .featured-review{
+            //display:table;
+            height:511px;
+            width:100%;
+            .product-img{
+                width: 511px;
+                height: 511px;
+                display: block;
+                float: left;
+                text-align: center;
+                img{
+                    height:80%;
+                    margin-top: 15%;
+                }
+                &.red {
+                    background: #ed1c24;
+                }
+                &.light-teal {
+                    background: #73b9b0;
+                }
+                &.silver {
+                    background: #eff1f9;
+                }
+                &.light-yellow {
+                    background: #fadf4c;
+                }
+                &.green {
+                    background: #4a9a4d;
+                }
+                &.blue {
+                    background: #3b73b0;
+                }
+                &.yellow {
+                    background: #c49f39;
+                }
+                &.charcoal {
+                    background: #9f9797;
+                }
+                &.magenta {
+                    background: #d2669f;
+                }
+                &.purple {
+                    background: #7f3483;
+                }
+                &.teal {
+                    background: #3195a9;
+                }
+            }
+            .product-details{
+                margin: 0;
+                @include boxBrdrT;
+                height: 511px;
+                position: relative;
+                padding-top: 45px;
+                padding-right: 60px;
+
+                > .post-info,
+                > .user-review,
+                > .product-title,
+                > .product-price,
+                > .button
+                {
+                    margin-left: 571px;
+                }
+
+                > .stars
+                {
+                    margin-left: 60px;
+                }
+
+                .carrot{
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -20px;
+                    left: 461px;
+                    display: block;
+                    @include css-triangle("left", 20px, #fff);
+                }
+
+                .promo-cta {
+                    clear: both;
+                    cursor: pointer;
+                    background-color: #545a62;
+                    @include border-radius(3px);
+                    @include background-image(linear-gradient(#545a62, #3b3f45));
+                    border: 1px solid #3B3F45;
+                    display: block;
+                    margin-top: 36px;
+                    width: 130px;
+                    height:43px;
+                    color: $colorVzwNavBrd;
+                    position: absolute;
+
+                    font: {
+                        family: $fontArial;
+                        weight: bold;
+                        size: 14px;
+                    }
+
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        padding: 3px 5px;
+                        line-height: 24px;
+                    }
+                }
+                .product-title{
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-family: "Verizon Apex Book";
+                    color: #3d4146;
+                    line-height: 1.34em;
+                    padding: 0;
+                    margin-top: 0;
+                    margin-bottom: 3px;
+                    margin-right: 0;
+                    padding-bottom: 1px;
+                    max-height: 55px;
+                    overflow: hidden;
+                    display: block;
+                }
+
+                .product-price{
+                    padding-top:0;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-family: "Verizon Apex Book";
+                    color: #3d4146;
+                    padding: 0;
+                    margin-bottom: 4px;
+                    margin-top: 0;
+                }
+                .review-block{
+
+                }
+
+                .user-review{
+                    font-family:$fontVzwBookItalic;
+                    font-size:32px;
+                    color:#3d4146;
+                    line-height: 1.34em;
+                    letter-spacing: -.05em;
+                    margin-bottom: 38px;
+                    padding-bottom: 3px;
+                    max-height: 213px;
+                    overflow: hidden;
+                }
+
+                .post-info{
+                    color: $cartGreyMd;
+                    line-height: 15px;
+                    margin-bottom: 3px;
+                    max-height: 15px;
+                    overflow: hidden;
+                    font: {
+                        family: $fontArial;
+                        size: 12px;
+                    }
+                }
+            }
+        }
+    }
+ .trending-products-module{
+        .product-hero{
+            margin: 15px 0px 30px 0px;
+        }
+        ul.content-grid{
+            margin:0;
+        }
+            .tabbed-wrapper {
+                position: relative;
+                .flex-direction-nav{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 0;
+                }
+            .tab-scroll {
+
+                dd {
+                    h2 { font-size: 12px; }
+                    } /* end dd */
+                } /* end tab-scroll */
+
+            .tabs-content {
+                &>li{
+                    display:none;
+                }
+
+                #consumer-reviewsTab,
+                #questions-commentsTab { display:none; }
+
+
+                }
+
+            } /* end tabbed-wrapper */
+    }
+    .trending-categories{
+        ol.flex-control-paging{display:none;}
+        .flex-viewport{
+            border-right: 1px solid #cecece;
+            height: 215px;
+        }
+        .slides{
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            overflow: hidden;
+            li{
+
+                position: relative;
+                width: 215px !important;
+                height: 213px;
+                float: left;
+                overflow: hidden;
+                border-right: 1px solid #ccc;
+                padding:15px;
+                a > img {
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    z-index: 1;
+                }
+
+                p {
+                    position: relative;
+                    z-index:2;
+                    font-family: $fontVzwMedium;
+                    font-size: 14px;
+                    color:$cartGreyMd;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .home-mobile{
+        article.category-section{
+            margin-left: 35px;
+            padding-top: 40px;
+            .content-header .title a{
+                padding-right:30px;
+            }
+            .categories{
+                margin: 0 35px 0 0;
+            }
+        }
+        .flex-direction-nav{
+            display: none;
+        }
+        .shop-module{
+
+        }
+    }
+
+    .content-grid .content-item.grid-hover-active .content-detail .name {
+        font-weight:inherit !important;
+    }
+
+    .content-grid .content-item:hover .see-all-cta {
+        text-decoration: underline;
+    }
+    
+    
+    
+    
+    
+    /***************  home page category list start ***************************/
+    .category-list-section{
+      margin: 0 auto;
+      width: 83.333%;
+      
+    }
+    
+    .cat-list{
+    
+
+    }
+
+    .cat-list-item{
+      width:19.643%;
+      display:inline-block;
+      margin:auto 0;
+      overflow: hidden;
+      vertical-align: top;
+      word-wrap:break-word;
+      
+    }
+    .sprite-container{
+      position: relative;
+    }
+    div.sprite-container, div.cat-list-sprite{
+      margin-left:0 !important;
+    }
+    .cat-list-sprite{
+      width:23px;
+    height:25px;
+    position:absolute;
+    }
+    .audio{
+      background: url(../img/category-icons.png) no-repeat 0px 0px;
+    }
+  .battery{
+    background: url(../img/category-icons.png) no-repeat -211px 0px;
+  }
+  .travel{
+    background: url(../img/category-icons.png) no-repeat -426px 0px;
+  }
+  .case{
+    background: url(../img/category-icons.png) no-repeat -637px 0px;
+  }
+  .essential{
+    background: url(../img/category-icons.png) no-repeat -855px 0px;
+  }
+  .sport{
+    background: url(../img/category-icons.png) no-repeat -1px -65px;
+  }
+  .gaming{
+    background: url(../img/category-icons.png) no-repeat -212px -63px;
+  }
+  .in-the-home{
+    background: url(../img/category-icons.png) no-repeat -424px -63px;
+  }
+  .memory{
+    background: url(../img/category-icons.png) no-repeat -637px -63px;
+  }
+  .photo{
+    background: url(../img/category-icons.png) no-repeat -852px -63px;
+  }
+  
+    .cat-list-item p{
+      font-family: "Verizon Apex Medium";
+      font-weight: bold;
+      font-size:15px;
+      margin-bottom:0px;
+      display:inline-block;
+      margin-left:23px;
+    }
+    
+    .cat-list-item div{
+      margin-left:23px;
+    }
+    
+    a.cat-link{
+      line-height:25px;
+    }
+    a.cat-link:hover{
+      text-decoration:underline;
+    }
+    
+    h2.cat-title {
+      color: #333333;
+      font-family: "Verizon Apex Book";
+      font-size: 28px;
+      font-weight: normal;
+      letter-spacing: -2px;
+      text-transform: capitalize;
+      vertical-align: baseline;
+    }
+    /***************  home page category list end ***************************/
+
+}
+
+/* home page rating colors begin */
+  .ratingcolorwrapper {
+      text-align: left;
+      height: auto;
+      margin: auto;
+      padding-left: 90px;
+    }
+    
+  .ratingcolorimgs > img {
+    height: 15px;
+    border: 1px solid;
+  } 
+
+/* home page rating colors begin */
+
+
+
+/************* madlib start *********************************************/
+@media only screen and (min-width: $screenSmall) {
+    #home-page .compatibility-filter div.container {
+      width:20%;
+      display:inline-block;
+      vertical-align: top;
+      margin-left:10px;
+    }
+    #home-page .compat-results {
+      border: 1px solid #CDCDCD;
+      padding:3px;
+      z-index: 10000;
+      width:20%;
+      position:absolute;
+      background:#FFF;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#867f7f)";/*IE 8*/
+    -moz-box-shadow: 3px 3px 3px #867f7f;/*FF 3.5+*/
+    -webkit-box-shadow: 3px 3px 3px #867f7f;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 3px 3px 3px #867f7f;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    }
+    #home-page #device > option {
+      display: none !important;
+  }  
+}
+/************* madlib end *********************************************/
+
+.lt-ie9 {
+    .featured-reviews-module {
+        .featured-review {
+            .product-details {
+                .carrot {
+                    left: 471px;
+                }
+            }
+        }
+    }
+// new homepage changes
+    #homePageCompatibility {
+        .content-header {
+            margin-left: 0px;
+        }
+        .compatibility-filter {
+            padding-bottom: 90px;
+            .container {
+                float: left;
+                width: 16%;
+                margin-left: 4%;
+                padding-right: 10px;
+
+                a {
+                    &.viewcompprodbtn {
+                        float: left;
+                        margin-top: 20px;
+                        margin-right: 20px;
+                        padding-top: 8px;
+                        padding-left:5px;
+                        white-space: nowrap;
+                    }
+                }
+                &:first-child + .container + .container + .container + .container {
+                    float: left;
+                    width: 5%;
+                    padding-top: 45px;
+                    padding-right:12%;
+                    padding-left:18px;
+                }
+            }
+            div.container {
+                width:20%;
+                display:inline-block;
+                vertical-align: top;
+                margin-left:10px;
+                #device > option {
+                    display: none !important;
+                }  
+                .compat-results {
+                    border: 1px solid #CDCDCD;
+                    padding:3px;
+                    z-index: 10000;
+                    width:20%;
+                    position:absolute;
+                    background:#FFF;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#867f7f)";/*IE 8*/
+                }
+            }
+        }
+
+    }
+}
+
+/************ new homepage *******************************************/
+
+
+
+.category-list-section {
+    .cat-section-wrap {
+        ul.cat-list {
+            li.cat-list-item {
+                .sprite-container {
+                    .Audiolb {
+                        background: url(../img/category-icons.png) no-repeat 0px 0px;
+                    }
+                    .BatteriesChargerslb {
+                        background: url(../img/category-icons.png) no-repeat -211px 0px;
+                    }
+                    .CarTravellb {
+                        background: url(../img/category-icons.png) no-repeat -426px 0px;
+                    }
+                    .CasesProtectionlb {
+                        background: url(../img/category-icons.png) no-repeat -637px 0px;
+                    }
+                    .EverydayEssentialslb {
+                        background: url(../img/category-icons.png) no-repeat -855px 0px;
+                    }
+                    .SportsFitnesslb {
+                        background: url(../img/category-icons.png) no-repeat -1px -65px;
+                    }
+                    .GamingToyslb {
+                        background: url(../img/category-icons.png) no-repeat -212px -63px;
+                    }
+                    .IntheHomelb {
+                        background: url(../img/category-icons.png) no-repeat -424px -63px;
+                    }
+                    .Memorylb {
+                        background: url(../img/category-icons.png) no-repeat -637px -63px;
+                    }
+                    .Photographylb {
+                        background: url(../img/category-icons.png) no-repeat -852px -63px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#homePagePopCat {
+    header.content-header {
+        height:40px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+    }
+}
+
+.viewcompprodbtn {
+    background-color: hsl(360, 95%, 31%); 
+    background-repeat: repeat-x; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e90505", endColorstr="#9a0303");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#e90505), to(#9a0303));
+    background-image: -moz-linear-gradient(top, #e90505, #9a0303); 
+    background-image: -ms-linear-gradient(top, #e90505, #9a0303); 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e90505), color-stop(100%, #9a0303)); 
+    background-image: -webkit-linear-gradient(top, #e90505, #9a0303); background-image: -o-linear-gradient(top, #e90505, #9a0303); 
+    background-image: linear-gradient(#e90505, #9a0303); border-color: #9a0303 #9a0303 hsl(360, 95%, 27%); color: #fff; 
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26); 
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+    &.disabled {
+        background-color: #FFA0A0 !important;
+        background-image: linear-gradient(#FFA0A0, #FA6363);
+        background-repeat: repeat-x;
+        cursor: not-allowed;        
+    }
+}
+
+#homePageCompatibility {
+    .selector {
+        span.active {
+            color:#333;
+        }
+    }
+}
+
+.cat-list-item {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    #homePageCompatibility {
+        padding-top: 25px;
+        margin-bottom: 70px;
+
+        .content-header {
+            margin:0px;
+        }
+        .section-wrap{
+            padding-top: 0;
+        }
+
+        #phntbltwrapper{
+            width: 100% !important;
+            padding: 0 !important;
+            div#phntblselectors{
+                width: 100%;
+                /*float: left;*/
+                &>div{
+                    width:30%;
+                    float: left;
+                  div{
+                    width:100%;
+                  }
+                }
+            }
+            &+div{
+                width: 100%;
+                a:first-child{
+                    margin-left:33.5%;
+                    /*padding:12px 4px 4px;*/
+                    text-align: center; 
+                    width:30.5%;
+                    display: inline-block;
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+
+    }
+
+    .topbrandsrow {
+        display: block;
+        width: auto;
+
+        span {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            width: 20%;
+        }
+    }
+
+    #homePagePopCat {
+        width: 83.33333333% !important;
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+}
+
+/***************** end new homepage ***********************************/
+
+@media only screen and (min-width: $screenLarge) {
+    @import "home_min1280";
+}
+@media only screen and (min-width: $screenMedium) and (max-width: $screenLarge - 1) {
+    @import "home_max1280min1024";
+}
+@media only screen and (max-width: $screenMedium - 1) and (min-width: $screenSmall) {
+    @import "home_max1023min768";
+}
+@media only screen and (max-width: $screenSmall - 1) and (min-width: $screenMobileLarge + 1) {
+    @import "home_max767min641";
+}
+@media only screen and (max-width: $screenMobileLarge) and (min-width: $screenMobileSmall) {
+    @import "home_max640min320";
+}
+
+@import "home_resizing";

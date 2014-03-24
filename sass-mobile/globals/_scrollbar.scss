@@ -1,0 +1,75 @@
+.device-scroll {
+    .viewport {
+        height: 230px;
+        overflow: hidden;
+        position: relative;
+    }
+    .overview{
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .scrollbar{
+        visibility: hidden;
+        position: relative;
+        float: right;
+        width: 6px;
+        background: url(../img/tiny-scroll/scroll-background.png) no-repeat scroll 0 0 transparent;
+    }
+
+    .track{
+        height: 100%;
+        width:8px;
+        position: relative;
+        padding: 0 1px;
+    }
+    .thumb{
+        background: url(../img/tiny-scroll/thumb-middle.png) repeat-y scroll 0 0 transparent;
+        height: 20px;
+        width: 8px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        .container{
+            position:relative;
+            height:100%;
+            width:8px;
+        }
+        .end{
+            background: url(../img/tiny-scroll/thumb-top.png) no-repeat scroll 0 0 transparent;
+            overflow: hidden;
+            height: 12px;
+            width: 8px;
+            position:relative;
+            top:-2px;
+        }
+        .bottom{
+            background:url(../img/tiny-scroll/thumb-bottom.png) no-repeat scroll 0 0 transparent;
+            height:10px;
+            width:8px;
+            overflow:hidden;
+            position:absolute;
+            bottom:0;
+        }
+    }
+    
+    .disable{
+        display: none;
+    }
+    .noSelect{
+        user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+    }
+
+}
+.scroll .viewport{
+    height:330px;
+}
+.scroll .scrollbar{
+    visibility: visible;
+}

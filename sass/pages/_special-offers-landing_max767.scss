@@ -1,0 +1,35 @@
+.special-offers-header
+{
+    .promo-fig {
+        position: relative;
+    }
+}
+
+    .header-promo{
+        .special-header{
+            display:none;
+        }
+
+        .promo-content .promo-copy {
+            margin-bottom: 15px;
+        }
+    }
+    .slide-nav{
+        display:block;
+    }
+    .category-section {
+        .content-header {
+            .title {
+                display: table;
+                width: 100%;
+                height: 100%;
+                font-size: 22px;
+                a {
+                    display: table-cell;
+                    height: 100%;
+                    text-align: right;
+                    vertical-align: baseline;
+                }
+            }
+        }
+    }

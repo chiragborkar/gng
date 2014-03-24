@@ -1,0 +1,106 @@
+.category-landing-page.bundle-builder-page{
+    #main-column {
+        .summary{
+            margin: 55px 0 80px 0;
+            background: #ebebeb;
+            position: relative;
+            height: 200px;
+
+            .social-block {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                .social-share-module {
+                    float: right;
+
+                    .social-list {
+                        .social-item {
+                            width: 50px;
+
+                            &.first{
+                                border-left: 1px solid #b6babb;
+                            }
+                        }
+                    }
+                }
+
+                .social-label{
+                    margin: 10px 10px;
+                    float: right;
+                    color: #959595;
+                    font-size: 10px;
+                    text-transform: uppercase;
+
+                }
+            }
+
+            .left-container{
+                width: 20%;
+                float: left;
+                padding: 30px 20px;
+
+                font-size: 18px;
+                color: #333;
+
+                strong {
+                    color: #da010c;
+                }
+
+                .product-details {
+                    display: block;
+                    @include background-image(linear-gradient(rgba(84, 90, 98, 1.0), rgba(59, 63, 69, 1.0)));
+                    text-transform: lowercase;
+                    width: 100%;
+                    height: 43px;
+                    border-radius: 3px;
+                    font: {
+                        family: Arial;
+                        size: 14px;
+                        weight: bold;
+                        }
+                    span {
+                        display:block;
+                        padding: 22px 0 5px 15px;
+                        color: #fff;
+
+                    }
+                }
+            }
+            ul.right-container{
+                width:70%;
+                float: right;
+                padding-top:63px;
+                margin-bottom: 30px;
+
+                li{
+                    display: inline-block;
+                    width: 32%;
+                    padding: 0 52px;
+                    vertical-align: top;
+                    color: #333;
+                    font-size: 12px;
+                    line-height: 14px;
+                    position: relative;
+
+                    img{
+                        display:block;
+                        margin: 0 auto;
+                        max-height: 72px;
+                        margin-bottom: 12px;
+                    }
+
+                    .plus{
+                        background: url(../../img/bb/bb-plus.png);
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        top: 30px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

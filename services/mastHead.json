@@ -1,0 +1,36 @@
+<a href="#closePanel" class="close">close x</a>
+<div class="filter-panel">
+    <h2 class="dimension-title">Compatibility</h2><br />
+
+    <strong>Select from your devices</strong>
+    <ul id="compatibility-devices" class="dimension-list single-select">
+        <li class="list-option">
+            <a href="#">
+                <span class="facet-check"></span>
+                <span class="facet-name">
+                    <img src="#" alt="iPhone 4S" width="15" />
+                    iPhone 4S
+                </span>
+            </a>
+        </li>
+        <li class="list-option selected">
+            <a href="#">
+                <span class="facet-check"></span>
+                <span class="facet-name">
+                    <img src="#" alt="iPhone 5" width="15" />
+                    iPhone 5
+                </span>
+            </a>
+        </li>
+    </ul>
+
+    <div id="search-device-or-brand">
+        <strong>Search all devices</strong><br />
+        <form action="post" action="#">
+            <span class="search-reset"></span>
+            <input name="device" id="search-input" type="text" placeholder="enter device or brand" />
+        </form>
+    </div>
+
+
+</div>

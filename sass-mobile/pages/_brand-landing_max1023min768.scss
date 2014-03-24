@@ -1,0 +1,34 @@
+.brand-landing-page {
+    .category-list-header {
+
+        .wrapper {
+
+
+            .mobile-sort-filter {
+                width: 100%;
+                padding-right: 0px;
+                min-height: 65px;
+                margin: 0;
+            }
+
+            .sort-options {
+                position: absolute;
+                z-index: 99;
+                right: 20px;
+                bottom: 25px;
+            }
+
+        } //.wrapper
+
+        .category-header-promo {
+            .promo-header {
+                height: 350px;
+            }
+
+            .category-image {
+                left: 0;
+				width: 72%;
+            }
+        }
+    }
+}

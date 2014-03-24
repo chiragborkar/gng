@@ -1,0 +1,8 @@
+{
+    "error": {
+        "inlineHTML": {
+            "checkoutEmail": "email already in use",
+            "checkoutLastName": "invalid last name"
+        }
+    }
+}

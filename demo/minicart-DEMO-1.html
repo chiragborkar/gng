@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile
+  <meta name="viewport" content="width=device-width" /> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale AND prevent zoom -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Checkout | Verizon MLS</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+
+  <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/styles-blessed1.css"><link rel="stylesheet" href="css/styles-blessed2.css">
+
+  <script src="js/foundation/modernizr.foundation.js"></script>
+
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+  <script type="text/javascript" src="js/HANDOFF-FUNCTIONS.js"></script>
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+
+</head>
+
+<body id="checkout-page" class="cart-and-checkout minicart-demo-1">
+
+<!-- BEGIN TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+	<div class="temp-pdp-header">
+  		<script type="text/javascript">
+    		includeFragment('inc/header.html');
+  		</script>
+  </div><!-- end temp header -->
+<!-- END TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+
+<!-- End Header and Nav -->
+
+<!-- Main Grid Section -->
+
+<section id="checkout-header">
+	<div class="section-wrap">
+		<h1 class="checkout-title">Begin Checkout</span></h1>
+		<div class="cart-link">
+			<a href="cart-base.html" title="Back to Cart">Back to Cart</a>
+		</div>
+	</div>
+</section><!-- end checkout header -->
+
+<div class="checkout-sequence-wrap">
+
+<section id="begin-checkout">
+	<div class="section-wrap">
+
+		<div class="sign-in">
+			<div class="form-box">
+				<h2 class="form-title"><span class="bold">Sign</span>-In</h2>
+				<p class="form-instructions">
+					If you <span>have a MyVerizon login</span>, sign in for access to saved shipping and billing information.
+				</p>
+				<form id="my-Verizon-login" method="post">
+
+					<div class="form-input-wrap">
+						<label class="form-item-title" for="vzw-user" accesskey="U" >User ID or Phone Number</label>
+						<input name="myVerizonID" type="text" id="vzw-user" class="checkout-text-input" placeholder="User ID or Phone Number" tabindex="1">
+						<a href="#" class="forgot">Forgot your User ID?</a>
+					</div>
+
+					<div class="form-input-wrap">
+						<label class="form-item-title" for="vzw-pass" accesskey="P">Password</label>
+						<input name="myVerizonPassword" type="password" id="vzw-pass" class="checkout-text-input hasPlaceholder" placeholder="Password" tabindex="3">
+						<a href="#" class="forgot">Forgot your password?</a>
+					</div>
+
+					<div class="remember-me">
+						<input name="remember-me" value="Create a login" type="checkbox" class="remember-me-checkbox" >
+						<div class="checkbox-label">
+							Remember Me (<a href="#" title="Read Our Privacy Policy" class="privacy-link">Privacy Policy</a>)
+						</div>
+				</div>
+
+				<div class="checkout-input-button">
+					<input name="myVerizonLoginSubmit" type="submit" class="checkout-submit" value="Sign-In" id="checkout-sign-in">
+				</div>
+
+				</form>
+
+			</div><!-- end form box -->
+		</div>
+
+
+
+
+		<div class="guest-checkout">
+			<div class="form-box">
+			 	<h2 class="form-title"><span class="bold">Guest</span> Checkout</h2>
+
+			 	<p class="form-instructions">
+					If you <span>don't have a MyVerizon login</span>, you can check out without signing in.
+				</p>
+
+				<div class="create-login">
+					<label class="form-item-title" for="create-login" accesskey="L">
+						Are you a Verizon Customer without an Account?
+					</label>
+					<input name="create-login" value="Create a login" type="checkbox" class="create-login-checkbox" id="create-login" tabindex="1">
+					<div class="checkbox-label">
+						Create a login.
+					</div>
+				</div>
+
+				<div class="create-login-message">
+					<p class="form-instructions">
+					You'll be able to <span>register for a MyVerizon ID</span> upon completion of your order.
+				</p>
+				</div>
+
+				<div class="checkout-input-button" id="checkout-as-guest" >
+					<div class="button"><span>Checkout as Guest</span></div>
+				</div>
+			</div><!-- end form-box -->
+		</div>
+
+
+
+
+	</div><!-- end section wrap -->
+</section><!-- end begin checkout -->
+
+
+
+<section id="checkout">
+	<div class="section-wrap">
+
+		<section id="checkout-sequence">
+			<form id="vzn-checkout">
+
+				<fieldset id="shipping-info" class="checkout-step">
+					<div class="step-title-block">
+						<legend class="step-title"><span class="bold">1<span class="sep"> | </span>Shipping</span> Information</legend>
+						<h5 class="step-number">Step <span class="bold">1</span> of <span class="bold">3</span></h5>
+					</div>
+
+
+					<div class="step-info-block hide-complete">
+						<div class="pointer"></div>
+
+				 		<div class="form-input-wrap where-to">
+							<select name="checkoutWhereTo" class="checkout-select-input" id="checkout-where-to-ship" tabindex="1">
+								<option value="residence" accesskey="H" selected>Ship to Home</option>
+								<option value="business" accesskey="B">Ship to Business</option>
+							</select>
+						</div>
+
+				 		<div id="destination" data-removed="" >
+				 			<div class="residence-fields">
+				 				<div class="form-input-wrap">
+									<label class="form-item-title" for="checkout-ship-first-name" accesskey="F">First Name</label>
+									<input name="checkoutFirstName" type="text" id="checkout-ship-first-name" class="checkout-input" placeholder="First Name" tabindex="10">
+								</div>
+
+								<div class="form-input-wrap">
+									<label class="form-item-title" for="checkout-ship-last-name" accesskey="L">Last Name</label>
+									<input name="checkoutLastName" type="text" id="checkout-ship-last-name" class="checkout-input" placeholder="Last Name" tabindex="11">
+								</div>
+							</div><!-- end residence -->
+
+							<div class="business-fields not">
+								<div class="form-input-wrap">
+									<label class="form-item-title" for="checkout-ship-company" accesskey="C">Company</label>
+									<input name="checkoutCompany" type="text" id="checkout-ship-company" class="checkout-input" placeholder="Company" tabindex="15">
+								</div>
+
+								<div class="form-input-wrap">
+									<label class="form-item-title" for="checkout-ship-attn" accesskey="A">C/O</label>
+									<input name="checkoutAttention" type="text" id="checkout-ship-attn" class="checkout-input" placeholder="First and Last Name" tabindex="16">
+								</div>
+							</div><!-- end business -->
+						</div><!-- end destination -->
+
+						<div class="form-input-wrap">
+							<label class="form-item-title" for="checkout-ship-email" accesskey="E">Email <span class="grey">| For Order Updates</span></label>
+							<input name="checkoutEmail" type="email" id="checkout-ship-email" class="checkout-input hasPlaceholder" placeholder="Email Address" tabindex="17">
+						</div>
+
+						<div class="newsletter-signup">
+							<input name="newsletterSignUp" type="checkbox" id="checkout-newsletter-signup" tabindex="20">
+							<label class="newsletter" for="checkout-newsletter-signup" accesskey="N">Sign-up for Newsletter updates<div class="checkout-dropdown">
+								<a href="#" class="dropdown-link">
+									What's in it for me?
+								</a>
+								<div class="dropdown-panel">
+									<div class="dropdown-pointer"></div>
+									<p>	Receive Verizon Wireless special offers via email.  You can remove your email address from our list at any time.  Simply click the "unsubscribe" link at the bottom of each email. <a href="#" title="Privacy Policy" class="privacy-link">Privacy Policy</a>
+									</p>
+								</div><!-- end dropdwn panel -->
+							</div><!-- end dropdown --></h5>
+						</div>
+
+						<div class="form-input-wrap">
+							<label class="form-item-title" for="checkout-ship-phone" accesskey="P">Phone Number <span class="grey">| For Shipping Assistance</span></label>
+							<input name="checkoutPhone" type="tel" id= "checkout-ship-phone" class="checkout-input hasPlaceholder" placeholder="Phone Number" tabindex="30">
+						</div>
+
+						<div class="form-input-wrap">
+							<label class="form-item-title" for="checkout-ship-address-1" accesskey="1">Address <span class="grey">| No P.O. Boxes</span></label>
+							<input name="checkoutAddress" type="text" id="checkout-ship-address-1" class="checkout-input" placeholder="Street Address" tabindex="35">
+						</div>
+
+						<div class="form-input-wrap">
+							<label class="form-item-title" for="checkout-ship-address-2" accesskey="2">Address 2</label>
+							<input name="checkoutAddress2" type="text" id="checkout-ship-address-2" class="checkout-input" tabindex="36">
+							<label class="optional">Optional</label>
+						</div>
+
+						<div class="form-input-wrap">
+							<label class="form-item-title" for="checkout-ship-city" accesskey="Y">City</label>
+							<input name="checkoutCity" type="text" id="checkout-ship-city" class="checkout-input" placeholder="City" tabindex="40">
+						</div>
+
+						<div class="form-input-wrap state">
+							<label class="form-item-title" for="checkout-ship-state">State</label>
+							<select name="checkoutState" class="checkout-select-input" id="checkout-ship-state" class="required" tabindex="41">
+
+								<option value="CA" selected>CA</option>
+								<option value="CO">CO</option>
+								<option value="CT">CT</option>
+								<option value="ME">ME</option>
+								<option value="MI">MI</option>
+								<option value="NC">NC</option>
+								<option value="NJ">NJ</option>
+								<option value="NY">NY</option>
+
+							</select>
+						</div>
+
+						<div class="form-input-wrap zip">
+							<label class="form-item-title" for="checkout-ship-zip" accesskey="Z">Zip Code</label>
+							<input name="checkoutZip" type="text" id="checkout-ship-zip" class="checkout-input" placeholder="Zip Code" tabindex="45">
+						</div>
+
+
+						<div class="instructions shipping-method">
+							Please select a shipping method:
+							<div class="checkout-dropdown">
+								<a href="#" class="dropdown-link">
+									See Detailed Shipping Information
+								</a>
+								<div class="dropdown-panel">
+									<div class="dropdown-pointer"></div>
+									<p>	Detailed shipping information nullam cursus, libero eu feugiat iaculis, nibh ante congue eros,
+										eu rutrum mi turpis elementum augue.
+									</p>
+								</div><!-- end dropdwn panel -->
+							</div><!-- end dropdown -->
+						</div><!-- end instructions -->
+
+						<div class="shipping-option-radios">
+
+							<div class="form-input-wrap">
+								<input name="shipRadio" type="radio" class="checkout-radio-input" id="ship-ground-5-day" >
+								<label class="form-item-title">2 to 5 Day Ground - <span class="radio-offer offer">Free!</span><span class="ship-price no-offer">$2.99</span></label>
+							</div>
+
+							<div class="form-input-wrap">
+								<input name="shipRadio" type="radio" class="checkout-radio-input" id="ship-overnight">
+								<label class="form-item-title">Overnight Shipping - <span class="ship-price">$12.99</span></label>
+							</div>
+
+							<div class="form-input-wrap">
+								<input name="shipRadio" type="radio" class="checkout-radio-input" id="ship-ground-2-day">
+								<label class="form-item-title two-day-spcl">2-Day Ground -
+									<span class="radio-offer offer">
+										Free!
+										<span class="ship-price">
+											Regularly $6.99
+										</span>
+
+										<div class="checkout-dropdown">
+											<a href="#" class="dropdown-link">
+												See Special Offers
+											</a>
+											<div class="dropdown-panel">
+												<div class="dropdown-pointer"></div>
+												<p>	Great news! Your order qualified for an additional discount that has already been applied to your total.
+												</p>
+											</div><!-- end dropdwn panel -->
+										</div><!-- end dropdown -->
+									</span>
+									<span class="ship-price no-offer">$6.99</span>
+								</label>
+							</div>
+
+							<div class="form-input-wrap">
+								<input name="shipRadio" type="radio" class="checkout-radio-input" id="ship-sat-overnight">
+								<label class="form-item-title">Saturday Priority Overnight Shipping - <span class="ship-price">$19.99</span></label>
+							</div>
+
+							<div class="form-input-wrap">
+								<input name="shipRadio" type="radio" class="checkout-radio-input" id="ship-priority-overnight">
+								<label class="form-item-title">Priority Overnight Shipping - <span class="ship-price">$14.99</span></label>
+							</div>
+
+							<div id="no-shipping-selected" class="shipping-method-error">
+								Please select your shipping method
+							</div>
+
+						</div><!-- end shipping radios -->
+
+					</div><!-- end info block -->
+
+					<a id="ship-info-complete" class="checkout-next hide-complete" href="#">
+						<div class="button"><span>Next Step</span></div>
+					</a>
+
+					<div class="step-info-summary hidden">
+
+						<div class="ship-contact">
+							<h5>Contact</h5>
+							<ul>
+							<!-- hidden field for scripting purposes --><div id="sum-destination" class="select-summary"></div>
+
+								<li id="ship-name-block">
+									<div class="sum-first-name summary"></div>
+									<div class="sum-last-name summary"></div>
+								</li>
+
+								<li id="sum-email" class="summary"></li>
+								<li id="sum-phone" class="summary"></li>
+							</ul>
+						</div>
+
+						<div class="ship-address">
+							<h5>Shipping Address</h5>
+							<ul>
+
+								<li id="copy-ship-name-block"></li>
+								<li id="sum-address-1" class="summary"></li>
+								<li id="sum-address-2" class="summary"></li>
+
+								<li class="ship-city-state">
+									<div id="sum-city" class="summary"></div>
+									<div id="sum-state" class="select-summary"></div>
+									<div id="sum-zip" class="summary"></div>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="ship-method-summary">
+						<h5>Shipping Method</h5>
+							<div id="sum-shipping" class="summary">Selected Shipping Method Placeholder</div>
+						</div>
+
+
+
+						<div class="edit-checkout-step">
+							<span>Edit</span>
+						</div>
+
+					</div><!-- end info summary -->
+
+				</fieldset><!-- end checkout step 1 -->
+
+
+
+				<fieldset id="billing-info" class="checkout-step"><!-- begin checkout step 3 -->
+					<div class="step-title-block">
+				 	<legend class="step-title"><span class="bold">2<span class="sep"> | </span>Billing</span> Information</h2>
+				 	<h5 class="step-number">Step <span class="bold">2</span> of <span class="bold">3</span></h5>
+				 </div>
+
+					<div class="step-info-block hide-complete "> <!-- add .hidden back!-->
+
+				 		<div class="pointer"></div>
+
+				 		<div class="billing-info-block">
+
+
+				 			<div class="billing-select-block"><!-- tabs -->
+
+				 				<div class="bill-account billing-option checked">
+				 					<input name="billMyAccount" type="checkbox" class="billing-select" id="bill-to-account" checked>
+				 					<h6 class="billing-select-label">Bill to My Account</h6>
+				 				</div>
+
+				 				<div class="bill-card billing-option">
+				 					<input name="payWithCard" type="checkbox" class="billing-select" id="pay-with-card">
+				 					<h6 class="billing-select-label">Pay With Credit Card</h6>
+				 				</div>
+
+				 			</div><!-- end billing select block -->
+
+
+				 			<div class="billing-details-block"><!-- tab content -->
+
+				 				<div class="billing-detail-content details-account">
+				 					<div class="instructions">
+				 						Bill to account #<span id="account-number">XXXXX6789</span>
+				 					</div>
+				 					<div class="account-disclaimer">
+				 						Transaction limits may apply.  Charges will appear on next monthly bill.
+				 					</div>
+				 					<div class="saved-account-info">
+				 						<div class="account-billing-address">
+				 							<h5>Billing Address</h5>
+				 							<ul>
+
+				 								<li id="account-name-block">
+				 									<div id="account-first-name">Name</div>
+				 									<div id="account-last-name">Account-Holder</div>
+				 								</li>
+												<li id="account-address-1">40 Account Street</li>
+												<li id="account-address-2">Apt 4</li>
+
+												<li id="account-city-state">
+													<div id="account-city">Account City</div>
+													<div id="account-state">NY</div>
+													<div id="account-zip">10038</div>
+												</li>
+				 							</ul>
+				 						</div><!-- end account billing address -->
+
+				 						<div class="account-contact">
+				 							<h5>Billing Contact</h5>
+				 							<ul>
+				 								<li class="account-email">account.holder@verizon.net</li>
+				 								<li class="account-phone">212-345-7890</li>
+				 							</ul>
+				 						</div><!-- end account contact -->
+
+				 					</div><!-- end saved account info -->
+
+				 				</div><!-- end details account -->
+
+				 				<div class="billing-detail-content details-card hidden">
+				 					<div class="instructions">
+				 						Choose your payment method
+				 					</div>
+
+				 					<div class="card-choice-block">
+
+				 						<div class="form-input-wrap saved-card">
+											<input name="cardChoice" type="radio" class="checkout-radio-input" id="choose-saved-card" checked>
+											<h5 class="form-item-title">Pay with Saved Card</h5>
+											<div class="card-choice-detail-block">
+												<div class="billing-card">
+													<div class="card-image mastercard">
+													</div>
+													<ul class="card-info">
+														<li id="name-on-card">Saved Name</li>
+														<li class="last-four">(Ending in <span id="confirmed-last-four">6789</span>)</li>
+														<li class="expires">Expires <span id="confirmed-month">01</span>/<span id="confirmed-year" class="select-summary">13</span></li>
+
+													</ul>
+												</div><!-- end billing-card -->
+											</div>
+										</div><!-- form-input-wrap saved card-->
+
+				 						<div class="form-input-wrap new-card">
+											<input name="cardChoice" type="radio" class="checkout-radio-input" id="choose-new-card">
+											<h5 class="form-item-title">Pay with New Card</h5>
+											<div class="card-choice-detail-block hidden">
+
+												<div class="instructions">Please enter your card information:</div>
+
+												<div class="credit-card-info">
+
+													<div class="form-input-wrap">
+														<label class="form-item-title" for="card-number">Credit Card Number <span class="grey">| No Spaces</span></label>
+														<input name="cardNumber" type="text" class="checkout-input" id="card-number" placeholder="Card Number" tabindex="50">
+													</div>
+
+													<ul class="card-list">
+
+														<li class="visa"></li>
+														<li class="mastercard"></li>
+														<li class="amex"></li>
+														<li class="discover"></li>
+
+													</ul><!-- end card list -->
+
+													<ul class="card-security">
+
+														<li class="security-item month">
+															<label class="form-item-title" for="card-month">Expiration Date</label>
+															<div class="form-input-wrap">
+																<select name="ccMonth"  class="checkout-select-input" id="card-month" tabindex="51">
+																	<option value="1" selected>1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																	<option value="8">8</option>
+																	<option value="9">9</option>
+																	<option value="10">10</option>
+																	<option value="11">11</option>
+																	<option value="12">12</option>
+																</select>
+															</div>
+														</li>
+
+														<li class="security-item slash">/</li>
+
+														<li class="security-item year">
+															<div class="form-input-wrap">
+																<select name="ccYear" class="checkout-select-input" id="card-year" tabindex="52">
+																	<option value ="13" selected>2013</option>
+																	<option value ="14">2014</option>
+																	<option value ="15">2015</option>
+																	<option value ="16">2016</option>
+																	<option value ="17">2017</option>
+																	<option value ="18">2018</option>
+																	<option value ="19">2019</option>
+																	<option value ="20">2020</option>
+																	<option value ="21">2021</option>
+																</select>
+															</div>
+														</li>
+
+														<li class="security-item code">
+
+															<label class="form-item-title" for="card-code">
+																	Security Code
+																	<div class="checkout-dropdown">
+																		<a href="#" class="dropdown-link">
+																			What's this?
+																		</a>
+																		<div class="dropdown-panel">
+																			<div class="dropdown-pointer"></div>
+																			<div class="code-instructions visa">
+																				<h6>Visa, MasterCard & Discover</h6>
+																				<p>Three digit security code on the back of your card.</p>
+																			</div>
+																			<div class="code-instructions amex">
+																				<h6>American Express</h6>
+																				<p>Four digit security code on the front of your card.</p>
+																			</div>
+																		</div><!-- end dropdwn panel -->
+																	</div><!-- end dropdown -->
+																</label>
+
+															<div class="form-input-wrap">
+																<input name="ccCode" type="text" class="checkout-input" id="card-code" placeholder="Code" tabindex="53">
+															</div>
+
+														</li><!-- end security-code block -->
+													</ul><!-- end security items list -->
+													<div class="cc-small-instructions">
+														To save this card, sign into My Verizon and edit your billing information.
+													</div>
+												</div> <!-- end credit card info -->
+											</div> <!-- end card-choice-detail-block for new card -->
+										</div><!-- form-input-wrap new card-->
+
+										<div class="edit-saved-card"><span class="checkout">Edit</span></div>
+
+				 					</div><!-- end card choice block -->
+
+				 				</div><!-- end details card -->
+
+				 			</div><!-- end billing-details-block -->
+
+				 			<div class="billing-boilerplate">
+
+				 				<ul class="list">
+
+				 					<li class="security-item image"><!-- item one -->
+				 						<img src="img/cart/norton-verisign.jpg" title="Norton/Verisign Secure Checkout">
+				 					</li>
+
+				 					<li class="security-item"><!-- item two -->
+				 						<h4 class="title">Security</h4>
+				 						<p class="info">Your purchase is safe, your information is secure.
+				 						</p>
+				 					</li>
+
+				 					<li class="security-item"><!-- item three -->
+				 						<h4 class="title">Privacy</h4>
+				 						<p class="info">We won't sell or share your information with anyone.
+				 						</p>
+				 					</li>
+
+				 					<li class="security-item"><!-- item four -->
+				 						<h4 class="title">Easy Return Policy</h4>
+				 						<p class="info">If you are not satisfied with your purchase, you can return your merchandise for a refund
+				 						A $35 restocking fee ($70 for netbooks and tablets) will apply (excluding Hawaii).
+				 						</p>
+				 					</li>
+
+				 					<li class="security-item"><!-- item five -->
+				 						<h4 class="title">Customer Guarantee</h4>
+				 						<p class="info">Our commitment to give you the best possible service.
+				 						</p>
+				 					</li>
+
+				 				</ul><!-- end list -->
+
+							</div><!-- end boilerplate -->
+				 		</div><!-- end billing info block -->
+
+						<div class="step-info-summary billing-address hidden">
+
+							<div class="instructions">Billing Address</div>
+
+							<div class="bill-contact-block">
+							<h5>Contact</h5>
+							<ul>
+								<li class="bill-name-block">
+									<div id="bill-first-name" class="summary">Saved</div>
+									<div id="bill-last-name" class="summary">Saved-Last-Name</div>
+								</li>
+
+
+								<li id="bill-email" class="bill-summary">saved.card@email.com</li>
+								<li id="bill-phone" class="summary">(saved) phone-number</li>
+							</ul>
+						</div>
+
+						<div class="bill-address-block">
+							<h5>Billing Address</h5>
+							<ul>
+
+								<li id="copy-bill-name-block">Saved Saved-Last-Name</li>
+								<li id="bill-address-1" class="summary">1 Saved Address </li>
+								<li id="bill-address-2" class="summary">Saved Address 2</li>
+
+								<li class="bill-city-state">
+									<div id="bill-city" class="summary">Saved City</div>
+									<div id="bill-state" class="select-summary">NY</div>
+									<div id="bill-zip" class="summary">SAVED</div>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="edit-checkout-step">
+							<span class="checkout">Edit</span>
+						</div>
+
+					</div><!-- end address only summary -->
+
+					<div class="new-billing-info-form billing-address hidden">
+
+						<div class="billing-address-block">
+				 			<p class="instructions">Please enter your billing address:</p>
+
+				 			<div class="same-as-shipping">
+				 				<input name="sameAsShipping" type="checkbox" id="same-as-shipping" >
+				 				<div class="label">Same as shipping address</div>
+				 			</div>
+
+				 			<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-first-name">First Name</label>
+								<input name="billingFirstName" type="text" id="bill-first-name" class="checkout-input" placeholder="First Name" tabindex="100">
+							</div>
+
+							<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-last-name">Last Name</label>
+								<input name="billingLastName" type="text" id="bill-last-name" class="checkout-input" placeholder="Last Name" tabindex="105">
+							</div>
+
+							<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-phone">Phone Number</label>
+								<input name="billingPhone" type="tel" id="bill-phone" class="checkout-input hasPlaceholder" placeholder="Phone Number" tabindex="110">
+							</div>
+
+							<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-address-1">Address <span class="grey">| No P.O. Boxes</span></label>
+								<input name="billingAddress" type="text" id="bill-address-1" class="checkout-input" placeholder="Street Address" tabindex="115">
+							</div>
+
+							<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-address-2" >Address 2</label>
+								<input name="billingAddress2" type="text" id="bill-address-2" class="checkout-input" placeholder="" tabindex="120">
+							</div>
+
+							<div class="form-input-wrap">
+								<label class="form-item-title" for="bill-city" >City</label>
+								<input name="billingCity" type="text" class="checkout-input" placeholder="City" tabindex="125">
+							</div>
+
+							<div class="form-input-wrap state">
+								<label class="form-item-title" for="bill-state" >State</label>
+								<select name="billingState" type="text" id="bill-state" class="checkout-select-input" tabindex="130">
+									<option value="CA" selected>CA</option>
+									<option value="CO">CO</option>
+									<option value="CT">CT</option>
+									<option value="ME">ME</option>
+									<option value="MI">MI</option>
+									<option value="NC">NC</option>
+									<option value="NJ">NJ</option>
+									<option value="NY">NY</option>
+								</select>
+							</div>
+
+							<div class="form-input-wrap zip">
+								<label class="form-item-title" for="bill-zip" >Zip Code</label>
+								<input name="billingZip" type="text" class="checkout-input" placeholder="Zip Code" tabindex=" 135">
+							</div>
+	 					</div><!-- end billing-address-block -->
+
+					</div><!-- end new-billing-info-form -->
+
+					<div class="checkout-discount-block">
+
+						<div class="checkout-accordion discount-code">
+							<div class="acc-control">
+								Do you have a discount code?
+								<div class="icon open"></div>
+							</div>
+							<div class="acc-info">
+
+								<div id="discount-code-input-block" class="discount-input">
+									<label for="discount-code-input">Discount Code</label>
+									<input type="text" id="discount-code-input" tabindex="150">
+									<input type="submit" id="apply-discount-code" tabindex="155">
+								</div>
+
+								<div id="discount-code-success-block" class="discount-success">
+									<span class="success-msg">Success!  </span>Discount code #<span id="confirmed-discount-code" class="confirmed">12345</span> credited to your account.
+									<a href="#" id="remove-discount-code" class="discount-remove">Remove</a>
+								</div>
+
+							</div>
+						</div><!-- end accordion discount code -->
+
+						<div class="checkout-accordion gift-card card1">
+							<div class="acc-control">
+								Do you have a gift card?
+								<div class="icon open"></div>
+								<div class="checkout-dropdown">
+									<a href="#" class="dropdown-link">
+										Where can I find the PIN?
+									</a>
+									<div class="dropdown-panel">
+										<div class="dropdown-pointer"></div>
+										<img src="img/cart/giftcard-dropdown.jpg">
+									</div><!-- end dropdown panel -->
+								</div><!-- end checkout dropdown -->
+							</div><!-- end acc control -->
+
+							<div class="acc-info">
+
+								<div id="gift-card-1-input-block" class="discount-input">
+									<label for="gift-card-1-input">Text</label>
+									<input type="text" id="gift-card-1-input" tabindex="160">
+									<label for="gift-card-1-pin">Text</label>
+									<input type="text" id="gift-card-1-pin" tabindex="165">
+									<input type="submit" id="apply-gift-card-1" tabindex="166">
+								</div>
+
+								<div id="gift-card-1-success-block" class="discount-success">
+									<span class="success-msg">Success!  </span>Gift card #<span id="confirmed-gift-card-1" class="confirmed">12345</span> credited to your account: <span id="confirmed-gift-card-1-amt" class="confirmed amt">50</span>
+									<a href="#" id="remove-gift-card-1" class="discount-remove">Remove</a>
+									<a href="#" id="add-gift-card-2" class="add-gift-card">Add another Gift Card</a>
+
+
+									<div id="gift-card-2-input-block" class="discount-input">
+										<label for="gift-card-2-input">Text</label>
+										<input type="text" id="gift-card-2-input" tabindex="170">
+										<label for="gift-card-2-pin">Text</label>
+										<input type="text" id="gift-card-2-pin" tabindex="175">
+										<input type="submit" id="apply-gift-card-2" tabindex="176">
+									</div>
+
+									<div id="gift-card-2-success-block" class="discount-success">
+										<span class="success-msg">Success!  </span>Gift card #<span id="confirmed-gift-card-2" class="confirmed">12345</span> credited to your account: <span id="confirmed-gift-card-2-amt" class="confirmed amt">25</span>
+										<a href="#" id="remove-gift-card-1" class="discount-remove">Remove</a>
+									</div>
+
+									<div class="cc-small-instructions">
+										Please provide credit card information above with all Gift Card purchases.
+										We will NOT charge your credit card unless your purchase amount exceeds your Gift Card value.
+									</div>
+								</div><!-- end card 1 success block -->
+
+							</div><!-- end acc info for guft card -->
+						</div><!-- end accordion gift cards -->
+
+					</div><!-- end discount block -->
+
+					<p class="checkout-not-charged hide-complete">
+				 		Your card will not be charged at this time.
+				 	</p>
+
+				 	<a id="billing-info-complete" class="bill-info-next checkout-next hide-complete" href="#">
+				 		<div class="button">
+				 			<span>Next Step</span>
+				 		</div>
+				 	</a>
+
+				 	<div class="verified-fineprint cc-small-instructions hide-complete">
+				 		If your bank participates in the Verified by Visa/MasterCard SecureCode, you may be asked to authenticate your credit card or enroll in this service on the following screen.
+				 		The State of Alabama requires that an individual signing a contractual agreement must be at least 19 years of age.
+				 	</div>
+
+
+
+
+
+				</div><!-- end step-info-block -->
+
+
+
+
+
+				<div class="step-info-summary hidden">
+					Payment Method Summary
+				</div>
+
+
+			</fieldset><!-- end checkout step 2 -->
+
+
+			<fieldset id="confirm-order" class="checkout-step"><!-- begin checkout step 3 -->
+				<div class="step-title-block">
+					<legend class="step-title"><span class="bold">3<span class="sep"> | </span>Confirm</span> Order</h2>
+					<h5 class="step-number">Step <span class="bold">3</span> of <span class="bold">3</span></h5>
+				</div>
+				<div class="step-info-block hide-complete hidden">
+
+					<p class="instructions">
+						This is the last step before purchasing.
+						Please review your order, make your final edits and click 'Place Your Order' when ready.
+						These items will require a signature for delivery:
+					</p>
+
+
+					<div class="final-cart-table">
+
+						<div class="table-row"><!-- -------------- first product in cart --------------- -->
+							<div class="desc-block">
+
+								<div class="cart-product-image">
+									<img src="img/cart/cart-headphones.png" title="Beats by Dre Pro On-Ear Headphones" alt="Beats by Dre Pro On-Ear Headphones" class="cart-img">
+								</div><!-- end product image -->
+
+								<div class="cart-product-info">
+									<h2>Beats by Dre Pro On-Ear Headphones</h2>
+
+									<div class="unit-price">
+
+										<span class="original-price offer">$399.99</span>
+										<span class="actual-price">$299.99</span>
+										<span class="discount offer">10% off</span>
+
+									</div><!-- end unit price -->
+
+									<div class="size-color">
+
+										<div class="size">Size: <span class="data">Place</span></div>
+										<div class="size">Color: <span class="data">Holder</span></div>
+
+									</div>
+								</div><!-- end crt-product-info -->
+							</div><!-- end desc block -->
+
+
+							<div class="edit-panel">
+
+								<div class="edit-box qty">
+									<div class="edit-label">Qty:</div>
+
+									<select  name="final-qty" class="checkout-text-input">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+
+								</div><!-- end qty detail -->
+							</div><!-- end  edit panel -->
+						</div><!-- end table row -->
+
+						<div class="table-row"><!-- -------------- second product in cart --------------- -->
+							<div class="desc-block">
+
+								<div class="cart-product-image">
+									<img src="img/cart/cart-headphones.png" title="Beats by Dre Pro On-Ear Headphones" alt="Beats by Dre Pro On-Ear Headphones" class="cart-img">
+								</div><!-- end product image -->
+
+								<div class="cart-product-info">
+									<h2>Beats by Dre Pro On-Ear Headphones</h2>
+
+									<div class="unit-price">
+
+										<span class="original-price offer">$399.99</span>
+										<span class="actual-price">$299.99</span>
+										<span class="discount offer">10% off</span>
+
+									</div><!-- end unit price -->
+
+									<div class="size-color">
+
+										<div class="size">Size: <span class="data">Place</span></div>
+										<div class="size">Color: <span class="data">Holder</span></div>
+
+									</div>
+								</div><!-- end crt-product-info -->
+							</div><!-- end desc block -->
+
+
+							<div class="edit-panel">
+
+								<div class="edit-box qty">
+									<div class="edit-label">Qty:</div>
+
+									<select  name="final-qty" class="checkout-text-input">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+
+								</div><!-- end qty detail -->
+							</div><!-- end  edit panel -->
+						</div><!-- end table row -->
+
+						<div class="table-row"><!-- -------------- third product in cart --------------- -->
+							<div class="desc-block">
+
+								<div class="cart-product-image">
+									<img src="img/cart/cart-headphones.png" title="Beats by Dre Pro On-Ear Headphones" alt="Beats by Dre Pro On-Ear Headphones" class="cart-img">
+								</div><!-- end product image -->
+
+								<div class="cart-product-info">
+									<h2>Beats by Dre Pro On-Ear Headphones</h2>
+
+									<div class="unit-price">
+
+										<span class="original-price offer">$399.99</span>
+										<span class="actual-price">$299.99</span>
+										<span class="discount offer">10% off</span>
+
+									</div><!-- end unit price -->
+
+									<div class="size-color">
+
+										<div class="size">Size: <span class="data">Place</span></div>
+										<div class="size">Color: <span class="data">Holder</span></div>
+
+									</div>
+								</div><!-- end crt-product-info -->
+							</div><!-- end desc block -->
+
+
+							<div class="edit-panel">
+
+								<div class="edit-box qty">
+									<div class="edit-label">Qty:</div>
+
+									<select  name="final-qty" class="checkout-text-input">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+
+								</div><!-- end qty detail -->
+							</div><!-- end  edit panel -->
+						</div><!-- end table row -->
+
+						<input name="placeOrder" type="submit" class="checkout-final" value="Place Your Order" action="checkout-success.html">
+
+
+
+				 	<div class="checkout-disclaimers">
+				 		<ul>
+				 			<li class="disclaimer returns">
+				 				<div class="title">Our Return Policy</div>
+				 				<p class="content">Donec adipiscing pretium dapibus.
+				 					Nunc gravida elementum risus et volutpat.
+				 					In hac habitasse platea dictumst.
+				 					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				 				</p>
+				 			</li>
+
+				 			<li class="disclaimer secure">
+				 				<div class="title">Secure Purchasing</div>
+				 				<p class="content">Donec adipiscing pretium dapibus.
+				 					Nunc gravida elementum risus et volutpat.
+				 					In hac habitasse platea dictumst.
+				 					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				 				</p>
+				 			</li>
+
+				 			<li class="disclaimer privacy">
+				 				<div class="title">Our Privacy Policy</div>
+				 				<p class="content">Donec adipiscing pretium dapibus.
+				 					Nunc gravida elementum risus et volutpat.
+				 					In hac habitasse platea dictumst.
+				 					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				 				</p>
+				 			</li>
+				 		</ul>
+
+				 		<div class="checkout-footnotes">
+				 			* Nunc gravida elementum risus et volutpat.
+				 		</div>
+
+				 		<div class="checkout-footnotes">
+				 			*** In hac habitasse platea dictumst.
+				 		</div>
+
+				 		<div class="checkout-footnotes">
+				 			***** Integer congue commodo tincidunt. Etiam justo mi, rutrum feugiat sagittis a,
+				 			rutrum quis risus. Vestibulum quam nunc, pellentesque quis sollicitudin sit amet,
+				 			mattis sit amet leo. Duis tellus ante, suscipit at condimentum at, auctor vitae odio.
+				 			Suspendisse potenti. Pellentesque blandit auctor urna, nec vulputate ante aliquam eu.
+				 		</div>
+				 	</div><!-- end disclaimers -->
+				</fieldset><!--  end step 3 -->
+
+			</form><!-- end vzn-checkout -->
+		</section><!-- end checkout sequence -->
+
+
+
+		<section id="checkout-sidebar">
+
+			<div class="cart-sidebar-wrap">
+
+				<div class="special-offer-block">
+					<p class="cart-offer-text">
+						Spend $10 more and your order qualifies for NEXT DAY DELIVERY!
+					</p>
+				</div>
+
+				<div class="checkout-cart-summary">
+
+					<div class="checkout-accordion sidebar">
+						<div class="acc-control">
+							<span id="item-total">3</span> items in your cart
+							<div class="icon"></div>
+						</div><!-- end acc-control -->
+
+						<div class="acc-info">
+							<ul class="item-list">
+								<li class="item"><!-- item 1 -->
+									<div class="item-image">
+										<img src="img/product-detail-page/pdp-plus/dre-beats-1-thumb.png" title="Product Name">
+									</div>
+
+									<div class="item-info">
+										<ul>
+											<li>
+												<div class="item-title">Beats by Dre - Wireless On-Ear Pro Headphones</div>
+											</li>
+
+											<li>
+												<div class="price">$<span class="item-price">249.99</span></div>
+												<div class="qty">Qty: <span class="item-qty">1</span></div>
+											</li>
+
+											<li>
+												<div class="item-color">Black</div>
+												<div class="item-size">Medium</div>
+											</li>
+										</ul>
+									</div>
+								</li><!-- end item 1 -->
+
+								<li class="item"><!-- item 2 -->
+									<div class="item-image">
+										<img src="img/product-detail-page/pdp-plus/dre-beats-1-thumb.png" title="Product Name">
+									</div>
+
+									<div class="item-info">
+										<ul>
+											<li>
+												<div class="item-title">Beats by Dre - Wireless On-Ear Pro Headphones</div>
+											</li>
+
+											<li>
+												<div class="price">$<span class="item-price">249.99</span></div>
+												<div class="qty">Qty: <span class="item-qty">1</span></div>
+											</li>
+
+											<li>
+												<div class="item-color">Black</div>
+												<div class="item-size">Medium</div>
+											</li>
+										</ul>
+									</div>
+								</li><!-- end item 2 -->
+
+								<li class="item"><!-- item 3 -->
+									<div class="item-image">
+										<img src="img/product-detail-page/pdp-plus/dre-beats-1-thumb.png" title="Product Name">
+									</div>
+
+									<div class="item-info">
+										<ul>
+											<li>
+												<div class="item-title">Beats by Dre - Wireless On-Ear Pro Headphones</div>
+											</li>
+
+											<li>
+												<div class="price">$<span class="item-price">249.99</span></div>
+												<div class="qty">Qty: <span class="item-qty">1</span></div>
+											</li>
+
+											<li>
+												<div class="item-color">Black</div>
+												<div class="item-size">Medium</div>
+											</li>
+										</ul>
+									</div>
+								</li><!-- end item 3 -->
+
+							</ul>
+						</div><!-- end acc-info -->
+					</div><!-- end sidebar accordion -->
+
+					<div class="totals">
+
+						<ul>
+							<li id = "checkout-cart-subtotal" >
+								<div class="label">SubTotal</div>
+
+								<div class="data">
+									$<span id="subtotal">399.99</span>
+								</div>
+							</li><!-- end subtotal -->
+
+							<li id = "checkout-cart-tax" >
+								<div class="label">
+									Estimated Tax
+								</div>
+
+								<div class="data">
+									$<span id="tax">24.31</span>
+								</div>
+							</li><!-- end tax -->
+
+							<li id = "checkout-cart-ship" >
+								<div class="label">
+									Shipping & Handling
+								</div>
+
+								<div class="data">
+									<span class="no-offer">$<span id="shipping">16.95</span></span>
+									<span class="offer">FREE!</span>
+								</div>
+							</li>
+
+							<li id = "checkout-cart-total" >
+								<div class="label">
+									Grand Total
+								</div>
+
+								<div class="data">
+									$<span id="total">399.99</span>
+								</div>
+							</li>
+						</ul>
+					</div><!-- end totals -->
+				</div><!-- end checkout-cart-summary -->
+				<div class="sidebar-finish">
+					<input name="sidebarPlaceOrder" type="submit" class="checkout-final" value="Place Your Order" action="checkout-success.html">
+				</div>
+
+			</div><!-- end sidebar wrap -->
+		</section><!-- end checkout sidebar -->
+	</div><!-- end section wrap -->
+</section><!-- end checkout -->
+
+
+</div><!-- end  checkout page wrap -->
+
+
+
+
+
+
+<!-- Footer -->
+<script type="text/javascript">
+	includeFragment('inc/footer.html');
+</script>
+<!-- TEMP- DO NOT  INCLUDE IN FINAL _ SAPIENT DEMO ONLY -->
+<script src="js/cart-DEMO.js"></script>
+
+
+</body>
+</html>

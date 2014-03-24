@@ -1,0 +1,27 @@
+.brand-landing-page {
+    .category-list-header {
+        // height: 176px;
+        border-bottom: 1px solid $colorLightGrayBorder;
+        .category-header-promo {
+            .category-image {
+                top: -30px;
+                right: -15px;
+                img {
+                    width: 72%;
+                    float: right;
+                }
+            }
+            .promo-header {
+                height: 60px;
+                img {
+                    width: 33%;
+                    top: 130px;
+                    left: 0;
+                }
+            }
+            .promo-info {
+                display: none;
+            }
+        }
+    }
+}

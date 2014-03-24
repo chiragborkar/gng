@@ -1,0 +1,147 @@
+     .content-grid-header {
+        .wrapper {
+            padding: 40px 30px 0;
+            min-height: 160px;
+        }
+    }
+
+
+    .content-grid {
+        // border-left: none; // why was this added?
+
+
+        &.fixed-height {
+            height: 302px;
+            border: {
+                bottom: 1px solid #CCC;
+                left: 1px solid #CCC;
+            }
+            .content-item {
+                border: {
+                    bottom: none;
+                }
+                .content-fig img {
+                    width: 200px;
+                    min-width: 200px;
+                    max-width: 200px;
+                }
+                &.promo-detail {
+                    height: 100%;
+                }
+            }
+        }
+        .content-item {
+            @include column(6);
+            padding: 15px;
+            .content-fig img {
+                max-width: 70%;
+            }
+            &.featured {
+                @include column(6);
+                padding: 15px;
+                .content-fig {
+                    margin: 15px 0 0;
+                    img {
+                        max-width: 70%;
+                    }
+                }
+                .content-detail {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .quick-view-overlay {
+        max-height: 475px;
+        .quick-view-item {
+            width: 60%;
+        }
+        .quick-view-details {
+            width: 40%;
+        }
+        .quick-view-item .slides {
+            li,
+            .slide {
+                img {
+                    width: 85%;
+                }
+            }
+        }
+        // .quick-view-header {
+        //     padding-left: 15px;
+        // }
+        // .quick-view-item {
+        //     @include column(12);
+        //     height: 60%;
+        //     .slides {
+        //         margin-top: 35px;
+        //         .slide {
+        //             img {
+        //                 display: block;
+        //                 margin: 0 auto;
+        //                 max-width: 325px;
+        //             }
+        //         }
+        //     }
+        //     .flex-control-thumbs {
+        //         position: absolute;
+        //         top: 50%;
+        //         right: 0;
+        //         left: auto;
+        //         bottom: auto;
+        //         padding: 15px;
+        //         width: auto;
+        //         background-color: $colorQuickViewBackground;
+        //         > li {
+        //             cursor: pointer;
+        //             float: none;
+        //             img {
+        //                 display: block;
+        //                 max-width: 40px;
+        //             }
+        //         }
+        //     }
+        // }
+        // .quick-view-details {
+        //     @include column(12);
+        //     position: relative;
+        //     right: auto;
+        //     height: 40%;
+        //     margin-top: 0;
+        //     border-top: none;
+        //     .column {
+        //         width: 50%;
+        //         height: 100%;
+        //         float: left;
+        //         &:first-child {
+        //             border-right: 1px solid #B2B9B9;
+        //         }
+        //         &:last-child {
+        //             padding-left: 15px;
+        //         }
+        //     }
+        //     .product-color {
+        //         position: absolute;
+        //         bottom: 0;
+        //         left: 0;
+        //         .product-pricing {
+        //             .sale {
+
+        //             }
+        //         }
+        //     }
+        //     .product-actions {
+        //         position: absolute;
+        //         bottom: 0;
+        //         left: 15px;
+        //         padding-right: 15px;
+        //         width: 100%;
+        //     }
+        // }
+        // .quick-view-header{
+        //     @include column(12);
+        // }
+    }
+	.spec-offer-header {
+		display: none;
+	}

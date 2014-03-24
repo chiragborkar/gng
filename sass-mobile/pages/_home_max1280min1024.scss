@@ -1,0 +1,45 @@
+.home-page {
+
+     /*===========================================
+    =            Trending Categories            =
+    ===========================================*/
+     .madlib .content-header, // MyMobileLife
+     .trending-categories, // Trending Categories
+     .trending-products-module .content-header, // Trending Products
+     .trending-lifestyles-module .content-header, // FeaturedLifestyles header
+     .featured-reviews-module .content-header // FeaturedReviews header
+     {
+
+        max-width: 861px;
+        min-width: 861px;
+
+     }
+
+	section.madlib,
+    // section.trending-products-module,
+    // section.trending-categories,
+    // section.trending-lifestyles-module .section-wrap,
+    // section.featured-reviews-module .section-wrap
+    {
+        // margin: 0 35px;
+
+        .content-grid .content-item {
+    		width: 25%;
+    	}
+    }
+    .content-grid .content-item {
+        a.see-all-cta{
+            height:197px;
+        }
+    }
+
+    .featured-reviews-module {
+        .featured-review {
+            .product-details {
+                .carrot {
+                    left: 471px;
+                }
+            }
+        }
+    }
+}

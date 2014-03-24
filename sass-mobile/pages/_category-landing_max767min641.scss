@@ -1,0 +1,89 @@
+.hide-for-mobile-grid,
+        .hide-for-small-grid-down {
+            display: none !important;
+        }
+        .category-list-page #secondary-column {
+            display: block;
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            .content-filter {
+                display: none;
+            }
+            .content-filter-touch {
+                display: block;
+            }
+        }
+        .category-list-header {
+            background-position: $bgPositionPromoSmall;
+            .header-info,
+            .category-header-promo {
+            }
+            .header-info {
+                .category-header-message { display: none; }
+            }
+            .category-header-promo {
+                float: none;
+                .category-image {
+                    left: -13px;
+                }
+                .promo-header {
+                    font-size: 90px;
+                }
+            }
+        }
+        .category-section {
+            .content-grid {
+                &.feature-grid {
+                    .content-item {
+                        &.large {
+                            @include clearfix();
+                            @include column(12);
+                            .content-fig,
+                            .content-detail {
+                                float: none;
+                                padding: 15px;
+                            }
+                            .content-fig {
+                                margin: 0;
+                                @include column(12);
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                            .content-detail {
+                                @include column(12);
+                                //padding-top: 0;
+                                padding: 25px 15px 25px 15px;
+                                .content-detail-header {
+                                    .content-title {
+                                        margin: 0 0 18px 0;
+                                    }
+                                    .content-category {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                                .content-copy {
+                                    margin-bottom: 4px;
+                                }
+                                .related-products {
+                                    display: block;
+                                }
+                            }
+                        }
+                        &.single {
+                            width: 50%;
+                            .content-fig {
+                                img {
+                                    width: 100%;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                        &.two-wide {
+                            @include column(12);
+                        }
+                    }
+                }
+            }
+        }

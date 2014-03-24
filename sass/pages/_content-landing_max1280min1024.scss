@@ -1,0 +1,20 @@
+.content-landing-page {
+    .featured-stories {
+        .story {
+            @include column(12);
+            position: relative;
+            padding: 15px;
+            border: {
+                left: 1px solid $colorArticleBorder;
+                bottom: 1px solid $colorArticleBorder;
+            }
+            .story-fig {
+                @include column(3);
+            }
+            .story-content {
+                @include column(9);
+                padding-left: 15px;
+            }
+        }
+    }
+}    

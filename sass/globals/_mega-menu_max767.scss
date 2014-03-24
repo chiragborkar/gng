@@ -1,0 +1,109 @@
+#site-header {
+    .left { 
+    	float: left; 
+    }
+    .right { 
+    	float: right; 
+    }
+}
+.mls-nav {
+    .nav-tabs {
+        .nav-help { 
+        	display: none; 
+        }
+        #nav-cart {
+            &.nav-item {
+                &.last {
+                    padding-right: 15px;
+                }
+            }    
+        } 
+    }
+}
+
+#site-header .specialoffers
+{
+	background: #f0f3f3;
+	box-shadow: 0 2px 6px #BABEC0 inset;
+	
+	article,
+	article.deals
+    {
+    	width: 50%;
+
+    	> .content-header,
+        > p, > a, > aside
+        {
+            position: relative;
+            z-index: 2;
+            margin-left: 25px;
+            margin-right: 10px;
+            width: auto;
+        }
+
+        figure
+        {
+        	position: absolute;
+        	left: 0;
+        	bottom: 18px;
+        	width: 100%;
+
+        	img
+        	{
+        		max-width: 100%;
+        	}
+        }
+
+        .content-header
+        {
+        	.title,
+        	.title strong
+            {
+                margin: 0;
+	        	font: {
+	        		family: $fontArial;
+	        		size: 10px;
+	        		weight: bold;
+	        	}
+	        	letter-spacing: 0;
+	        	text-transform: uppercase;
+            }
+        }
+    }
+
+    .offer-box {
+        position:absolute;
+        top:auto; 
+        left:auto;
+        bottom: 73px;
+        right:20px;
+        width:80px; 
+        height:80px;
+
+        .offer-amt {
+            font-size:34px;
+            line-height:34px;
+            letter-spacing: -2px;
+            margin:20px 0 0 10px;
+        } 
+        // end amt
+
+        .offer-unit{
+            font-size:20px;
+            line-height: 20px;
+            top:25px; 
+            right: 14px;
+        }
+        // end unit
+
+
+        .offer-off {
+            font-size:9px;
+            line-height: 13px;
+            right:16px; 
+            bottom:23px;
+            letter-spacing: -1px;
+        } 
+        // end off text
+    }
+}

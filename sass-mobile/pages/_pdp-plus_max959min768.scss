@@ -1,0 +1,183 @@
+/* -----------------------------------------  768 - 959 HERO  -------------------------- */
+
+#pdp-hero {
+	#carousel-block {
+		height:594px;
+		#carousel {
+			height:594px;
+
+				#focus {
+					.flex-viewport {
+						.slides {
+							li { min-height:576px;
+
+								img {
+
+									}
+								}/* end li */
+							}
+						}
+					}/* end focus */
+
+			.thumb-wrap{
+				#thumbs { left: auto; right: 36px; }
+				}/* end thumb-wrap */
+
+			}/* end carousel */
+		}/* end carousel-block */
+	#cart-block {
+		height: 594px;
+		}/* end cart block */
+	} /* ------------------------------  768 - 959 END HERO  ----------------------- */
+
+
+
+/* -----------------------------------------  768 - 959 BTF  -------------------------- */
+
+	#product-details { /* ...................... product details tabs ................. */
+		#detail-hero-image-box {
+			display:none !important;
+			}
+		.tabbed-wrapper {
+			margin-top:45px;
+
+			dd h2 { letter-spacing:0px; }
+
+			.tabs-content {
+				width:100%;
+
+				#featuresTab {
+					.tab-wrapper {
+						width: 100%;
+						.third.left, .third.center { min-height:504px; }
+						}
+					} /* end features tab */
+
+
+				#specsTab {
+					.tab-wrapper {
+						width: 100%;
+							.third.center { margin-top:0px; }
+							.third.right {
+								.tech-info { margin-top:0; }
+								}
+						} /* end wrapper */
+					}/* end specs tab */
+
+				#compatTab {
+					.tab-wrapper {
+						.search, .brand, .device {
+							width: 30%;
+							margin-right: 4.5%;
+							}
+						.device { margin-right: 5px; }
+
+						.compat-results {
+							height:330px;
+							}
+						}
+					} /* end compat Tab */
+
+				#consumer-reviewsTab .tab-wrapper,
+				#questions-commentsTab .tab-wrapper {
+					width: 100%;
+					}
+
+				}
+			}/* end tabbed wrapper */
+
+		}/* end product details */
+
+
+	.btf-hero-wrapper { /*.......................... btf hero section ...................*/
+		.btf-hero-image{
+			width: 66.666%;
+
+				img {
+					height: 100%; width: 125% !important;
+					}
+
+				.btf-hero-data {
+					width:250px;
+					}
+			}
+		.btf-hero-icon,
+		.btf-hero-text-box {
+			width: 33.333%;
+			}
+		} /* end btf hero : both instances */
+
+
+	#pdp-plus-highlights {
+		.tab-block {
+			.tab-scroll {
+				width: 35%;
+				}
+			.tabs-content {
+				width: 65%;
+
+				.feature-box { padding:30px 40px 20px 40px; }
+
+				#app-highlightTab {
+					.feature-box {
+						padding: 25px 30px 15px 30px;
+
+						.feature-title h3 { margin-bottom: 10px; }
+
+
+						}
+					}/* end app-highlight */
+				}/* end tabs-content */
+			}/* end tab block */
+
+		.highlight-stats-box {
+			.stats-list {
+
+				.highlight-stat { width: 33.333%; }
+				.highlight-stat:last-child { display:none; }
+
+
+				} /* end stats ist */
+
+			}/* end stats box */
+
+		} /* end pdp-plus-highights */
+
+
+	#similar-products { /* ....................... similar product scroller ............*/
+
+		.section-header { width:646px; }
+
+		.plus-slider-wrap {
+			width:645px;
+
+			.vzn-slide-prev { top: -30px; right:35px; left: auto; }
+			.vzn-slide-next { top: -30px; right: -10px; }
+			}
+
+		.vzn-slide {
+			width: 645px;
+			}
+
+	} /* end similar products */
+
+#lifestyles {
+	.section-wrap {
+		.section-header { width:646px; }
+
+
+		.tabs-content {
+			.vzn-slide { width : auto; }
+			}/* end tabs content */
+
+		}/* end section wrap */
+	}/* end lifestyles */
+
+
+
+#others-bought {
+	.section-wrap {
+		.section-header { width:646px; }
+		}/* end section-wrap */
+
+	}/* end others bought */

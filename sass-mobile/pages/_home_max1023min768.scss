@@ -1,0 +1,124 @@
+.home-page {
+
+    /*===========================================
+    =            Trending Categories            =
+    ===========================================*/
+     .madlib .content-header, // MyMobileLife
+     .trending-categories, // Trending Categories
+     .trending-products-module .content-header, // Trending Products
+     .trending-lifestyles-module .content-header, // FeaturedLifestyles header
+     .featured-reviews-module .content-header // FeaturedReviews header
+     {
+        // max-width: 861px;
+        // min-width: 861px;
+        max-width: 646px;
+        min-width: 646px;
+    }
+
+    section.madlib{
+        .madlib-header h2,
+        #madlib-device,
+        .madlib-select label{
+            font-size: 24px !important;
+        }
+    }
+
+    section.trending-products-module .content-grid .content-item {
+        width:33.333%;
+    }
+    .home-hero {
+    	#home-hero-slider {
+    		.slides {
+    			li {
+		    		.product-hero {
+		    			width: auto;
+		    			img {
+		    				height: 93%;
+		    			}
+		    		}
+		    		&.alt {
+						.hero-info {
+							padding: 10px 0 0 0;
+							.story-title {
+								font-size: 55px;
+								letter-spacing: -.05em;
+							}
+						}
+		    		}
+		    	}
+		    }
+    	}
+    }
+    .category-list-header {
+        background-position: 50px -110px;
+    }
+	.madlib {
+		.content-grid {
+			.content-item {
+				width: 33.33333%;
+			}
+		}
+	}
+ 	.featured-reviews-module {
+        .featuredReviewSlider {
+            height: 385px;
+        }
+        .slides {
+            .slide {
+                max-height: 385px;
+            }
+        }
+        .featured-review {
+            height: 385px;
+            .product-img {
+                width: 385px;
+                height: 385px;
+
+                img {
+                    height:69%;
+                    margin-top: 19%;
+                }
+            }
+            .product-details {
+                height: 385px;
+                padding-top: 40px;
+                padding-right: 45px;
+
+                > .post-info,
+                > .user-review,
+                > .product-title,
+                > .product-price,
+                > .button
+                {
+                    margin-left: 430px;
+                }
+
+                > .stars
+                {
+                    margin-left: 45px;
+                }
+
+                .product-title {
+                    max-height: 26px;
+                }
+
+                .carrot
+                {
+                    left: 345px;
+                }
+
+                .promo-cta
+                {
+                	margin-top: 20px;
+                }
+
+                .user-review
+                {
+                	font-size: 24px;
+                	margin-bottom: 16px;
+                    max-height: 162px;
+                }
+            }
+        }
+    }
+}

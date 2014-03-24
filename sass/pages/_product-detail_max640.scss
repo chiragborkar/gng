@@ -1,0 +1,154 @@
+.product-detail
+{
+    .crsl-offer-box{
+        display:none;
+    }
+
+    #focus .slides li {
+        height:320px;
+        min-height: 1px;
+    } 
+
+    .pdp-bundle-block,
+    .pdp-bundles-content {
+        .bundle-items .item
+        {
+            height: 180px;
+
+            .item-wrapper 
+            {
+                .product-image
+                {
+                    float: none;
+                    width: auto;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+
+                    img
+                    {
+                        max-height: 70px;
+                        width: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+
+                .product-info
+                {
+                    float: none;
+                    width: auto;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .pdp-compat-content 
+    {
+        #returned-items {
+            li {
+                height: 140px;
+                padding: 0;
+                width: 50%;
+
+                .item-details {
+                    width: 100%;
+                    .product-image {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .product-info {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        h5 {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        #compatibilityForm {
+            margin-bottom: 0;
+            .compat-sort {
+                .my-devices {
+                    h4 {
+                        margin-top: 0;
+                        border-top: none;
+                    }
+                    ul {
+                        li {
+                            width: 50%;
+                            .product-info {
+                                h5 {
+                                    clear: left;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tab-inner {
+                    padding-bottom: 0;
+                    .sorting-elements {
+                        .device {
+                            display: none;
+                        }
+                        .brand {
+                            display: none;
+                        }
+                        .search {
+                            width: 100%;
+                            margin: 0 0 15px 0;
+                            #detail-search-box {
+                                width: 100%;
+                            }
+                        }
+                        .summary {
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #product-details {
+            .pdp-compat-content {
+                .compat-results {
+                    padding: 0;
+                    .tab-inner {
+                        border: 0;
+                        .viewport {
+                            height: 196px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pdp-specs-content .column {
+        border-top:none;
+    }
+
+    .pdp-specs-content .column .details-list li {
+        display: list-item;
+    }
+
+    .product-detail .pdp-specs-content .column.download img {
+        width: 60px;
+        float: left;
+    }
+
+    .product-detail .pdp-specs-content .column.download span {
+        display: block;
+        float: right;
+        width: 73%;
+    }
+}

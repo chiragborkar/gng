@@ -1,0 +1,56 @@
+.lifestyle-landing-page .category-section .content-header {
+    position: relative;
+    overflow: hidden;
+    padding: 60px 25px 20px;
+    height: auto;
+
+    .title {
+        font-size: 24px;
+        margin: 0;
+        a { 
+            white-space: nowrap; 
+            z-index: 100; 
+            float: right;
+            display: inline;
+            position: relative;
+            top: 17px;
+        }
+    }
+
+    .slide-nav { display: none; }
+}
+
+.guides-module {
+    .content-grid .content-item {
+        width: 100%;
+    }
+    .guides-slider {
+        .guide-slide {
+            &.content-item {
+                .slide-2 {
+                    background: $colorVzwRedPrimary;
+                }
+                .guide-copy{
+                    font-size: 22px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+.featured-story-module
+{
+    .story-content {
+        .copy {
+            height: auto;
+            max-height: 157px;
+            margin-bottom: 0;
+        }
+
+        .actions .story-cta
+        {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.category-section {
+    .content-grid {
+        &.feature-grid {
+            .content-item {
+                &.large {
+                    @include clearfix();
+                    @include column(12);
+                    .content-fig,
+                    .content-detail {
+                        float: left;
+                        padding: $globalGutter / 2;
+                    }
+                    .content-fig {
+                        margin: 0;
+                        @include column(8);
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .content-detail {
+                        @include column(4);
+                        padding-left: 0;
+                    }
+                }
+                &.single {
+                    @include column(4);
+                }
+                &.two-wide {
+                    @include column(8);
+                }
+            }
+        }
+    }
+    &.guides-module,
+    &.best-sellers {
+        .content-grid .content-item {
+            width: 33.33334%;
+        }
+    }
+}

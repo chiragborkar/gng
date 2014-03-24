@@ -1,0 +1,20 @@
+html {
+    #fourofour {
+        #main-column {
+            max-width: 300px; // 1.5 panels
+            min-width: 300px;
+        }
+    }
+}
+.similar-products-module.category-section {
+    .content-header {
+        padding: 25px 2px 10px 2px;
+        height: auto;
+
+        .title {
+            font-size: 18px;
+            letter-spacing: -1px;
+            margin-bottom: 5px;
+        }
+    }
+}

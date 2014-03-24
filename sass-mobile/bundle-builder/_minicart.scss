@@ -1,0 +1,66 @@
+#minicart-box .minicart-banner.bundle-bonus {
+
+	height: 224px;
+	background:#a49898 url("../img/bb/minicart-banner-bg.png") no-repeat center left; 
+	display: none;
+
+	.minicart-cta {
+		background-position:102px 9px;	
+	}
+	
+}
+ 
+#minicart-box #minicart-cart #minicart-item-list {
+	.minicart-item.bundle-item {
+
+		height:160px;
+
+		.strikethrough {
+			text-decoration:line-through;
+		}
+		.item-info-block {
+			.item-details {
+
+				.offer-toggle {
+					display:block;
+					width:auto;
+				}
+
+				.minicart-item-price {
+					width:auto;
+				}
+			}				
+		}
+
+		.bundle-disclaimer {
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			border-top: solid 1px #cccccc;
+			
+			p {
+				font-size: 12px;
+				margin-bottom: 0;
+				margin: 5% 10%;
+			}
+
+			.remove {
+				display: block;
+				width: 12px;
+				height:12px;
+				background: url(../img/sprites/cart/blue-close-x.png);
+				position:absolute;
+				right:15px;
+				top:15px;
+			}
+		}
+
+		.minicart-edit {
+			top: 49px;
+			bottom:none;
+		}
+
+		
+		
+	}
+}

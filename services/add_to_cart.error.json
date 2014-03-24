@@ -1,0 +1,5 @@
+{
+    "error": {
+        "responseHTML": "<h3 class='lightbox-headline'>Sorry!</h3><div class='lightbox-details'>There was an error procesing your request, please try again</div><div class='lightbox-fineprint'><h5 class='headline'>Questions?</h5><div class='call'><span>Call:</span><a href='#' title='Call Verizon Customer Service' class='modal-call-link'>1-800-555-6789</a></div><div class='chat'><a href='#' title='Chat with Verizon Customer Service' class='modal-chat-link'>Chat</a></div></div><div class='lightbox-close'></div><div class='lightbox-cta'><div class='close-btn lightbox-back'><span>back</span></div></div>"
+    }
+}

@@ -1,0 +1,100 @@
+
+    .lifestyle-landing-page .category-section .content-header {
+        padding: 60px 35px 20px;
+
+        .title
+        {
+            display: table-cell;
+
+            a {
+                display: inline;
+            }
+        }
+
+        .flex-direction-nav
+        {
+            width: 90px;
+        }
+    }
+
+    .featured-lifestyle {
+
+        .featured-fig {
+        }
+
+        .header {
+            @include clearfix();
+            height: auto;
+            position: static;
+
+            .title {
+                top: 25px;
+                padding-right: 25%;
+                .spacer {
+                    top: 15px; width: 20%; height: 21px;
+                }
+            }
+            .next-lifestyle { display: none; }
+            .featured-copy {
+                position: absolute;
+                top: 100%; 
+                left: 0;
+                margin: -2px 0 0;
+                padding: 20px 30px;
+                width: 100%;
+                height: auto;
+                background-color: #2A2D32;
+                color: #FFF;
+                font: {
+                    family: $fontVzwBookItalic;
+                    size: 18px;
+                    weight: normal;
+                }
+                line-height: 1.4em;
+                .marker {
+                    display: block;
+                    position: absolute;
+                    left: 30px; top: -15px;
+                    width: 31px;
+                    height: 31px;
+                    background: transparent url(../img/lifestyle-landing/lifestyle-marker.png) top left no-repeat;
+                }
+            }
+            .title {
+                font-size: 40px;
+                letter-spacing: -3px;
+            }
+        }
+    }
+    .guides-module {
+        .content-grid .content-item {
+            width: 50%;
+        }
+    }
+    .featured-story-module {
+        //padding-top: 60px;
+        margin-bottom: 50px;
+        .story-slider {
+            margin-left: 0;
+            .slide .story { padding: 0 0 30px 0; }
+        }
+        .story-fig,
+        .story-content {
+            float: none;
+            width: 100%;
+            .story-header,
+            .copy,
+            .actions {
+                padding: 0 30px;
+            }
+            .story-header {
+                padding-top: 30px;
+                h1 {
+                    font-size: 18px;
+                }
+            }
+            .copy {
+                font-size: 12px;
+            }
+        }
+    }

@@ -1,0 +1,56 @@
+#checkout-header {
+	margin: 0 50px;
+}
+
+#mixed-checkout > div
+{
+	margin: 0 50px;
+	width: auto;
+}
+
+#checkout-page-wrap {
+	// margin: 0 50px;
+}
+
+#checkout-success, #order-details {
+	margin: 0 50px;
+}
+
+#order-details {
+	.display-left {
+		width: 50%;
+		.table-row {
+			margin-bottom: 30px;
+			.cart-product-title {
+				float: none;
+				width: 100%;
+				h3 {
+					font-family: $fontVzwLight !important;
+				}
+			}
+			.cart-product-info {
+				.price-size {
+					padding-top: 0px;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+	.display-right {
+		width: 50%;
+	}
+}
+	#shipping-billing-details {
+		padding: 0 20px;
+		.section-wrap {
+			padding: 20px 50px;
+			ul {
+				li.step {
+					h4 {
+						font-size: 14px;
+						font-family: $fontArial;
+					}
+				}
+			}
+		}
+	}

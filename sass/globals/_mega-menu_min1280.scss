@@ -1,0 +1,24 @@
+.mls-nav {
+    .subnav-grid {
+        .nav-grid-item {
+            &.item-6, &.item-7, &.item-8, &.item-9, &.item-10 {
+                border-bottom: none;
+            }
+        }
+        .nav-grid-item {
+            &.item-6, &.item-7, &.item-8, &.item-9, &.item-10 {
+                border-bottom: none;
+            }
+        }
+    }
+    .nav-grid {
+        .nav-grid-item {
+            &.item-5, &.item-10, &.item-15 {
+                border-right: none;
+            }
+            &.item-11, &.item-12, &.item-13, &.item-14, &.item-15 {
+                border-bottom: none;
+            }
+        }
+    }
+}

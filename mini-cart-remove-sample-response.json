@@ -1,0 +1,18 @@
+{
+    "success" : {
+        "cartCount" : "4"
+    },
+    "error" : {
+        "responseHTML" : "(see ERROR sample below)" // example ERROR HTML below
+    }
+}
+
+
+/* example of **ERROR** HTML */
+/*
+
+<div class="error">
+  <p class="copy">ERROR MESSAGE</p>
+</div>
+
+*/

@@ -1,0 +1,88 @@
+.hide-for-small-grid-down {
+    display: none !important;
+}
+.category-list-page #secondary-column {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+}
+.category-list-header {
+    .category-header-promo {
+        // .category-image {
+            // left: -13px;
+        // }
+        .promo-header {
+            font-size: 75px;
+            width: 520px;
+            padding-left: 5.3%;
+        }
+    }
+}
+.category-list-page .secondary-column {
+    .content-filter {
+        padding: 15px;
+    }
+}
+
+.category-section {
+    .content-grid {
+        @include boxBrdrL;
+        &.feature-grid {
+            .content-item {
+                &.large {
+                    @include clearfix();
+                    @include column(12);
+                    padding-bottom: 10px;
+                    .content-fig,
+                    .content-detail {
+                        float: none;
+                        padding: 15px;
+                    }
+                    .content-fig {
+                        margin: 0;
+                        @include column(12);
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .content-detail {
+                        @include column(12);
+                        padding-top: 25px;
+                        .content-detail-header {
+                            .content-title {
+                                margin: 0 0 18px 0;
+                            }
+                            .content-category {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        .content-copy {
+                                margin-bottom: 4px;
+                        }
+                        .related-products {
+                            display: block;
+                        }
+                    }
+                }
+                &.single {
+                    @include column(6);
+                    .content-fig {
+                        img {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                &.two-wide {
+                    @include column(12);
+                }
+            }
+        }
+    }
+    &.guides-module {
+        .content-grid .content-item {
+            width: 50%;
+        }
+    }
+}

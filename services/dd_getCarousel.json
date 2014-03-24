@@ -1,0 +1,8 @@
+{
+    "success" : {
+        },
+
+    "error" : {
+        "responseHTML" : "<li>ERROR HTML</li>"
+    }
+}

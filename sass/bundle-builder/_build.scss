@@ -1,0 +1,470 @@
+.category-landing-page.bundle-builder-page
+{
+    #main-column .additional-products-module
+    {
+        .content-header
+        {
+            padding-bottom: 25px;
+            height: auto;
+        }
+
+        h1.title
+        {
+            font-size: 18px;
+            letter-spacing: 0;
+
+            a
+            {
+                @include actionLink();
+                float: right;
+                font-size: 10px;
+                margin-right: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+        #grid-pop-out .details .add-cart div.button {
+            background-color: #464646;
+            -webkit-box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.35), inset 0 -1px 4px 1px #2e2e2e;
+            -moz-box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.35), inset 0 -1px 4px 1px #2e2e2e;
+            box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.35), inset 0 -1px 4px 1px #2e2e2e;
+        }
+
+        .content-grid .content-item.featured .content-fig img {
+            max-width:340px;
+        }
+        .content-grid .content-item .content-fig img {
+            max-width:125px;
+        }
+
+
+	.category-tabs
+    {
+        padding-left: 0;
+        background: transparent;
+        border-bottom: 1px solid #dcdede;
+        border-right: 0;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+
+        ul.inline-list
+        {
+            margin: 0;
+            overflow: visible;
+            display: inline-block;
+            border-right: 1px solid #dcdede;
+            border-left: 1px solid #dcdede;
+            position: relative;
+            bottom: -1px;
+            @include clearfix();
+        }
+
+        a
+        {
+            background: #DFE3E4;
+            position: relative;
+            top: 1px;
+            border-right: 0;
+        }
+
+        a:hover,
+        .active a
+        {
+            background: #fff;
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    .content-filter-count
+    {
+        font-size: 18px;
+        font-family: $fontVzwBook;
+        padding-left: 20px;
+        margin: 30px 0 15px;
+        font-weight: normal;
+        text-transform: capitalize;
+
+        strong
+        {
+            font-weight: normal;
+            font-family: $fontVzwBold;
+        }
+    }
+
+    .sort-options,
+    .filter-options
+    {
+        float: right;
+        margin: 0 15px 15px 0;
+        position: static;
+
+        label
+        {
+            text-transform: uppercase;
+            float: left;
+            margin: 20px 10px 0 0;
+            font: {
+                family: $fontVzwBold;
+                size: 10px;
+            }
+        }
+
+        .selector
+        {
+            width: 95px !important;
+
+            span
+            {
+                width: 165% !important;
+                text-align: left;
+            }
+        }
+    }
+
+    .content-grid
+    {
+        border-top: 1px solid #dcdede;
+    }
+
+    .tab-content-wrapper
+    {
+        display: none;
+
+        &.active
+        {
+            display: block;
+        }
+
+        > p
+		{
+			font:
+			{
+				size: 14px;
+				family: $fontArial;
+			}
+			padding: 20px 15px;
+			color: #333333;
+			border: 1px solid #dcdede;
+			border-top: 0;
+		}
+    }
+
+    .category-list-header {
+        height: 320px;
+
+        .category-header-promo {
+
+            .category-image {
+                position: absolute;
+                top: 44px;
+                left: 56px;
+            }
+            .promo-header,
+            .promo-info {
+                font-size: 60px;
+                position: absolute;
+                text-align: left;
+                top: 57px;
+                right: 137px;
+            }
+
+            .promo-info {
+                .promo-copy {
+                    position: absolute;
+                    top: 177px;
+                    right: -106px;
+                    width: 325px;
+
+                    .copy {
+                        width: 290px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-model-select {
+    letter-spacing: -1px;
+}
+
+
+// =========================================
+// =            Mobile Breakpoint            =
+// =========================================
+.only-mobile { display: none; }
+@media only screen and (max-width: $screenSmall - 1) {
+    .only-mobile { display: inline-block; width: 100%; }
+    .mobile-model-select { display: none; }
+    #bundle-builder-page {
+
+        // Facets
+        li {
+            .facet-name {
+                text-transform: none;
+                img {
+                    max-width: 18px;
+                }
+
+            }
+            .facet-check{
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/mobile-checkbox.png) bottom right no-repeat;
+                margin-right: 10px;
+            }
+            &.selected{
+                font-weight: bold;
+                .facet-check{
+                    background: url(../img/mobile-checkbox.png) top right no-repeat;
+                }
+
+            }
+        }
+
+        // pagination
+        .pages {
+            text-align: right;
+            color: #ccc;
+            margin-bottom: 13px;
+            a {
+                color: #0066cc !important;
+                margin: 0 !important;
+                text-transform: none !important;
+            }
+        }
+
+        // Typeaway
+        .search-device-or-brand {
+            margin: 0 0 33px;
+            form {
+                position: relative;
+            }
+
+            .search-reset {
+                display: none;
+                position: absolute;
+                z-index: 999;
+                right: 11px;
+                top: 12px;
+                display: block;
+                width: 25px;
+                height: 25px;
+                background-size: 25px;
+                background-position: 0 -74px !important;
+                @include ui-sprite(search-close, false);
+                cursor: pointer;
+            }
+
+            strong {
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            // form {
+            //     margin: 15px 0 0;
+            // }
+
+            .twitter-typeahead {
+                background-color: #fff;
+                width: 100%;
+                @include border-radius(5px);
+                border: 1px solid #999;
+            }
+
+            input[type=text] {
+                padding: 20px 15px 0;
+                border: 0 none;
+                background: transparent;
+            }
+
+            .tt-dropdown-menu {
+                padding: 10px;
+
+                .tt-dataset-devices {
+                    max-height: 215px;
+                    overflow: auto;
+
+                    &::-webkit-scrollbar {
+                        -webkit-appearance: none;
+                        width: 5px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        @include box-shadow(inset 0 0 6px rgba(0,0,0,0.3));
+                        background-color: #ccc;
+                        border-radius: 8px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        @include box-shadow(inset 1px 0 1px rgba(255,255,255,0.5));
+                        border-radius: 8px;
+                        background-color: #D00505;
+                    }
+                }
+
+                top: 0px !important;
+                position: relative !important;
+                border-top: 1px solid #999;
+
+            }
+
+            .tt-suggestion {
+                padding: 0 15px 0 5px;
+
+                p {
+                    border-bottom: 1px solid #eee;
+                    padding: 10px 0;
+                    margin: 0;
+                    display: block !important;
+                    font-size: 14px !important;
+                }
+
+                &:first-child p {
+                    padding-top:  0;
+                }
+                &:last-child p {
+                    border-bottom: 0 none;
+                }
+            }
+
+        } //.search-device-or-brand
+
+
+        // Tabs
+        #main-column > header {
+            form { margin: 0; }
+            padding: 0;
+            .tabs {
+                clear: both;
+                float: left;
+                width: 100%;
+
+                a.build,
+                a.browse {
+                    @include box-shadow(#eee 0 -2px 2px inset);
+                    border-bottom: 1px solid #ddd;
+                    padding: 20px 0;
+                    width: 50%;
+                    margin: 0 0;
+                    text-align: center;
+                    float: left;
+                    color: #757575;
+                    background-color: #e9e9e9;
+
+                    &.active {
+                        @include box-shadow(transparent 0 0 0);
+                        @include border-radius(0 4px 0 0);
+                        border-right: 1px solid #ccc;
+                        border-bottom: 0 none;
+                        background-color: #fff;
+                        color: #da010c;
+                    }
+             }
+            }
+
+            #my-bundle-device {
+                clear: both;
+                padding: 33px;
+
+                .title {
+                    display: block;
+                    clear: both;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-bottom: 13px;
+                }
+
+            }
+
+            #compatibility-devices {
+                margin: 0 0 33px;
+            }
+
+            .results {
+                li {
+                    margin-bottom: 13px;
+                }
+            }
+
+            #my-device {
+                clear: both;
+                float: left;
+                width: 100%;
+                margin-bottom: 21px;
+
+                .my-device-picture {
+                    vertical-align: top;
+                    margin-right: 20px;
+                    float: left;
+                }
+                .my-device-title {
+                    font-family: $fontVzwBook;
+                    font-size: 24px;
+                    line-height: 1.2;
+                }
+            }
+
+        }
+
+
+        .progress-bar {
+            clear: both;
+        }
+
+        // Header
+        .category-list-header {
+            height: auto;
+
+            .promo-header {
+                left: auto;
+                top: 120px;
+                font-size: 25px;
+                right: 12px;
+                width: auto;
+                display: inline;
+                padding: 0;
+            }
+
+            .category-image {
+                left: auto;
+                position: relative;
+                top: auto;
+                margin-left: -88px;
+            }
+
+            .offer-box {
+                left: auto;
+                right: 9px;
+                top: 12px;
+            }
+
+            .offer-box {
+                display: none; // this is not in the comp
+            }
+
+            .promo-info {
+                top: auto;
+                left: auto;
+                right: auto;
+                margin-top: -23px;
+                position: relative;
+                font-size: 18px;
+                .mobile-details { padding-right: 30px; }
+                .mobile-cta {
+                    margin-top: 20px;
+                }
+            }
+
+        } // .category-list-header
+
+    }
+
+}
+// -----  End of Mobile Breakpoint  ------
+

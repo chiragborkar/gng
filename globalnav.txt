@@ -1,0 +1,129 @@
+/* ver 1.41 24-Jun-2013 Test Domains for Mapping, by responsible team */
+/* updates: removed clp key */
+
+/* MAIN SITE - IT-CIS */ 
+vzw=http://testman.verizonwireless.com
+vzw-secure=https://testman.verizonwireless.com
+business=https://b2b-uat.verizonwireless.com
+mbss=https://mbss-uat.verizonwireless.com
+espanol=http://espanol.vzw.com/enes/sdtestman
+espanol-secure=https://espanol.vzw.com/enes/sdtestman
+espanol2=http://es.verizonwireless.com/enes/sdtestman
+espanol2-secure=https://es.verizonwireless.com/enes/sdtestman
+
+/* MY VERIZON & ACCESS MANAGER - IT-MVPS */
+login=https://tlogin.verizonwireless.com
+myverizon=https://tmyacct.verizonwireless.com
+ebillpay=https://preprodebillpay.verizonwireless.com
+nbillpay=https://preprodnbillpay.verizonwireless.com
+wbillpay=https://preprodwbillpay.verizonwireless.com
+wizard=https://preprodwizard.verizonwireless.com
+scu=https://preprodecache.vzw.com/imageFiles/Myacct/gn/pre
+scu2=https://preprodecache.verizonwireless.com/imageFiles/Myacct/gn/pre
+billpaysvc=https://preprodbillpaysvc.verizonwireless.com
+asu=https://preprodbillpaysvc.verizonwireless.com/vzwsvc/asc
+usu=https://preprodbillpaysvc.verizonwireless.com/vzwsvc/usc
+ics=https://icspp.verizonwireless.com
+workshops-secure=https://vzwworkshops.verizonwireless.com
+/* test environment unknown */
+
+/* ECHANNEL - IT */
+support2=http://presupport.verizonwireless.com
+support2-secure=https://presupport.verizonwireless.com
+
+/* MEDIA STORE - IT-MCS */
+media=http://mediastore-sit.verizonwireless.com
+media-secure=https://mediastore-sit.verizonwireless.com
+
+/* ASPs - PDI */
+alerts=https://vmeqa1.pdi.vzw.com
+alerts2=https://vmeqa1.pdi.verizonwireless.com
+animated=https://vgeqa2.pdi.vzw.com/vge
+animated2=https://vgeqa2.pdi.verizonwireless.com/vge
+enterprizeMsg=http://emaglab.vzw.com
+enterprizeMsg2=http://emaglab.verizonwireless.com
+familyLocator=http://familylocatorstage.vzw.com
+familyLocator2=http://familylocatorstage.verizonwireless.com
+familyLocator-secure=https://familylocatorstage.vzw.com
+familyLocator2-secure=https://familylocatorstage.verizonwireless.com
+locationMgmt=https://vzwlocmanagement.vzw.com
+locationMgmt2=https://vzwlocmanagement.verizonwireless.com
+mediaMgr=http://web-vip-ext.ont-hs3.newbayasp.net
+mediaManager=http://mediamanager.verizonwireless.com
+mediaMgr-secure=https://web-vip-ext.ont-hs3.newbayasp.net
+mediaManager-secure=https://mediamanager.verizonwireless.com
+mobileWeb=https://demomobileweb.vzw.com
+mobileWeb2=https://demomobileweb.verizonwireless.com
+pictures=http://testpix.vzw.com
+pictures2=http://testpix.verizonwireless.com	 
+pictures-secure=https://testpix.vzw.com
+pictures2-secure=https://testpix.verizonwireless.com	 
+pushtotalk=http://stageptt2.vzw.com
+pushtotalk2=http://stageptt2.verizonwireless.com
+pushtotalk-secure=https://stageptt2.vzw.com
+pushtotalk2-secure=https://stageptt2.verizonwireless.com
+textMessaging=https://vma.vzw.com
+textMessaging2=https://vma.verizonwireless.com
+vma=https://vmaqaui.pdi.vzw.com
+vzAM=http://dev.vzam.net
+vzNavigator=http://vnavstg5.nimdemo.com
+vzNavigator2=http://vznavigator.verizonwireless.com
+vzNavigator-secure=https://vnavstg5.nimdemo.com
+vzNavigator2-secure=https://vznavigator.verizonwireless.com
+
+/* ASPs - ISM & OTHER BUSINESS TEAMS */
+community=http://amstage2.verizonwireless.com
+community-secure=https://amstage2.verizonwireless.com
+community-sso=https://amstage2.verizonwireless.com/verizon-login.jspa?goto=https%3A%2F%2Famstage2.verizonwireless.com
+devices=http://stage.devices.verizonwireless.com
+devices-secure=https://stage.devices.verizonwireless.com
+droiddoes=http://stage.droiddoes.verizonwireless.com
+email=https://email.vzwshop.com
+network4g=http://stage.network4g.verizonwireless.com
+estore=http://stage.phones.verizonwireless.com
+entertainment=http://stage.products.verizonwireless.com
+entertainment-secure=https://stage.products.verizonwireless.com
+rebates=https://cft2.parago.com
+services=http://stage.services.vzwshop.com
+smartphoneRC=https://stage.smartphones.verizonwireless.com
+solutionFinder=http://75.127.197.60/vzw_finder5
+solutions=http://stage.solutions.vzwshop.com
+specialOffers=http://stage.specialoffers.verizonwireless.com
+tradein=http://www.trade-in.vzw.com
+tradein2=http://trade-in.verizonwireless.com
+vskins=http://www.test1.skinit.com
+videos=http://videos-nightly.verizonwireless.com
+videos-secure=https://videos-nightly.verizonwireless.com
+satellite=http://www.vzwsatellite.com/beta
+vzwBusiness=http://stage.business.verizonwireless.com
+/* pending confirmation */
+vzwBusiness-secure=https://stage.business.verizonwireless.com
+/* pending confirmation */
+
+/* ADOBE (Formerly OMNITURE) */
+aboutus2=http://stage-aboutus.verizonwireless.com
+bizportals=http://stage-businessportals.verizonwireless.com
+bizportals-secure=http://stage-businessportals.verizonwireless.com
+news2=http://stage-news.verizonwireless.com
+search2=http://stage.vzwsupport-upgrade.guided.atomz.com
+shop=http://stage.vzw3-feeds.guided.atomz.com
+
+
+/* VERIZON */
+vzBusiness=http://business.verizon.net
+vzGames=http://games.verizon.com
+vzHeadlines=http://headlines.verizon.com
+hub=http://hubstg.vzw.com
+vzMedia=http://mediasit.verizon.com
+vzSurround=http://surround.verizon.com
+vzComm=http://www25.verizon.com
+vzComm-secure=https://www25.verizon.com
+vzTVMedia-secure=https://www35.verizon.com
+vzFedSso=https://tlogin.verizonwireless.com/amserver/saml2/jsp/idpSSOInit.jsp?metaAlias=/vzw/vzwidp&spEntityID=vzc&binding=HTTP-POST&RelayState=https%3A%2F%2Fwww25.verizon.com%2FForyourhome%2FRegistration%2FRegProfile%2Fergcon.aspx%3FTarget%3Dhttps%253A%252F%252Fwww25.verizon.com
+
+/* ALLTEL */
+altMcore=http://alltel.web.mcore.com
+altFfinder=https://alltelfamilyfinder.com
+altBackup=http://www.alltel-backup.com
+altPics=http://www.alltelmypics.net
+altWwwMcore=http://www.mcore.com

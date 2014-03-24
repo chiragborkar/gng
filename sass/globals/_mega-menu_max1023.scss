@@ -1,0 +1,312 @@
+.mls-nav {
+    .nav-tabs {
+        .logo {
+            h1,h2 {
+                padding-right: 3px;
+                white-space: nowrap;
+            }
+        }
+        &.left {
+            > .tab:not(.nav-actions) {
+                a {
+                    padding-right: 12px;
+                }
+            }
+        }
+
+        .nav-item:not(.nav-cart) {
+            padding: 0 5px;
+            &.active:not(.nav-actions) {
+                padding: 0 6px;
+            }
+        }
+        .nav-help {
+            width: auto;
+            padding: 0;
+            margin-right: 5px;
+
+            > strong.need-help  {
+                cursor: pointer;
+                color: $colorVzwRed;
+                display: block !important;
+            }
+
+            &:hover .help-options-container
+            {
+                opacity: 1;
+                display: block;
+            }
+            
+            .help-options-container {
+                display: none;
+                opacity: 0;
+                position: absolute;
+                top: 35px;
+                right: 0;
+
+                .marker {
+                    background: transparent url(../img/nav/marker.png) top left no-repeat;
+                    display: block;
+                    position: absolute;
+                    top: -3px;
+                    left: 70%;
+                    margin-left: -15px;
+                    width: 31px; 
+                    height: 8px;
+                }
+
+                .help-options {
+                    @include border-radius(3px);
+                    white-space: nowrap;
+                    background: #FFF;
+                    border: 1px solid $colorSubnavGridBrd;
+
+                    .help-option {
+                        padding: 5px;
+                        float: none;
+                        width: auto;
+                        display: block;
+
+                        &.last .smallLink { 
+                            position: absolute !important;
+                            left: 80px;
+                            top: 24px;
+                        }
+                        
+                        &.first .help-item 
+                        {
+                            &:after
+                            {
+                                content: ".";
+                                width: 100%;
+                                height: 1px;
+                                display: block;
+                                overflow: hidden;
+                                text-indent: -999px;
+                                position: relative;
+                                top: 15px;
+                                background: $colorActiveTabBrd;
+                                color: $colorActiveTabBrd;
+                            }
+
+                            > a:after
+                            {
+                                display: none;
+                            }
+                        }
+
+                        .help-item
+                        {
+                            top: 0;
+                            text-align: left;
+                            padding: 10px;
+
+                            &.inactive > a
+                            {
+                                color: $colorLightGray;
+                            }
+
+                            > a
+                            {
+                                float: none;
+                                display: block;
+                                padding: 0;
+                            }
+
+                            .dropdown-panel
+                            {
+                                display: none;
+                            }
+
+                            &.inactive .dropdown-panel
+                            {
+                                display: block;
+                                width: 130px;
+                                opacity: 1;
+                                position: static;
+                                background: transparent;
+                                border: 0;
+                                margin: 0;
+                                padding: 0;
+                                @include border-radius(0);
+                                @include box-shadow(none);
+
+                                .dropdown-pointer
+                                {
+                                    display: none;
+                                }
+                            }
+
+                        }
+                    }
+
+                    a {
+                        color: #06C;
+                    }
+                }
+            }
+        }
+        #nav-cart {
+            .mini-cart.tab-dropdown
+            {
+                width: 75%;
+                min-width: 540px;
+            }
+
+            &.nav-item {
+                &.last {
+                    padding-right: 8px;
+                }
+
+                &.last.active,
+                &.last:hover
+                {
+                    padding-right: 7px;
+                }
+
+                > a {
+                    width: 27px;
+                    position: relative;
+                    left: -5px;
+                }
+            }
+
+            &.active,
+            &:hover
+            {
+                > a {
+                    left: 0;
+                }
+            }
+        }
+
+        > .tab .tab-dropdown {
+            .tall-tab-section {
+                min-height: 727px;
+                height: auto;
+
+                .tall-tab {
+                    width: 33.333%;
+                    height: auto;
+
+                    a {
+                        > img
+                        {
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .tab-fig {
+                            padding: 0;
+                            vertical-align: middle;
+                            img {
+                                max-width: 100%;
+                                width: 100%;
+                                display: block;
+                            }
+
+                            figcaption
+                            {
+                            }
+
+                            &:hover{
+                                padding-bottom: 30px;
+                            }
+                        }
+                    }
+                    &.item-3 {
+                        border-right: none;
+                    }
+                    &.item-4 {
+                        border-left: none;
+                    }
+                    &.item-1,
+                    &.item-2,
+                    &.item-3 {
+                        border-bottom: 1px solid $colorVzwNavBrdShade;
+                    }
+                    &.item-4,
+                    &.item-5,
+                    &.item-6 {
+                        border-top: 1px solid $colorVzwNavBrd;
+                    }
+                }
+            }
+            .subnav-grid {
+                .nav-grid-item {
+                    width: 25%;
+                    a .nav-grid-fig {
+                        img {
+                            max-width: 70%;
+                        }
+                        figcaption {
+                            left: 5px;
+                        }
+                    }
+                    &.cta-all {
+                        a {
+                            padding: 0 25px;
+                        }
+                    }
+                }
+            }
+
+            // "see all" moved to first
+            .tab.first .subnav-grid .nav-grid-item
+            {
+                width: 25%;
+                height: 33%;
+
+                a .nav-grid-fig {
+                    img {
+                        max-width: 50%;
+                    }
+
+                    figcaption {
+                        bottom: 5px;
+                    }
+                }
+
+                &.item-6,
+                &.item-7,
+                &.item-8 {
+                    border-bottom: 1px solid $colorVzwNavBrdShade;
+                }
+            }
+
+            // "see all" moved to first
+            .tab.first .subnav-grid.max-15 .nav-grid-item
+            {
+                width: 25%;
+                height: 25%;
+
+                a .nav-grid-fig {
+                    img {
+                        max-width: 40%;
+                    }
+                }
+
+                &.item-9,
+                &.item-10,
+                &.item-11,
+                &.item-12 {
+                    border-bottom: 1px solid $colorVzwNavBrdShade;
+                }
+
+                img
+                {
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+// #site-header {
+//    nav#mls-nav.mls-nav {
+//        .nav-tabs .nav-item.last.active:not(.nav-actions) {
+//            background: #e5eaea url(../img/sprites/nav/minicart-cart-icon-hover.png) 6px 15px no-repeat !important;
+//        }
+//    }
+// }

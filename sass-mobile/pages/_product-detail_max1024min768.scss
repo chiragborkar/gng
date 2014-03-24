@@ -1,0 +1,246 @@
+#site-header #mls-nav-content #nav-tab4.active
+{
+    width: 70%;
+}
+
+.pdp-overview-content{
+    .more-less-block {
+        margin-bottom: 20px;
+        .two-thirds.left {
+            width: 65%;
+            float: left;
+            height: auto;
+            padding-right: 12%;
+	    ul { list-style-type: disc;}
+            .less,
+            .more {
+                display: inline;
+		ul {
+	            list-style-type: disc;
+		    li {
+			list-style-type: disc;
+		    }
+		}
+            }
+            p{
+                font-size: 20px;
+                line-height: 30px;
+                color:$cartGreyMd;
+                @include instruct;
+	    	strong{
+	            font-weight:700;
+		    font-family: "Verizon Apex Bold";
+	    	}
+            }
+            .more-less {
+                .more-less-link {
+                    font-size: 14px;
+                    color:$actLinkBlue;
+                    text-transform:none;
+                }
+            }
+        }
+        .third.right {
+            width: 33%;
+            height: auto;
+            float: left;
+        }
+    }
+}
+#cart-block {
+    width:44%;
+    .product-title {
+        font-size:22px;
+    }
+}
+
+    #carousel-block{
+        width:56%;
+        .crsl-offer-box{
+            > div{
+                position:relative;
+            }
+            width:125px;
+            height:125px;
+            .offer-amt{
+                font-size:58px;
+                margin:26px 0 0 20px;
+            }
+            .offer-unit{
+                font-size:26px;
+
+            }
+            .offer-off{
+                top: auto;
+                left: auto;
+                right: 17px;
+                bottom: 40px;
+                font-size: 12px;
+                position: absolute;
+            }
+        }
+    }
+    .view-to-scale{
+        display:none;
+    }
+
+    /*
+    #mls-nav-content{
+        display: none;
+    }
+    */
+
+    #product-details{
+        .detail-tabs{
+            li{
+                span{
+                    font-size:11px;
+                }
+            }
+        }
+        .tabbed-wrapper{
+            .detail-tabs-accordion{
+                > li.features{
+                    .details-list{
+                        &.toggle{
+                            height:100%;
+                        }
+                        height:204px;
+                        margin:0;
+                        padding:0 0 0 16px;
+                        overflow:hidden;
+                        li{
+                            float:none;
+                            width:auto;
+                        }
+                    }
+                    .pdp-features-content{
+                        .more-less-link{
+                            color: $actLinkBlue;
+                            display:inline-block;
+                            margin-top:20px;
+                            &.toggle{
+                                .more{
+                                    display:none;
+                                }
+                                .less{
+                                    display:inline;
+                                }
+                            }
+                            .more{
+                                display:inline;
+                            }
+                            .less{
+                                display:none;
+                            }
+                        }
+                    }
+                    .more-less-block{
+                        width:46%;
+                        margin:0 46px 0 0;
+                    }
+                }
+            }
+        }
+        .pdp-compat-content{
+            .tab-inner{
+                position:relative;
+                padding-top:0;
+            }
+            .compat-results{
+                .tab-inner{
+                    padding-top:10px;
+                }
+            }
+            .sorting-elements{
+                float:none;
+                clear:both;
+                height:100%;
+                position:relative;
+                padding:36px 0 0 0;
+                .summary{
+                    top:0;
+                    width:100%;
+                    position:absolute;
+                }
+                .search{
+                    width:52%;
+                    float:left;
+                }
+            }
+        }
+    }
+    #similar-products {
+        .similar-products-module {
+            width: 87.5%;
+            margin: 0 auto;
+        }
+    }
+
+    .pdp-compat-content {
+        .my-devices {
+            ul {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    #featuresTab {
+        .tab-wrapper {
+            .more-less-block {
+                .third {
+                    width: 54%;
+                }
+            }
+            .pdp-features-tab-box {
+                width: 41.5%;
+            }
+        }
+    }
+
+    #specsTab {
+        .tab-wrapper {
+            .more-less-block {
+                .third {
+                    width: 45%;
+                    margin-right: 25%;
+                }
+            }
+            .manual-block {
+                width: 41.5%;
+            }
+        }
+    }
+
+    #product-details {
+        .pdp-overview-content {
+            .tab-wrapper {
+                .more-less-block {
+                    .two-thirds.left {
+                        width: 60%;
+                    }
+                    .third.right {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .pdp-compat-content {
+        #returned-items {
+            li {
+                width: 50%;
+            }
+        }
+        .my-devices {
+            ul {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }

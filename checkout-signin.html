@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile
+  <meta name="viewport" content="width=device-width" /> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- Set the viewport width to device width for mobile AND set initial scale AND prevent zoom -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Checkout SignIn| Verizon MLS</title>
+
+  <!-- Included CSS Files (Uncompressed) -->
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+
+  <!-- Included CSS Files (Compressed) -->
+  <!-- <link rel="stylesheet" href="css/app.css"> -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/foundation/modernizr.foundation.js"></script>
+
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+  <script type="text/javascript" src="js/HANDOFF-FUNCTIONS.js"></script>
+  <!-- TEMPLATE FRAGMENT INCLUDE FUNCTION - DO NOT INCLUDE THIS CODE IN FINAL TEMPLATE -->
+
+</head>
+
+<body id="checkout-page" class="checkout-signin">
+	<div id='site-container'>
+<!-- BEGIN TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+	<div class="temp-pdp-header">
+  		<script type="text/javascript">
+    		includeFragment('inc/fragments/checkout-header.html');
+  		</script>
+  </div><!-- end temp header -->
+<!-- END TEMPLATE FRAGMENT REFERENCE - DO NOT INCULUDE THIS CODE IN FINAL TEMPLATE -->
+
+<!-- End Header and Nav -->
+
+<!-- Main Grid Section -->
+
+<section id="checkout-header">
+	<div class="section-wrap">
+		<h2 class="checkout-title">Begin Checkout</h2>
+		<div class="cart-link">
+			<a href="cart-base.html" title="Back to Cart">Back to Cart</a>
+		</div>
+	</div>
+</section><!-- end checkout header -->
+
+<div class="checkout-sequence-wrap">
+
+<section id="begin-checkout">
+	<div class="section-wrap">
+
+		<div class="sign-in">
+			<div class="form-box">
+				<h2 class="form-title"><span class="bold">Sign</span>-In</h2>
+				<p class="form-instructions">
+					If you <span>have a MyVerizon login</span>, sign in for access to saved shipping and billing information.
+				</p>
+				<form id="my-Verizon-login" method="POST" action="#" autocomplete="on">
+
+					<div class="form-input-wrap">
+						<label class="form-item-title" for="vzw-user" accesskey="U" >User ID or Phone Number</label>
+						<!-- sape <input name="myVerizonID" type="text" id="vzw-user" class="checkout-text-input" placeholder="User ID or Phone Number" tabindex="1" />-->
+						<!-- pa -->
+						<input type="text" tabindex="1" placeholder="User ID or Phone Number" class="checkout-text-input hasPlaceholder" id="IDToken1" name="IDToken1" />
+						<a href="#" class="forgot">Forgot your User ID?</a>
+					</div>
+
+					<div class="form-input-wrap">
+						<label class="form-item-title" for="vzw-pass" accesskey="P">Password</label>
+						<!-- sape <input name="myVerizonPassword" type="password" id="vzw-pass" class="checkout-text-input hasPlaceholder" placeholder="Password" tabindex="3" /> -->
+						<!-- pa -->
+						<input type="password" tabindex="3" placeholder="Password" id="IDToken2" name="IDToken2" class="checkout-text-input hasPlaceholder" />
+
+						<a href="#" class="forgot">Forgot your password?</a>
+					</div>
+
+					<div class="remember-me">
+						<input name="remember-me" value="Create a login" type="checkbox" class="remember-me-checkbox" >
+						<div class="checkbox-label">
+							Remember Me (<a href="#" title="Read Our Privacy Policy" class="privacy-link">Privacy Policy</a>)
+						</div>
+				    </div>
+
+				    <div class="checkout-input-button">
+					   <input name="myVerizonLoginSubmit" type="submit" class="checkout-submit" value="Sign-In" id="checkout-sign-in">
+				    </div>
+
+				</form>
+
+			</div><!-- end form box -->
+		</div>
+
+
+
+
+		<div class="guest-checkout">
+			<form class="form-box">
+			 	<h2 class="form-title"><span class="bold">Guest</span> Checkout</h2>
+
+			 	<p class="form-instructions">
+					If you <span>don't have a MyVerizon login</span>, you can check out without signing in.
+				</p>
+
+				<div class="create-login">
+					<label class="form-item-title" for="create-login" accesskey="L">
+						Are you a Verizon Customer without an Account?
+					</label>
+					<input name="create-login" value="Create a login" type="checkbox" class="create-login-checkbox" id="create-login" tabindex="1">
+					<div class="checkbox-label">
+						Create a login.
+					</div>
+				</div>
+
+				<div class="create-login-message">
+					<p class="form-instructions">
+					You'll be able to <span>register for a MyVerizon ID</span> upon completion of your order.
+				</p>
+				</div>
+
+				<div class="checkout-input-button" id="checkout-as-guest" >
+					<!--
+					<a href="http://localhost:8888/checkout.html">
+						<div class="button"><span>Checkout as Guest</span></div>
+					</a>
+					-->
+					<input type="submit" name="checkoutAsGuest" value="Checkout as Guest" />
+				</div>
+			</form><!-- end form-box -->
+		</div>
+
+
+
+
+	</div><!-- end section wrap -->
+</section><!-- end begin checkout -->
+
+<!-- Footer -->
+<script type="text/javascript">
+	includeFragment('inc/footer.html');
+</script>
+
+
+</div><!-- end site-container -->
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+.modal-container
+{
+	background: transparent;
+}
+
+.modal-overlay-background {
+	position: fixed;
+	background-color: #000;
+	opacity: .7;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter:alpha(opacity=70);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100000;
+}
+
+.modal-overlay {
+	background: #fff;
+	border-radius: 8px;
+	// behavior: url(gng/css/PIE.htc);
+	position: absolute;
+	left: 50%;
+	margin-left: -333px;
+	width: 665px;
+	padding: 40px;
+	z-index: 100001;
+	top: 25%;
+
+	h1 {
+		font-family: "Verizon Apex Book";
+		color: #3d4146;
+		font-size: 32px;
+		font-weight: normal;
+		padding-bottom: 25px;
+	}
+
+	.title {
+		font-size: 22px;
+		display: block;
+		margin: 0;
+	}
+
+	.ratings {
+		background:url(../img/sprites/pdp/stars-temp.png) no-repeat;
+		width:75px; height:13px;
+		margin-top:5px;
+	}
+
+
+	> a {
+		display: block;
+		width: 50px;
+		height: 51px;
+		background: url(../img/article/close.png);
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+
+	.error {
+		color: red;
+	}
+}
+
+.modal-overlay.bundle {
+	width: 700px;
+
+	h1 {
+		letter-spacing: -1.5px;
+		color: #3d4146;
+		margin-top: 0;
+	}
+
+    .keep-item-button {
+        float: right;
+        width: 150px !important;
+        @include ctaBlackButton;
+    }
+
+    .remove-item-link {
+        text-transform: uppercase;
+        font-size: .75em;
+        font-weight: 700;
+        margin-top: 30px;
+        float: left;
+    }
+
+	.container{
+		width: 50%;
+		float: left;
+
+		&.img{
+			padding-right: 9%;
+		}
+
+		&.content{
+			padding-top: 10px;
+		}
+
+		p{
+			font-size: 18px;
+			line-height: 1.4em;
+		}
+
+		b {
+			color: #cc0000;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+        .rating {
+            margin-top: 9px;
+        }
+
+		.simple-price{
+			margin-top: 40px;
+
+			.product-title{
+				display: block;
+				margin-bottom: 5px;
+			}
+			.product-price{
+				font-weight: bold;
+			}
+		}
+
+	}
+}

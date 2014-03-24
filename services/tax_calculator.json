@@ -1,0 +1,9 @@
+{
+    "success": {
+        "responseHTML": "<div class=\"totals\"> <ul> <li class=\"cart-subtotal\"> <div class=\"label\">Sub Total:</div> <div class=\"data\"> $<span id=\"cart-subtotal\">399.99</span> </div> </li><!-- end subtotal --> <li class=\"cart-discount offer\"> <div class=\"label\">Employee Discount:</div> <div class=\"data\"> - $<span id=\"cart-discount\">29.99</span> </div> </li><!-- end subtotal --> <li class=\"cart-ship\"> <div class=\"label\">Shipping:</div> <div class=\"data\"> <span class=\"no-offer\">$<span id=\"cart-shipping\">16.95</span></span> <span class=\"offer\">FREE!</span> </div> </li> <li class=\"cart-tax\"> <div class=\"label\">Estimated Tax:</div> <div class=\"data\"> $<span id=\"cart-tax\">4.99</span> </div> </li><!-- end tax --> <li class=\"cart-total\"> <div class=\"label\">Total:</div> <div class=\"data\"> $<span id=\"cart-total\">399.99</span> </div> </li> </ul> </div>"
+        },
+
+    "error": {
+        "responseHTML": ""
+    }
+}

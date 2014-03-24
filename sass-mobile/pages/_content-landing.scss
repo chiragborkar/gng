@@ -1,0 +1,544 @@
+.content-landing-page {
+    .tab-content-wrapper{
+        display:none;
+        &.active{
+            display:block;
+            padding-bottom: 200px;
+        }
+    }
+    .content-cta {
+        background: url("../img/content-landing/blue-right.png") no-repeat center right;
+        min-width: 76px;
+        display: inline-block;
+    }
+    .page-header {
+        background-color: $colorLightBg;
+        padding: 15px;
+        h1,
+        h3 {
+            color: $colorNavLinks;
+        }
+        h1 {
+            font: {
+                family: $fontVzwLight;
+                size: 80px;
+                weight: normal;
+            }
+            letter-spacing: -8px;
+        }
+        h3 {
+            font: {
+                family: $fontVzwBold;
+                size: 12px;
+                weight: normal;
+            }
+            text-transform: uppercase;
+        }
+    }
+    .category-tabs {
+        ul {
+            &.inline-list {
+                margin-bottom: 0;
+                .active {
+                    a {
+                        color: $colorVzwRed;
+                    }
+                }
+            }
+        }
+    }
+    .content-landing-header {
+        padding: 25px 0 0 0;
+        h2 {
+            margin-left: 25px;
+            .content-all {
+                display: none;
+            }
+        }
+        .sort-by {
+            margin-right: 15px;
+        }
+        .mobile-sort-filter {
+            display: none;
+            float: right;
+            margin-top: -60px;
+            .dropdown-menu {
+                    margin: 0 !important;
+                ul{
+                    float: none;
+                    text-align: left;
+                    white-space: nowrap;
+                    // height: 27px;
+                }
+                .submenu-list {
+                    &.filter-options-list {
+                        // padding: 5px 0 0 0 !important;
+                        display: block;
+                        // overflow: hidden;
+                    }
+                    li {
+                        float: none;
+                        display: inline;
+                        text-align: left;
+                    }
+                }
+            }
+            .dropdown-cta {
+                font-size: 12px;
+                width: 96px;
+                margin: 0 0 0 10px;
+                @include pdp-sprite(grey-more, false, 76px, 27px);
+                &.active {
+                    background: url("../img/mobile_filter_bg.jpg");
+                    border-bottom: 0;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                }
+                &.sort {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .category-section {
+        .content-grid {
+            &.feature-grid {
+                border-top: none;
+                margin-bottom: 0;
+                .content-item {
+                    &.large {
+                        .content-fig {
+                            max-width: 100%;
+                            .hot-story {
+                                background: url("../img/content-landing/hot_story.jpg") 0 0 no-repeat;
+                                width: 135px;
+                                height: 49px;
+                                position: absolute;
+                                top: 33px;
+                                left: 0;
+                            }
+                            .featured-large-image {
+                                max-width: 100%;
+                                height: auto;
+                            }
+                            .featured-corner,
+                            .featured-item-hover {
+                                position: absolute;
+                                bottom: 15px;
+                                right: 15px;
+                            }
+                            .featured-item-hover {
+                                width: 254px;
+                                height: 166px;
+                                background: url("../img/content-landing/article_tab_hover.png") 0 1px no-repeat;
+                                opacity: 0;
+                                cursor:pointer;
+                                @include ftrHover;
+                                overflow: hidden;
+                                a {
+                                    display: block;
+                                    width: 58%;
+                                    position: absolute;
+                                    bottom: 0; right: 0;
+                                    background: none;
+                                    line-height: normal;
+                                    img {
+                                        display: block;
+                                        width: 59%; height: auto;
+                                        float: left;
+                                        position: static;
+                                    }
+                                    .shop-this-story {
+                                        float: right;
+                                        display: block;
+                                        width: 54px;
+                                        padding: 33px 0 0 0;
+                                        line-height: 12px;
+                                    }
+                                }
+                            }
+                            .featured-corner {
+                                width: 45px;
+                                height: 45px;
+                            }
+                            .featured-item {
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: $colorVzwNavBrd;
+                                padding: 15px;
+                                display: none;
+                                &.active {
+                                    top: 0;
+                                    left: 0;
+                                }
+                                .featured-item-color-code {
+                                    margin-bottom: 40px;
+                                    img {
+                                        padding: 0;
+                                        position: static;
+                                        width: 40%;
+                                        margin: 0;
+                                    }
+                                }
+                                .focus {
+                                    .slides {
+                                        margin-left: 0;
+                                        li {
+                                            margin: 0 auto;
+                                            .featured-item-detail {
+                                                width: 20%;
+                                                margin: 12% 1% 0 0;
+                                                position: relative;
+                                                float: left;
+                                                height: auto;
+                                                img {
+                                                    position: static;
+                                                }
+                                                .featured-item-info {
+                                                    .featured-item-title {
+                                                        font-family: $fontVzwBook;
+                                                        padding: 0;
+                                                        color: $cartGreyDk;
+                                                        font-size: 18px;
+                                                        line-height: 21px;
+                                                        font-weight: normal;
+                                                        margin: 0;
+                                                    }
+                                                    .rating {
+                                                        @include clearfix();
+                                                        margin: 0 0 18px 0;
+                                                        color: #666;
+                                                        line-height: 14px;
+                                                        font: {
+                                                            family: $fontArial;
+                                                            size: 12px;
+                                                        }
+                                                        img {
+                                                            position: relative;
+                                                            top: auto; right: auto;
+                                                            width: auto;
+                                                            float: left;
+                                                            margin: 2px 10px 0 0;
+                                                        }
+                                                    }
+
+                                                    .sale-tag
+                                                    {
+                                                        position: absolute;
+                                                        top: -30px;
+                                                        left: 0;
+                                                        height: 30px;
+
+                                                        img
+                                                        {
+                                                            width: auto;
+                                                            height: auto;
+                                                        }
+
+                                                        .copy
+                                                        {
+                                                            letter-spacing: 0;
+                                                            padding-top: 4px;
+                                                        }
+                                                    }
+                                                }
+                                                .featured-item-select {
+                                                    position: absolute;
+                                                    top: 120px; right: 0;
+                                                    width: 65%; height: auto;
+                                                }
+                                                .price {
+                                                    display: block;
+                                                    font-family: $fontVzwBook;
+                                                    color: $cartGreyDk !important;
+                                                    font-size: 18px;
+                                                    line-height: 21px;
+                                                    font-weight: normal;
+                                                    letter-spacing: -1px;
+                                                    margin: 0 0 5px 0;
+                                                    sup {
+                                                        font-size: 12px;
+                                                        position: relative;
+                                                        color: $cartGreyDk;
+                                                    }
+                                                }
+                                                .featured-item-add-to-cart {
+                                                    @include ctaRedButton;
+                                                    width: 110px;
+                                                    height: 45px;
+                                                    margin: 0;
+                                                    .featured-item-actions {
+                                                        width: 100%;
+                                                        .button {
+                                                            height: 45px;
+                                                            span {
+                                                                margin: 0;
+                                                                padding-top: 19px;
+                                                                letter-spacing: normal;
+                                                                font: {
+                                                                    family: $fontArial;
+                                                                    size: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            img {
+                                                width: 45%;
+                                            }
+                                        }
+                                    }
+                                }
+                                .thumbs-back {
+                                    overflow: hidden;
+                                    width: 100%;
+                                    .thumb-wrap {
+                                        position: absolute;
+                                        bottom: 5px;
+                                        width: 81%;
+                                        z-index: 110;
+                                        float: left;
+                                        .slides {
+                                            margin-left: 0;
+                                            li {
+                                                height: 55px;
+                                                margin: 0 10px 0 0;
+                                                position: relative;
+                                                cursor: pointer;
+                                                .vzn-active {
+                                                    @include slideFast;
+                                                    display: block;
+                                                    width: 0; height: 1px;
+                                                    border-bottom: 2px solid $colorVzwRed;
+                                                    position: absolute;
+                                                    bottom: 10px;
+                                                }
+                                            }
+                                            li.flex-active-slide {
+                                                .vzn-active {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .back {
+                                        width: 10%;
+                                        position: absolute;
+                                        bottom: 17px;
+                                        right: 45px;
+                                        display: block;
+                                        .back-to-story {
+                                            display: block;
+                                            cursor: pointer;
+                                            overflow: hidden;
+                                            width: 90px;
+                                            background: none;
+                                            .thumb {
+                                                width: 48px;
+                                                height: 48px;
+                                                float: left;
+                                            }
+                                            .go-back {
+                                                float: right;
+                                                width: 37px;
+                                                display: block;
+                                                padding-top: 13px;
+                                                line-height: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .content-detail {
+                            .content-detail-header {
+                                .content-title {
+                                    line-height: 38px;
+                                    margin: 0 0 20px 0;
+                                    color: $colorTxtGray;
+                                }
+                                .content-category {
+                                    color: $colorSubnavActiveTabBg;
+                                    display: block;
+                                    margin-bottom: 31px;
+                                    font: {
+                                        family: $fontArial;
+                                        weight: bold;
+                                        size: 10px;
+                                    }
+                                }
+                            }
+                            .content-copy {
+                                color: $cartGreyMd;
+                                line-height: 20px;
+                                margin: 0 0 4px 0;
+                                font: {
+                                    family: $fontArial;
+                                    size: 14px;
+                                    weight: normal;
+                                }
+                            }
+                        }
+                        .social-share-module {
+                            display: none;
+                            width: 243px;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .featured-stories {
+        @include clearfix();
+
+        .story {
+            @include column(12);
+            position: relative;
+            padding: 15px;
+            border: {
+                left: 1px solid $colorArticleBorder;
+                bottom: 1px solid $colorArticleBorder;
+            }
+            .story-fig {
+                @include column(3);
+            }
+            .story-content {
+                @include column(9);
+                padding-left: 0;
+                .story-header {
+                    .pub-date {
+                        color: $colorSubnavActiveTabBg;
+                        display: block;
+                        margin-bottom: 20px;
+                        font : {
+                            family: $fontArial;
+                            weight: bold;
+                            size: 10px;
+                        }
+                    }
+                    h2 {
+                        line-height: 38px;
+                        margin: 0 0 19px 0;
+                        color: $colorTxtGray;
+                        font: {
+                            family: $fontVzwBook;
+                            size: 32px;
+                            weight: normal;
+                        }
+                    }
+                }
+                p {
+                    color: $cartGreyMd;
+                    line-height: 20px;
+                    margin: 0 0 8px 0;
+                    font: {
+                        family: $fontArial;
+                        size: 14px;
+                        weight: normal;
+                    }
+                }
+            }
+            .story-social {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 0;
+                width: 325px;
+                .social-share-module{
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 325px;
+                }
+            }
+        }
+    }
+    .load-actions{
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        .load-more{
+            overflow: hidden;
+            width: 45% !important;
+            height: 55px;
+            margin: 40px auto;
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            font-family: "Verizon Apex Book";
+            padding: 15px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            background: #edf1f2;
+            -webkit-box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px 1px rgba(60, 60, 60, 0.1);
+            -moz-box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px 1px rgba(60, 60, 60, 0.1);
+            box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 1px 1px rgba(60, 60, 60, 0.1);
+        }
+        .load-remaining {
+            float: right;
+            text-align: left;
+            display: block;
+            color: #0066cc;
+            width: 110px;
+            font-family: Arial;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+}
+.lt-ie9  {
+    .content-landing-page {
+        .content-item .content-fig img {
+            max-height: none;
+        }
+    }
+
+    .content-landing-header {
+        .sort-by .selector {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            span
+            {
+                width: 100% !important;
+                @include ieRightArrowDown;
+            }
+        }
+    }
+}
+
+.infographic{
+    padding-left: 50px;
+}
+@media only screen and (max-width: $screenLarge) and (min-width: $screenMedium) {
+    @import "_content-landing_max1280min1024";
+}
+@media only screen and (max-width: $screenMedium - 1) and (min-width: $screenSmall) {
+    @import "_content-landing_max1023min768";
+}
+@media only screen and (max-width: $screenSmall - 1) and (min-width: $screenMobileLarge + 1) {
+    @import "_content-landing_max767min641";
+}
+@media only screen and (max-width: $screenMobileLarge) and (min-width: $screenMobileSmall) {
+    @import "_content-landing_max640min320";
+}

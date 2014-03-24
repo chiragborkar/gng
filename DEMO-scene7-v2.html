@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scene7 Asset Loading Example</title>
+<script src="js/foundation/modernizr.foundation.js"></script>
+<script language="javascript" type="text/javascript" src="js/all.js"></script>
+</head>
+
+<body>
+	<input type="hidden" id="heroImageSetID" value="lg_lucid_is" />
+	<input type="hidden" id="imageSetID" value="lg_lucid_spin" />
+	<input type="hidden" id="zoomID" value="apple_ipad2_black" />
+
+	<script language="javascript" type="text/javascript">
+		$jQ(document).ready(function() {
+			/* 
+			main carousel
+			1.- retrieve images (MLS.scene7.gallery)
+			2.- populate thumbnails slider container
+			3.- populate large images slider container
+			4.- initialize both flexsliders
+			*/
+			MLS.scene7.gallery($jQ("#heroImageSetID").val(), function(images) {
+				var self = this,
+					$large = $jQ("#hero .large"),
+					$thumbs = $jQ("#hero .small");
+				
+				$jQ(images).each(function() {
+					$jQ(new Image()).attr({
+						src: self.largeImage(this.toString())
+					}).appendTo($large);
+
+					$jQ(new Image()).attr({
+						src: self.thumbnailImage(this.toString())
+					}).appendTo($thumbs);
+				});
+			});
+
+			/* 
+			360 view
+			1.- retrieve images (MLS.scene7.gallery)
+			2.- preload all images (so the animation is not jumpy)
+			3.- initialize image with the first image in the set
+			4.- finalize events
+			5.- (re-)initialize events (mousedown\touchstart, mousemove\touchmove, mouseup\touchend\touchcancel)
+			*/
+			MLS.scene7.gallery($jQ("#imageSetID").val(), function(images) {
+				/*
+					Images is an array of image ids, use the largeImage & thumbnailImage method to retrieve the actual image urls 
+				*/
+
+				var self = this,
+					$large = $jQ("#container .large"),
+					$thumbs = $jQ("#container .small");
+				
+				$jQ(images).each(function() {
+					$jQ(new Image()).attr({
+						src: self.largeImage(this.toString())
+					}).appendTo($large);
+
+					$jQ(new Image()).attr({
+						src: self.thumbnailImage(this.toString())
+					}).appendTo($thumbs);
+				});
+
+				// this is the method to use un 
+			});
+
+			/* 
+			zoom
+			1.- retrieve images (MLS.scene7.gallery)
+			2.- populate thumbnails slider container
+			3.- populate large images slider container
+			4.- initialize both flexsliders
+			5.- initialize zoom functionality (zoom+ / zoom- buttons)
+			*/
+			MLS.scene7.zoom($jQ("#zoomID").val(), function(d) {
+				/*
+				Parameter 'd' has the following structure:
+				{
+				    "set": {
+				        "n": "VerizonWireless/apple_ipad2_black",
+				        "pv": "1.0",
+				        "type": "img",
+				        "item": {
+				            "i": {
+				                "n": "VerizonWireless/apple_ipad2_black"
+				            },
+				            "dx": "917",
+				            "dy": "1396",
+				            "iv": "vB3vQ2"
+				        }
+				    }
+				}
+
+				Note: During my tests I didn't find an example that would have more that 1 "item",
+				but just in case assume "set" could contain an actual set of images
+				*/ 
+				var $zoomed = $jQ("#container .zoomed");
+				
+				$jQ(new Image()).attr({
+					src: this.zoomThumbnailImage(d.set.item)
+				}).appendTo($zoomed);
+
+				$jQ(new Image()).attr({
+					src: this.zoomLargeImage(d.set.item)
+				}).appendTo($zoomed);
+			});
+		});
+	</script>
+
+	<div id="hero">
+		<h1>large images</h1>
+		<div class="large">
+		</div>
+
+		<h1>thumbnail images</h1>
+		<div class="small">
+		</div>
+	</div>
+	<hr />
+
+	<div id="container">
+		<h1>zoom images</h1>
+		<div class="zoomed">
+		</div>
+
+		<h1>large images (spin / gallery)</h1>
+		<div class="large">
+		</div>
+
+		<h1>thumbnail images (gallery)</h1>
+		<div class="small">
+		</div>
+	</div>
+
+</body>
+</html>

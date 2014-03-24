@@ -1,0 +1,105 @@
+//Buttons
+.button {
+	text:{
+		decoration: none;
+		align: left;
+	}
+	font: {
+		family: arial, helvetica, sans-serif;
+		size: 14px;
+		weight:600;
+	}
+	color: white;
+	line-height: 25px;
+	padding: 14px 40px 3px 10px;
+	border: 1px solid;
+	border-bottom-color: rgba(0,0,0,0.4);
+	border-left-color: rgba(0,0,0,0.2);
+	border-right-color: rgba(0,0,0,0.2);
+	border-top-color: rgba(0,0,0,0);
+	@include background( linear-gradient(#ff0000, #cc0000) ); // multiple: comma-delimited
+	@include text-shadow( 0px -1px 1px rgba(0,0,0,0.3) ); // multiple: comma-delimited
+	@include border-radius(3px);
+	@include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.4), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+	&:hover {
+		@include background( linear-gradient(#e50000, #b30000) ); // multiple: comma-delimited
+	}
+
+	&:active{
+		@include background( linear-gradient(#990000, #cc0000) );
+		border-bottom-color: rgba(0,0,0,0.2);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0.5);
+		@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) );
+	}
+}
+
+.button.extra-large {
+	font:{
+		family: "Verizon Apex Book", arial, helvetica, sans-serif;
+		size: 18px;
+		weight:200;
+	}
+	padding: 47px 20px 3px 10px;
+	width: 100%;
+}
+
+.button.large {
+	font:{
+		family: "Verizon Apex Book", arial, helvetica, sans-serif;
+		size: 18px;
+		weight:200;
+	}
+	padding: 24px 60px 3px 10px;
+}
+
+.button.form-field {
+	padding: 6px 60px 3px 10px;
+}
+
+.button.small {
+	padding: 2px 20px 0px 10px;
+	font-size: 12px;
+	height:25px;
+}
+
+.button.darkgray {
+	@include background( linear-gradient(#52585e, #3c4045) ); // multiple: comma-delimited
+	@include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.2), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+	&:hover {
+		@include background( linear-gradient(#474c52, #313438) ); // multiple: comma-delimited
+	}
+
+	&:active {
+		@include background( linear-gradient(#26282b, #3e4247) ); // multiple: comma-delimited
+		@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) ); // multiple: comma-delimited
+	}
+}
+
+.button.lightgray {
+	@include background( linear-gradient(#f0f2f2, #e3e5e5) ); // multiple: comma-delimited
+	color: #808080;
+	@include text-shadow( 0px -1px 1px rgba(255,255,255,0.3) ); // multiple: comma-delimited
+	border-bottom-color: rgba(0,0,0,0.3);
+	border-left-color: rgba(0,0,0,0.2);
+	border-right-color: rgba(0,0,0,0.2);
+	border-top-color: rgba(0,0,0,0.1);
+	@include box-shadow( inset 0 1px 1px  rgba(255,255,255,1.0), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+	&:hover {
+		@include background( linear-gradient(#e8ebeb, #dcdede) ); // multiple: comma-delimited
+		color: #666666;
+	}
+
+	&:active {
+		@include background( linear-gradient(#d4d6d6, #e1e3e3) ); // multiple: comma-delimited
+		border-bottom-color: rgba(0,0,0,0.2);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0.3);
+		@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.15) ); // multiple: comma-delimited
+	}
+}

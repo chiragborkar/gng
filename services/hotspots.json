@@ -1,0 +1,34 @@
+[
+    {
+        "template": "javascript:loadProduct('$$');void(0);",
+        "coords": [
+            264,
+            177,
+            264,
+            225,
+            292,
+            225,
+            292,
+            177
+        ],
+        "templateenabled": "true",
+        "shape": "poly",
+        "href": "javascript:loadProduct('testurl.html');void(0);"
+    },
+    {
+        "template": "javascript:loadProduct('$$');void(0);",
+        "coords": [
+            193,
+            107,
+            193,
+            124,
+            219,
+            124,
+            219,
+            107
+        ],
+        "templateenabled": "true",
+        "shape": "poly",
+        "href": "javascript:loadProduct('testurl2.html');void(0);"
+    }
+]

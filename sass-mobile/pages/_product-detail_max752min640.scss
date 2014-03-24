@@ -1,0 +1,24 @@
+#carousel-block{
+        width:52%;
+        .crsl-offer-box{
+            display:none;
+        }
+        .view-to-scale{
+            display:none;
+        }
+    }
+    #cart-block{
+        width:48%;
+    }
+    #product-details{
+        .tabbed-wrapper{
+            .detail-tabs{
+                li{
+                    span{
+                        font-size:11px;
+                    }
+                }
+
+            }
+        }
+    }

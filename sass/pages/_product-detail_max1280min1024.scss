@@ -1,0 +1,36 @@
+    #featuresTab {
+        .tab-wrapper {
+            .more-less-block { }
+            .pdp-features-tab-box {
+                width: 33.333%;
+            }
+        }
+    }
+
+    #specsTab {
+        .tab-wrapper {
+            .more-less-block { }
+            .manual-block {
+                width: 33.333%;
+            }
+        }
+    }
+
+    #product-details {
+        .tabbed-wrapper {
+            .tab-block {
+                .tabs-content {
+                    .pdp-overview-content {
+                        .more-less-block {
+                            .two-thirds.left {
+                                width: 70%;
+                            }
+                            .third.right {
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

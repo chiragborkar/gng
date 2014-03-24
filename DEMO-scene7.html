@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scene7 Asset Loading Example</title>
+<!-- [Required for Image Zoom] CSS used for mouseover hover/zoom of Images.  Can be removed if not deploying this functionality -->
+<link href="http://s7.vzw.com/skins/Scene7SharedAssets/htmlviewerskins/css/advancedflyout.css" rel="stylesheet" type="text/css"/>
+<!-- [Required] This is the JS file that renders the various viewers. -->
+<script language="javascript" type="text/javascript" src="http://cache.vzw.com/wcms/scene7ui.js"></script>
+<!-- jQuery isn't required, is simply VzW's JavaScript platform and what's used in this demo. -->
+<script language="javascript" type="text/javascript" src="http://cache.vzw.com/scripts/vzw_jquery.js"></script>
+
+</head>
+
+<body>
+<script language="javascript" type="text/javascript">
+// Function used to load different asset types.  The JS file takes care of detecting the client and serving a desktop (Flash) version of the asset or a Smartphone/Tablet (HTML5) version of the same.  
+function loadS7Content(div, assetType, uViewer, assetName) {
+	//[Important] resized DIV because the Video Player's control bar will always align to the bottom of the video causing black bars (letterbox)
+   if (div == 'myContentDiv') {
+		  if (assetType == 'VIDEO') {
+				 jQuery('#myContentDiv').css("height", "281px");
+		  }
+		  else {
+				 jQuery('#myContentDiv').css("height", "500px"); 
+		  }                    
+   };
+  
+   // This section sets the HTML5 viewer in cases where the desktop browser does not have Flash installed.
+   var fallback = 'SpinH5';
+	switch (assetType) {
+		case 'IMAGE_SET' :
+			fallback = 'ImageSetH5';
+			break;
+		case 'SPIN_SET_2D' :
+			fallback = 'SpinH5';
+			break;
+		default :
+			fallback = null;
+	}
+
+       
+	 var s7Viewer = viewer[div];
+	// [Required] - checks to see if viewer is already initialized; if so, calls a refresh - if not initiates it.  Takes the 4 input values and loads the asset in the DIV "ID" passed (the Scene7 assets will automatically size to height/width of the DIV).  11/12 - Added fallback paramater for Desktop devices with Flash installed, but not active
+    if (s7Viewer) {
+       s7Viewer.setAsset("VerizonWireless/"+assetName);
+       s7Viewer.setAssetType(assetType);
+       s7Viewer.setConfig(uViewer);
+	   s7Viewer.setFallbackPolicy(fallback);
+       s7Viewer.refresh();
+    } else {
+		var config={
+			   appUrl : window.location.protocol.indexOf('https') != -1 ? 'https://ss7.vzw.com/' : 'http://s7.vzw.com/',
+			   containerId:div,
+			   assetType:assetType,
+			   config:uViewer,
+			   fallbackPolicy:fallback,
+			   asset:"VerizonWireless/"+assetName,
+			   flashMode:"transparent"
+		};
+		viewer[div] = new s7uev.EmbeddedViewer(config);
+    }      
+};
+
+var viewer = new Object();																									
+</script>
+
+
+<h1>Asset Switching Example</h1>
+<p>This is an example page of how to load the various Scene7 assets within a webpage.  This particular example allows the developer to load multiple assets in a single DIV.
+</p>
+
+<div style="width:510px; height:500px; border:#999 dashed 2px; float:left; margin-right:5px;">
+  <div id="myContentDiv" style=" position:absolute; width:510px; height:500px;"></div>
+</div>
+
+<h4>Valid Asset Types and Viewers</h4>
+<a href="javascript: void(0);" onclick="loadS7Content('myContentDiv', 'SPIN_SET_2D', 'Universal_SpinSet2d1', 'lg_lucid_spin');" >SpinSet</a><br />
+<a href="javascript: void(0);" onclick="loadS7Content('myContentDiv', 'IMAGE_SET', 'Universal_ImageSet1', 'lg_lucid_is');" >ImageSet</a><br />
+<a href="javascript: void(0);" onclick="loadS7Content('myContentDiv', 'VIDEO', 'Universal_Video1', 'LG_Lucid-1080-AVS');" >Video</a><br />
+<a href="javascript: void(0);" onclick="loadS7Content('myContentDiv', 'ECATALOG', 'Universal_Catalog1', 'bionic_manual');" >eCatalog</a><br />
+<a href="javascript: void(0);" onclick="loadS7Content('myContentDiv', 'ZOOM', 'Universal_Zoom1', 'apple_ipad2_black');" >Image Zoom</a><br />
+
+<div style="clear:both;"></div>
+
+<hr />
+<h1>Multiple Assets on a Page Example</h1>
+<p>This is an example page of how to load multiple Scene7 assets on a webpage.  This particular example allows the developer to load separate assets in different DIVs.</p>
+<table width="900" border="0">
+  <tr>
+    <td><a href="javascript: void(0);" onclick="loadS7Content('myDiv1', 'SPIN_SET_2D', 'Universal_SpinSet2d1', 'samsung_galaxy_s3_blue_spin');">Load First DIV with Spinset</a></td>
+    <td><a href="javascript: void(0);" onclick="loadS7Content('myDiv2', 'IMAGE_SET', 'Universal_ImageSet1', 'mot_droid4_is');">Load Second DIV with Imageset</a></td>
+  </tr>
+  <tr>
+    <td><div id="myDiv1" style="width:450px; height:450px; float:left; border:#009 thin dashed;"></div></td>
+    <td><div id="myDiv2" style="width:450px; height:450px; float:left; border:#009 thin dashed;"></div></td>
+  </tr>
+</table>
+<div style="clear:both;"></div>
+
+<h2>Notes</h2>
+<ol>
+  <li>Scene7 will automatically scale the asset to the size of the DIV, e.g., if you make the DIV 300 by 300px, it will automatically size the images/video to properly fit the div size. Note: you will need to account for the aspect ratio for videos (16:9) as the S7 player controls align to the bottom of the div (this is why we have jQuery resizing the div in the code).</li>
+  <li>Scene7 will automatically take care of serving the correct version of the viewer based the device type. By default, Flash is served to all Desktop browsers. If Flash is not installed or the device is a Tablet or Smartphone, the HTML5/DHTML version is rendered.</li>
+  <li>All viewers have a transparent background when viewed in Flash mode; white background in HTML5 mode (to be fixed 4Q12)</li>
+  <li>There are several ways to have the assets automatically load on the page. One method is using the BODY onload method. Another is using JavaScript, e.g., 
+    <p style="color:#009;">jQuery(function() { <br />&nbsp;&nbsp;&nbsp;loadS7Content('myContentDiv', 'SPIN_SET_2D', 'Universal_SpinSet2d1',  'htc_incredible_4g_spin');<br />});</p>
+  </li>
+</ol>
+
+
+
+</body>
+</html>

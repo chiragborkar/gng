@@ -1,0 +1,75 @@
+.featured-lifestyle {
+    #next-lifestyle {
+        display: none;
+    }
+    .featured-fig {
+    }
+    .header {
+        .title {
+            // top: 90px;
+            top: 20px;
+            font-size: 60px;
+            letter-spacing: -5px;
+            .spacer {
+                top: 20px;
+            }
+        }
+        .featured-copy {
+            // top: 120px;
+            top: 60px;
+            padding: 20px;
+        }
+    }
+}
+.guides-module {
+    .content-grid .content-item {
+        width: 33.33334%;
+    }
+}
+.featured-story-module {
+    .story-content {
+        .story-header,
+        .copy,
+        .actions {
+            padding: 0 20px;
+        }
+        .copy {
+            font: {
+                family: $fontArial;
+                size: 14px;
+                weight: normal;
+            }
+
+            max-height: 157px;
+        }
+    }
+}
+.user-reviews-module {
+    .title a {
+        display: none;
+    }
+}
+
+.device-scroll{
+    .scrollbar{
+        width: 9px;
+        background-size: 9px;
+        .thumb{
+            width: 9px;
+            background-size: 9px;
+            .container{
+                width: 20px;
+                .end{
+                    width: 9px;
+                    background-size: 9px;
+                }
+                .bottom{
+                    width: 9px;
+                    background-size: 9px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+}

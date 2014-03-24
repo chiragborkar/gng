@@ -1,0 +1,186 @@
+.mls-nav {
+    .nav-tabs {
+        .logo {
+            h1 {
+                padding-right: 3px;
+            }
+        }
+        &.left {
+            > .tab:not(.nav-actions) {
+                a {
+                    padding-right: 12px;
+                }
+            }
+        }
+
+        .nav-item {
+            padding: 0 7px;
+            &.active:not(.nav-actions) {
+                padding: 0 6px;
+            }
+        }
+        .nav-help {
+            width: auto;
+            padding: 0;
+            strong {
+                cursor: pointer;
+            }
+            .help-options-container {
+                display: none;
+                position: absolute;
+                top: 40px;
+                right: 9px;
+                .marker {
+                    background: transparent url(../img/nav/marker.png) top left no-repeat;
+                    display: block;
+                    position: absolute;
+                    top: -7px;
+                    left: 50%;
+                    margin-left: -15px;
+                    width: 31px; height: 8px;
+                }
+                .help-options {
+                    @include border-radius(3px);
+                    background: #FFF;
+                    border: 1px solid $colorSubnavGridBrd;
+                    padding: 10px;
+                    a {
+                        color: #06C;
+                    }
+                }
+            }
+        }
+        #nav-cart {
+            .mini-cart.tab-dropdown
+            {
+                width: 75%;
+            }
+
+            &.nav-item {
+                &.last {
+                    padding-right: 7px;
+                }
+
+                > a {
+                    width: 27px;
+                }
+            }
+        }   
+
+        > .tab .tab-dropdown {
+            .tall-tab-section {
+                min-height: 727px;
+                height: auto;
+                
+                .tall-tab {
+                    width: 33.333%;
+                    height: auto;
+
+                    a {
+                        .tab-fig {
+                            padding: 0;
+                            vertical-align: middle;
+                            img {
+                                max-width: 100%;
+                                width: 100%;
+                            }
+
+                            figcaption
+                            {
+                            }
+
+                            &:hover{
+                                padding-bottom: 30px;
+                            }
+                        }
+                    }
+                    &.item-3 {
+                        border-right: none;
+                    }
+                    &.item-4 {
+                        border-left: none;
+                    }
+                    &.item-1,
+                    &.item-2,
+                    &.item-3 {
+                        border-bottom: 1px solid $colorVzwNavBrdShade;
+                    }
+                    &.item-4,
+                    &.item-5,
+                    &.item-6 {
+                        border-top: 1px solid $colorVzwNavBrd;
+                    }
+                }
+            }
+            .subnav-grid {
+                .nav-grid-item {
+                    width: 25%;
+                    a .nav-grid-fig {
+                        img {
+                            max-width: 70%;
+                        }
+                        figcaption {
+                            left: 5px;
+                        }
+                    }
+                    &.cta-all {
+                        a {
+                            padding: 0 25px;
+                        }
+                    }
+                }
+            }
+
+            .tab.last .subnav-grid .nav-grid-item,
+            .tab:last-child .subnav-grid .nav-grid-item
+            {
+                width: 25%;
+                height: 33%;
+
+                a .nav-grid-fig {
+                    img {
+                        max-width: 50%;
+                    }
+
+                    figcaption {
+                        bottom: 5px;
+                    }
+                }
+
+                &.item-6, 
+                &.item-7, 
+                &.item-8 {
+                    border-bottom: 1px solid $colorVzwNavBrdShade;
+                }
+            }
+
+            .tab.last .subnav-grid.max-15 .nav-grid-item,
+            .tab:last-child .subnav-grid.max-15 .nav-grid-item
+            {
+                width: 25%;
+                height: 25%;
+
+                a .nav-grid-fig {
+                    img {
+                        max-width: 40%;
+                    }
+                }
+
+                &.item-9, 
+                &.item-10,
+                &.item-11,
+                &.item-12 {
+                    border-bottom: 1px solid $colorVzwNavBrdShade;
+                }
+            }
+        }
+    }
+}
+
+#site-header {
+    nav#mls-nav.mls-nav {
+        .nav-tabs .nav-item.last.active:not(.nav-actions) {
+            background: #e5eaea url(../img/sprites/nav/minicart-cart-icon-hover.png) 6px 15px no-repeat !important;
+        }
+    }
+}

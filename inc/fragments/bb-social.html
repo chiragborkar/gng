@@ -1,0 +1,73 @@
+<div class="social-share-module">
+   <ul class="social-list">
+        <li class="first social-item email">
+            <a href="#" class="social-link" title="Click to share this item via Email">
+                <span class="icon">Email</span>
+            </a>
+            <div class="overlay">
+                <div class="share-error"></div>
+                <h3 class="share-title">Share this item</h3>
+                <a href="#" id="close-social-overlay" class="close-overlay"></a>
+                <div class="overlay-content">
+                    <figure class="share-fig">
+                        <img src="img/product-detail-page/pdp-products/belkin-charger.png" alt="Photo of Belkin AC Charger with Swivel Plug" title="Belkin AC Charger with Swivel Plug">
+                        <figcaption>Belkin AC Charger with Swivel Plug</figcaption>
+                    </figure>
+                    <form id="share-modal" name="share-modal" class="share-modal" method="post" action="social-share-email.json">
+                        <div class="fieldwrapper">
+                            <label for="share-name">Your Name</label>
+                            <input id="share-name" name="shareName" type="text" class="share-field hasPlaceholder" placeholder="Name" />
+                        </div>
+                        <div class="fieldwrapper">
+                            <label for="share-email">Your Email</label>
+                            <input id="share-email" name="shareEmail" type="email" class="share-field hasPlaceholder" placeholder="Email Address">
+                        </div>
+                        <div class="fieldwrapper">
+                            <label for="share-recipient-name">Recipient's Name</label>
+                            <input id="share-recipient-name" name="shareRecipientName" type="text" class="share-field hasPlaceholder" placeholder="Name" />
+                        </div>
+                        <div class="fieldwrapper">
+                            <label for="share-recipient">Recipient Email</label>
+                            <input id="share-recipient" name="shareRecipient" type="email" class="share-field hasPlaceholder" placeholder="Email Address">
+                        </div>
+                        <input type="submit" id="share-submit" class="button share-cta" value="Send" />
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li class="social-item facebook">
+            <a href="#" class="social-link" title="Click to share on Facebook">
+                <span class="icon">Like on Facebook</span>
+            </a>
+            <div class="overlay">
+                <div class="fb-wrap">
+                    <div class="fb-like" data-href="http://www.google.com?change-this-url-to-the-product-url-instead-of-google" data-send="false" data-layout="button_count" data-width="225" data-show-faces="false" data-font="arial"></div>
+                </div>
+            </div>
+        </li>
+        <li class="social-item twitter">
+            <a href="#" class="social-link" title="Click to share on Twitter">
+                <span class="icon">Share on Twitter</span>
+            </a>
+            <div class="overlay">
+                <a href="//twitter.com/share" class="twitter-share-button" data-url="http://www.google.com?change-this-url-to-the-product-url-instead-of-google">Tweet</a>
+            </div>
+        </li>
+        <li class="social-item google-plus">
+            <a href="#" class="social-link" title="Click to share on Google Plus">
+                <span class="icon">Share on Google+</span>
+            </a>
+            <div class="overlay">
+                <div class="g-plus" data-action="share" data-annotation="bubble" data-height="15" data-href="http://www.google.com?change-this-url-to-the-product-url-instead-of-google"></div>
+            </div>
+        </li>
+        <li class="last social-item pinterest">
+            <a href="#" class="social-link" title="Click to share on Pinterest">
+                <span class="icon">Share on Pinterest</span>
+            </a>
+            <div class="overlay">
+                <a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+            </div>
+        </li>
+    </ul>
+</div>

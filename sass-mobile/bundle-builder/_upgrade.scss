@@ -1,0 +1,150 @@
+@import "compass";
+
+.bundle-builder-page {
+	.upgrade.content-item
+	{
+		position: absolute;
+		z-index: 11;
+		top: -45px;
+		right: -190%;
+		width: 370px;
+		padding: 25px;
+		background: #fff;
+		border: 1px solid #dcdede;
+		box-shadow: 0px 0px 10px #8A8C8C;
+		text-align: left;
+
+		&:before
+		{
+			content: ".";
+			position: absolute;
+			text-indent: -999px;
+			top: 50%;
+			margin-top: -14px;
+			left: -13px;
+			width: 14px;
+			height: 28px;
+			overflow: hidden;
+			background: transparent url(../img/bb/bb-arrow-left.png) no-repeat 0 0;
+		}
+
+		.close
+		{
+			display: block;
+			width: 32px;
+			height: 31px;
+			overflow: hidden;
+			text-indent: -999px;
+			background: transparent url(../img/bb/close.png) no-repeat 0 0;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			z-index: 11;
+		}
+
+		p
+		{
+			color: #333;
+			font: {
+				size: 18px;
+				family: $fontVzwBook;
+			}
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+
+	    figure {
+            width: 30%;
+            float: left;
+            padding: 0 5%;
+
+            img
+            {
+            	max-width: 100%;
+            }
+        }
+
+        .price {
+            color: #222;
+            font: {
+            	font-family: $fontArial;
+            	size: 12px;
+            	weight: bold;
+            }
+        }
+
+        .original {
+		    color: #727272;
+		    display: inline-block;
+		    font-weight: 200;
+		    padding-left: 2px;
+		    text-decoration: line-through;
+		}
+
+		.rating
+		{
+			font-family: $fontArial;
+			display: inline-block;
+		    color: #666666;
+		    font-size: 12px;
+		    line-height: 14px;
+		    font-weight: normal;
+		    margin-right: 4px;
+		    margin-top: 1px;
+		    padding-top: 0;
+		}
+
+        .content-detail {
+            .name {
+                color: #999;
+                margin: 10px 0;
+                font: {
+                	size: 12px;
+                	weight: normal;
+                	family: $fontArial;
+                }
+            }
+        }
+
+        .content-link,
+		> div
+        {
+        	@include clearfix();
+        	display: block;
+        }
+
+        .see-all
+        {
+        	float: left;
+	    	padding-top: 20px;
+	    	line-height: 10px;
+
+	        a
+	        {
+	        	@include actionLink();
+	            font-size: 10px;
+	            margin-right: 0;
+	            text-transform: uppercase;
+	        }
+	    }
+
+	    div.upgrade
+	    {
+	    	float: right;
+	    	width: 125px;
+	    	height: 40px;
+	    	@include ctaDarkButton();
+
+	    	span
+	    	{
+	    		font: {
+                	size: 14px;
+                	weight: bold;
+                	family: $fontArial;
+                }
+                letter-spacing: 0;
+                padding-top: 15px;
+	    	}
+	    }
+    }
+}

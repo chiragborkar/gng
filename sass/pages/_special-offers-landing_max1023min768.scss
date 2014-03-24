@@ -1,0 +1,69 @@
+	.hide-for-small-grid-down {
+        display: none !important;
+    }
+    .category-list-page #secondary-column {
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .category-list-header {
+        .category-header-promo {
+            .category-image {
+                left: -85px;
+            }
+        }
+    }
+    .category-list-page .secondary-column {
+        .content-filter {
+            padding: 15px;
+        }
+    }
+    .category-section {
+        .content-grid {
+            &.feature-grid {
+                .content-item {
+                    &.large {
+                        @include clearfix();
+                        @include column(12);
+                        .content-fig,
+                        .content-detail {
+                            float: none;
+                            padding: 15px;
+                        }
+                        .content-fig {
+                            margin: 0;
+                            @include column(12);
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                        .content-detail {
+                            @include column(12);
+                            padding-top: 0;
+                            .related-products {
+                                display: block;
+                            }
+                        }
+                    }
+                    &.single {
+                        @include column(6);
+                        .content-fig {
+                            img {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    &.two-wide {
+                        @include column(12);
+                    }
+                }
+            }
+        }
+        &.guides-module {
+            .content-grid .content-item {
+                width: 50%;
+            }
+        }
+    }

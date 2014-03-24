@@ -1,0 +1,817 @@
+
+
+
+// mixins shared in pdp, cart & checkout
+
+@mixin heroBG { background: #ECEDEE; }
+@mixin cartBG { background: #D2D3D4; }
+@mixin heroInset {
+		-webkit-box-shadow: inset 0 0 0 0px #eceeee, inset 0px -2px 6px #ccc;
+		-moz-box-shadow: inset 0 0 0 0px #eceeee, inset 0px -2px 6px #ccc;
+		-o-box-shadow: inset 0 0 0 0px #eceeee, inset 0px -2px 6px #ccc;
+		box-shadow: inset 0 0px 0 0px #eceeee, inset 0px -2px 6px #ccc; }
+
+@mixin boxBrdrT { border-top: 1px solid #ccc; }
+@mixin boxBrdrR { border-right: 1px solid #ccc; }
+@mixin boxBrdrB { border-bottom: 1px solid #ccc; }
+@mixin boxBrdrL { border-left: 1px solid #ccc; }
+@mixin boxBrdrA { border: 1px solid #ccc; }
+
+@mixin cartRounded {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	// behavior: url(gng/css/PIE.htc);
+}
+
+@mixin anchorDrop {
+	-webkit-box-shadow:0px 3px 8px -6px rgba(119, 119, 119, 0.7);
+	-moz-box-shadow:0px 6px 8px -6px rgba(119, 119, 119, 0.7);
+	-o-box-shadow:0px 6px 8px -6px rgba(119, 119, 119, 0.7);
+	box-shadow:0px 6px 8px -6px rgba(119, 119, 119, 0.7);
+}
+
+@mixin cartLabel {
+	display: inline-block;
+	font-size:13px;
+	line-height:13px;
+	text-transform: uppercase;
+	color:$cartGreyMd;
+	font-family: $fontVzwBold;
+	padding-left:25px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	}
+
+
+@mixin checkoutContent {
+	color: $cartGreyMd;
+	font-family: $fontArial;
+	font-size: 12px;
+	line-height:15px;
+	font-weight: normal;
+	text-transform: none;
+	}
+
+@mixin checkoutLabel {
+	color: $cartGreyDk;
+	font-family: $fontArial;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+
+@mixin instruct {
+	font-family: $fontVzwBook;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight:normal;
+	color:$cartGreyDk;
+	letter-spacing: -1px;
+	}
+
+@mixin actionLink {
+	font-family: $fontArial;
+	font-size:12px;
+	line-height: 15px;
+	font-weight:bold;
+	text-transform:capitalize;
+	color: $actLinkBlue;
+	}
+
+@mixin dropdownPanel {
+	@include cartRounded;
+	@include boxBrdrA;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	z-index:10;
+	padding:10px;
+	display: none;
+
+	.dropdown-pointer {
+		width: 24px;
+		height: 24px;
+		@include cart-sprite(req-pointer-bg);
+		position: absolute;
+		top: -24px;
+		left: 50%;
+		margin-left: -12px;
+		z-index: 5;
+		}
+
+	p {
+		@include checkoutContent;
+		font-size: 11px; line-height: 14px;
+		margin: 0;
+
+		.privacy-link { font-size: 11px; line-height: 14px; }
+		}
+	}
+
+
+@mixin ctaButtons {
+	cursor: pointer;	
+	text-decoration: none;
+	text-align: left;
+	text-transform: lowercase;
+	
+	font-family: "Verizon Apex medium";
+	font-size: 14px;
+	font-weight: bold;
+	
+	color: white;
+	line-height: 25px;
+	padding: 14px 40px 3px 10px;
+	border: 1px solid;
+	border-bottom-color: rgba(0,0,0,0.4);
+	border-left-color: rgba(0,0,0,0.2);
+	border-right-color: rgba(0,0,0,0.2);
+	border-top-color: rgba(0,0,0,0);
+	@include background( linear-gradient(#ff0000, #cc0000) ); // multiple: comma-delimited
+	@include text-shadow( 0px -1px 1px rgba(0,0,0,0.3) ); // multiple: comma-delimited
+	@include border-radius(3px);
+	@include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.4), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+	&:hover {
+		@include background( linear-gradient(#e50000, #b30000) ); // multiple: comma-delimited
+	}
+
+	&:active{
+		@include background( linear-gradient(#990000, #cc0000) );
+		border-bottom-color: rgba(0,0,0,0.2);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0.5);
+		@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) );
+	}
+}
+
+@mixin ctaButton-shop-this-story {
+	padding: 16px 10px 6px 10px;
+	font-size: 16px;
+}
+
+
+@mixin ctaButton-formField {
+	padding: 6px 60px 3px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin ctaRedButton {
+	
+
+	& input[type="submit"],
+	& input[type="button"], 
+	& .lightbox-back,
+	& > span, 
+	& > a {
+    	cursor: pointer;	
+		text-decoration: none;
+		text-align: left;
+		text-transform: lowercase;
+		
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		
+		color: white;
+		line-height: 25px;
+		padding: 14px 40px 3px 10px;
+		border: 1px solid;
+		border-bottom-color: rgba(0,0,0,0.4);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0);
+		@include background( linear-gradient(#ff0000, #cc0000) ); // multiple: comma-delimited
+		@include text-shadow( 0px -1px 1px rgba(0,0,0,0.3) ); // multiple: comma-delimited
+		@include border-radius(3px);
+		@include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.4), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+		background-color:#cc0000;
+
+		&:hover {
+			@include background( linear-gradient(#e50000, #b30000) ); // multiple: comma-delimited
+			background-color:#e50000;
+		}
+
+		&:active{
+			@include background( linear-gradient(#990000, #cc0000) );
+			background-color:#990000;
+			border-bottom-color: rgba(0,0,0,0.2);
+			border-left-color: rgba(0,0,0,0.2);
+			border-right-color: rgba(0,0,0,0.2);
+			border-top-color: rgba(0,0,0,0.5);
+			@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) );
+		}
+	}
+
+    // this needs fallback to image for ie8
+}
+// end ctaRedButton
+
+@mixin ctaDarkButton {
+	@include ctaRedButton;
+
+	& input[type="submit"],
+	& input[type="button"],  
+	& > span, 
+	& > a {
+		@include background( linear-gradient(#52585e, #3c4045) ); // multiple: comma-delimited
+		background-color:#3c4045;
+		@include box-shadow( inset 0 1px 1px  rgba(255,255,255,0.2), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+		&:hover {
+			@include background( linear-gradient(#474c52, #313438) ); // multiple: comma-delimited
+			background-color:#474c52;
+		}
+
+		&:active {
+			@include background( linear-gradient(#26282b, #3e4247) ); // multiple: comma-delimited
+			background-color:#3e4247;
+			@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.2) ); // multiple: comma-delimited
+		}
+	}
+}
+
+
+
+@mixin greyCartButton {
+	@include ctaRedButton;
+
+	& input[type="submit"],
+	& input[type="button"],   
+	& > span, 
+	& > a {	
+		@include background( linear-gradient(#f0f2f2, #e3e5e5) ); // multiple: comma-delimited
+		background-color:#e3e5e5;
+		color: #808080;
+		@include text-shadow( 0px -1px 1px rgba(255,255,255,0.3) ); // multiple: comma-delimited
+		border-bottom-color: rgba(0,0,0,0.3);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0.1);
+		@include box-shadow( inset 0 1px 1px  rgba(255,255,255,1.0), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+		&:hover {
+			@include background( linear-gradient(#e8ebeb, #dcdede) ); // multiple: comma-delimited
+			background-color:#e8ebeb;
+			color: #666666;
+		}
+
+		&:active {
+			@include background( linear-gradient(#d4d6d6, #e1e3e3) ); // multiple: comma-delimited
+			background-color:#e1e3e3;
+			border-bottom-color: rgba(0,0,0,0.2);
+			border-left-color: rgba(0,0,0,0.2);
+			border-right-color: rgba(0,0,0,0.2);
+			border-top-color: rgba(0,0,0,0.3);
+			@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.15) ); // multiple: comma-delimited
+		}
+	}
+	
+	.vzw {
+		font-family: $fontVzwMedium;
+		font-size:18px;
+		line-height:18px;
+		font-weight: normal;
+		letter-spacing: -1px;
+	}
+
+	.data {
+		font-size: 16px;
+		display: inline;
+	}
+}
+	// end cartGreyButton
+
+
+@mixin greyCheckoutButton {
+		
+	& input[type="submit"],
+	& input[type="button"] {		
+		cursor: pointer;	
+		text-decoration: none;
+		text-align: left;
+		text-transform: lowercase;
+		
+		font-family: "Verizon Apex medium";
+		font-size: 14px;
+		font-weight: 600;
+		
+		line-height: 25px;
+		padding: 14px 40px 3px 10px;
+		border: 1px solid;
+		@include border-radius(3px);
+		
+		@include background( linear-gradient(#f0f2f2, #e3e5e5) ); // multiple: comma-delimited
+		background-color:#e3e5e5;
+		color: #808080;
+		@include text-shadow( 0px -1px 1px rgba(255,255,255,0.3) ); // multiple: comma-delimited
+		border-bottom-color: rgba(0,0,0,0.3);
+		border-left-color: rgba(0,0,0,0.2);
+		border-right-color: rgba(0,0,0,0.2);
+		border-top-color: rgba(0,0,0,0.1);
+		@include box-shadow( inset 0 1px 1px  rgba(255,255,255,1.0), inset 0 -1px 2px  rgba(0,0,0,0.1) ); // multiple: comma-delimited
+
+		&:hover {
+			@include background( linear-gradient(#e8ebeb, #dcdede) ); // multiple: comma-delimited
+			background-color:#e8ebeb;
+			color: #666666;
+		}
+
+		&:active {
+			@include background( linear-gradient(#d4d6d6, #e1e3e3) ); // multiple: comma-delimited
+			background-color:#e1e3e3;
+			border-bottom-color: rgba(0,0,0,0.2);
+			border-left-color: rgba(0,0,0,0.2);
+			border-right-color: rgba(0,0,0,0.2);
+			border-top-color: rgba(0,0,0,0.3);
+			@include box-shadow( inset 0 1px 3px  rgba(0,0,0,0.15) ); // multiple: comma-delimited
+		}
+	}
+}
+
+
+
+@mixin greyCartSelector {
+ 	@include cartRounded;
+	@include boxBrdrA;
+    min-height: 36px;   min-width: 90px;
+	display: inline-block;
+	padding: 0; margin: 0;
+ 	width: 100% !important;
+    height: 100%;
+	position: relative;
+	background: #edf1f2;
+	-webkit-box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5),
+			inset 0 -1px 1px 1px rgba(60, 60, 60, .1) ;
+	-moz-box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5),
+			inset 0 -1px 1px 1px rgba(60, 60, 60, .1) ;
+    box-shadow: inset 0px 5px 4px 1px rgba(255, 255, 255, 0.5),
+			inset 0 -1px 1px 1px rgba(60, 60, 60, .1) ;
+
+ 	span {
+ 		position: absolute;
+
+ 		width: 100% !important;
+ 		height: 100%;
+ 		top: 0; left: 0;
+ 		font-size: 14px;
+		line-height: 14px;
+		text-transform: lowercase;
+		color: $cartGreySelect;
+		font-family: $fontArial;
+		font-weight: bold;
+		padding: 14px 0 0 10px;
+		@include pdp-sprite(grey-more, false, 100%, 18px);
+	}
+
+ 	select {
+		-webkit-appearance: none;
+        min-height: 36px;
+        min-width: 90px;
+		appearance: none;
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-box-align: start;
+		width: 100%;
+		height: 100%;
+		position:absolute;
+		top: 0px; left: 0;
+		z-index: 10;
+		cursor: pointer;
+		filter: alpha(opacity=0);
+		opacity: 0;
+	}
+
+
+}
+// end greyCart Selector
+
+@mixin rightArrowDown
+{
+	background-image: none;
+
+	&:before
+    {
+        position: absolute;
+        content: ".";
+        text-indent: -999px;
+        overflow: hidden;
+        right: 5px;
+        top: 50%;
+        margin-top: -3px;
+        width: 12px;
+        height: 5px;
+        @include pdp-sprite(grey-more, false, 0, 0);
+    }
+}
+
+@mixin ieRightArrowDown
+{
+	background-image: none;
+
+	&:before
+    {
+        position: absolute;
+        content: ".";
+        text-indent: -999px;
+        overflow: hidden;
+        right: 5px;
+        top: 50%;
+        margin-top: -3px;
+        width: 12px;
+        height: 5px;
+        @include ie-sprite(grey-more, false, 0, 0);
+    }
+}
+
+@mixin rightArrowUp
+{
+	background-image: none;
+
+	&:before
+    {
+        position: absolute;
+        content: ".";
+        text-indent: -999px;
+        overflow: hidden;
+        right: 5px;
+        top: 50%;
+        margin-top: -3px;
+        width: 12px;
+        height: 5px;
+        @include ui-sprite(drop-down-active, false, 0, 0);
+    }
+}
+
+@mixin ieRightArrowUp
+{
+	background-image: none;
+
+	&:before
+    {
+        position: absolute;
+        content: ".";
+        text-indent: -999px;
+        overflow: hidden;
+        right: 5px;
+        top: 50%;
+        margin-top: -3px;
+        width: 12px;
+        height: 5px;
+        @include ie-sprite(grey-less, false, 0, 0);
+    }
+}
+
+@mixin checkoutSelected {
+	font-weight: normal;
+	font-family: $fontVzwBook !important;
+	padding-top: 10px;
+	font-size: 18px;
+	color: $cartGreyDk;
+	text-shadow: 0 0 0;
+	}
+
+
+
+
+
+
+@mixin ctaSecondaryCart {
+		
+
+	input[type="submit"] {
+		display: inline-block;
+		// height:30px;
+		// width: 108px;
+		position: relative;	
+		margin: 0;
+		padding: 9px 0 0 20px;
+		@include cart-sprite(red-cart-secondary-add, false, 2px, 8px);
+		text-transform:uppercase;
+		color: $colorVzwRed;
+		font-family : $fontArial;
+		font-size:11px;
+		line-height: 11px;
+		font-weight: bold;
+		border: 0 none;
+		cursor: pointer;	
+	}
+	// end input
+
+
+}
+// end ctaSecondaryCart
+
+
+@mixin ctaBlackButton {
+	@include cartRounded;
+	border: 1px solid  #222;
+	position: relative;
+	width: 216px;
+	height: 50px;
+    background-color: #6B6B6B;
+	background-image: -ms-linear-gradient(top, #6B6B6B 20%, #292929 100%); /* IE10 Consumer Preview */
+	background-image: -moz-linear-gradient(top, #6B6B6B 20%, #292929 100%); /* Mozilla Firefox */
+	background-image: -o-linear-gradient(top, #6B6B6B 20%, #292929 100%); /* Opera */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #6B6B6B), color-stop(1, #292929)); /* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-linear-gradient(top, #6B6B6B 20%, #292929 100%); /* Webkit (Chrome 11+) */
+
+	.button {
+		width: 100%; height: 100%;
+		position: absolute;
+		top: 0; left: 0;
+
+		span {
+			width: 100%; height: 100%;
+			position: absolute;
+			color:#fff;
+			font-size: 18px;
+			line-height: 18px;
+			font-family: $fontVzwMedium;
+			text-transform: lowercase;
+			padding: 20px 0 0 10px;
+			top: 0; left: 0;
+
+		 	input[type="submit"],
+            input[type="button"]{
+		 		-webkit-appearance: none;
+		 		appearance: none;
+		 		width: 100%; height: 100%;
+		 		position: absolute;
+		 		top: 0; left: 0;
+		 		opacity: 0;
+		 		cursor:pointer;
+		 		}
+		 		// end input
+		 	}
+		 	// end span
+		}
+		// end button
+	}
+	// end ctaBlackButton
+
+
+// mixins for mobile slideshows
+
+@mixin simpleSwipeFrame { width:100%; overflow:auto;}
+@mixin simpleSwipeList {
+	width:auto;
+	float:left;
+	margin-right: -999em;
+	white-space:nowrap;
+}
+
+// mixins for transform3d transitions
+
+@mixin accordion {
+	-webkit-transition: height 300ms ease-out;
+   	-moz-transition: height 300ms ease-out;
+    -o-transition: height 300ms ease-out;
+    -ms-transition: height 300ms ease-out;
+    transition: height 300ms ease-out;
+    }
+
+@mixin slideFast {
+	-webkit-transition: 300ms ease-in-out;
+   	-moz-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    }
+
+@mixin slideMedium {
+	-webkit-transition: 450ms ease-in-out;
+   	-moz-transition: 450ms ease-in-out;
+    -o-transition: 450ms ease-in-out;
+    -ms-transition: 450ms ease-in-out;
+    transition: 450ms ease-in-out;
+    }
+
+@mixin slideSlow1 {
+	-webkit-transition: -webkit-transform 600ms ease-in-out;
+   	-moz-transition: -moz-transform 600ms ease-in-out;
+    -o-transition: -o-transform 600ms ease-in-out;
+    -ms-transition: -ms-transform 600ms ease-in-out;
+    transition: transform 600ms ease-in-out;
+    }
+
+@mixin slideSlow2 {
+	-webkit-transition: 750ms ease-in-out;
+   	-moz-transition: 750ms ease-in-out;
+    -o-transition: 750ms ease-in-out;
+    -ms-transition: 750ms ease-in-out;
+    transition: 750ms ease-in-out;
+    }
+
+@mixin crslFade {
+	-webkit-transition: opacity 500ms ease-in-out;
+   	-moz-transition: opacity 500ms ease-in-out;
+    -o-transition: opacity 500ms ease-in-out;
+    -ms-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+    }
+
+@mixin zoomBlockTop	{
+	-webkit-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+   	-moz-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+    -o-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+    -ms-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+    transition: left 750ms ease-in-out, top 0s ease 0.5s;
+    }
+
+@mixin slideSlow1 {
+	-webkit-transition: -webkit-transform 600ms ease-in-out;
+   	-moz-transition: -moz-transform 600ms ease-in-out;
+    -o-transition: -o-transform 600ms ease-in-out;
+    -ms-transition: -ms-transform 600ms ease-in-out;
+    transition: transform 600ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    }
+
+@mixin breakpoint($point) {
+    @if $point == largeDesktop {
+        @media (min-width: $screenLarge) { @content; }
+    }
+    @else if $point == desktop {
+        @media (min-width: $screenMedium) and (max-width: $screenLarge - 1) { @content; }
+    }
+    @else if $point == tablet {
+        @media (min-width: $screenSmall) and (max-width: $screenMedium - 1) { @content; }
+    }
+    @else if $point == mobileLarge {
+        @media (min-width: $screenMobileSmall + 1) and (max-width: $screenSmall - 1)  { @content; }
+    }
+    @else if $point == mobile {
+        @media (max-width: $screenMobileSmall)  { @content; }
+    }
+}
+
+// mixin to create CSS triangles
+// Example: @include css-triangle ("up", 10px, #fff);
+@mixin css-triangle ($direction: "down", $size: 20px, $color: #000) {
+    width: 0;
+    height: 0;
+    border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+    border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+    border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+    border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+}
+
+// Utility function to return the relevant colour depending on what type of arrow it is
+@function setTriangleColor($direction, $side, $color) {
+
+    @if $direction == "left" and $side == "right"
+    or  $direction == "right" and $side == "left"
+    or $direction == "down" and $side == "top"
+    or $direction == "up" and $side == "bottom" {
+        @return $color
+    } @else {
+        @return "transparent";
+    }
+
+}
+
+@mixin add-cart-cta {
+    @include border-radius(3px);
+    @include box-shadow(
+        // horizontal offset | vertical offset |  blur | zoom/distance | color
+      inset 0 2px 3px 1px rgba(205, 205, 205, 0.55), // top internal shadow
+      inset 0 -1px 4px 1px rgba(164, 0, 0, 1) // bottom internal shadow
+    ); // this needs fallback to image for ie8
+    background-color: $colorVzwRed;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font: {
+        family: $fontVzwBook;
+        size: 14px;
+        weight: normal;
+    }
+}
+
+// cathegory landing
+@mixin ftrHover {
+	-webkit-transition: opacity 300ms ease-in-out;
+	-moz-transition: opacity 300ms ease-in-out;
+	-o-transition: opacity 300ms ease-in-out;
+	-ms-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+
+@mixin ftrReveal {
+	-webkit-transition: 500ms ease-in-out;
+	-moz-transition: 500ms ease-in-out;
+	-o-transition: 500ms ease-in-out;
+	-ms-transition: 500ms ease-in-out;
+	transition: 500ms ease-in-out;
+}
+
+@mixin cartRounded {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	// behavior: url(gng/css/PIE.htc);
+}
+
+@mixin ctaButton {
+	@include cartRounded;
+	border:0px;
+	background-color: $colorVzwRed;
+	color: #FFF;
+	letter-spacing: 0px;
+	text-shadow: -1px -1px 0.3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.55), inset 0 -1px 4px 1px #a40000;
+	-moz-box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.55), inset 0 -1px 4px 1px #a40000;
+	box-shadow: inset 0 2px 3px 1px rgba(205, 205, 205, 0.55), inset 0 -1px 4px 1px #a40000;
+	font-family: $fontVzwBook;
+	cursor:pointer;
+	// this needs fallback to image for ie8
+}
+
+//home page
+@mixin heroBG { background: #ECEDEE; }
+@mixin cartBG { background: #D2D3D4; }
+@mixin boxBrdrT { border-top: 1px solid #ccc; }
+@mixin boxBrdrR { border-right: 1px solid #ccc; }
+@mixin boxBrdrB { border-bottom: 1px solid #ccc; }
+@mixin boxBrdrL { border-left: 1px solid #ccc; }
+@mixin boxBrdrA { border: 1px solid #ccc; }
+
+@mixin actionLink { font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                        font-size:12px;
+                        font-weight:bold;
+                        text-transform:capitalize;
+                        color: $actLinkBlue; }
+
+@mixin accordion {  -webkit-transition: height 300ms ease-out;
+                    -moz-transition: height 300ms ease-out;
+                    -o-transition: height 300ms ease-out;
+                    -ms-transition: height 300ms ease-out;
+                    transition: height 300ms ease-out; }
+
+@mixin slideFast {  -webkit-transition: 300ms ease-in-out;
+                    -moz-transition: 300ms ease-in-out;
+                    -o-transition: 300ms ease-in-out;
+                    -ms-transition: 300ms ease-in-out;
+                    transition: 300ms ease-in-out; }
+
+@mixin slideMedium {-webkit-transition: 450ms ease-in-out;
+                    -moz-transition: 450ms ease-in-out;
+                    -o-transition: 450ms ease-in-out;
+                    -ms-transition: 450ms ease-in-out;
+                    transition: 450ms ease-in-out; }
+
+@mixin slideSlow1 { -webkit-transition: -webkit-transform 600ms ease-in-out;
+                    -moz-transition: -moz-transform 600ms ease-in-out;
+                    -o-transition: -o-transform 600ms ease-in-out;
+                    -ms-transition: -ms-transform 600ms ease-in-out;
+                    transition: transform 600ms ease-in-out; }
+
+@mixin slideSlow2 { -webkit-transition: 750ms ease-in-out;
+                    -moz-transition: 750ms ease-in-out;
+                    -o-transition: 750ms ease-in-out;
+                    -ms-transition: 750ms ease-in-out;
+                    transition: 750ms ease-in-out; }
+
+@mixin zoomBlockTop {-webkit-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+                    -moz-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+                    -o-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+                    -ms-transition: left 750ms ease-in-out, top 0s ease 0.5s;
+                    transition: left 750ms ease-in-out, top 0s ease 0.5s; }
+
+@mixin simpleSwipeFrame { width:100%; overflow:auto;}
+@mixin simpleSwipeList {    width:auto;
+                    float:left;
+                    margin-right: -999em;
+                        white-space:nowrap; }
+
+// Mixins for Content Landing
+@mixin tabsInset {
+	-webkit-box-shadow: inset 0 0 0px #e1e6e6, inset 0px 2px 6px #d7dcdc;
+	-moz-box-shadow: inset 0 0 0px #e1e6e6, inset 0px -2px 6px #ccc;
+	-o-box-shadow: inset 0 0 0px #e1e6e6, inset 0px -2px 6px #ccc;
+	box-shadow: inset 0px 0 0px #e1e6e6, inset 0px 2px 6px #d7dcdc;
+}

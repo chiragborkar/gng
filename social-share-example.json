@@ -1,0 +1,8 @@
+{
+    "success" : {
+        "responseHTML" : "<h3 class=\"share-title message\">Thanks for sharing!</h3><a href=\"#\" id=\"close-social-overlay\" class=\"close-overlay\">"
+    },
+    "error" : {
+        "responseHTML" : "<h3 class=\"share-title message\">There was a problem sharing. Please try again later.</h3><a href=\"#\" id=\"close-social-overlay\" class=\"close-overlay\">"
+    }
+}

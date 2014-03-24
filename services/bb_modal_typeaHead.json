@@ -1,0 +1,9 @@
+{
+    "success": {
+        "responseHTML": "<div class=\"results\" style=\"\"><strong>30 results</strong><ul><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> 1 Nokia Lumia 822 </a></li><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> Nokia Lumia 822 </a></li><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> Nokia Lumia 822 </a></li><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> Nokia Lumia 822 </a></li><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> Nokia Lumia 822 </a></li><li><a href=\"#N=102351+42966602&Nr=sku.siteId%3A1000001\"><img src=\"img/product-detail-page/pdp-products/non-compat.jpg\" alt=\"\"> Nokia Lumia 822 </a></li></ul><div class=\"pages\"><span>1</span><a href=\"#page=2\">2</a><a href=\"#page=3\">3</a><a href=\"#page=4\">4</a> ... <a href=\"#page=5\">99</a><a href=\"#page=0\" class=\"prev\">previous</a><a href=\"#page=2\" class=\"next\">next</a></div></div>",
+        "itemCount": 987
+    },
+    "error": {
+        "responseHTML": ""
+    }
+}

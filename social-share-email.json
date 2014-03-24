@@ -1,0 +1,8 @@
+{
+    "success" : {
+        "responseHTML" : "<div class=\"share-success\"><h3 class=\"share-title\">Success!</h3><a href=\"#\" id=\"close-social-overlay\" class=\"close-overlay\"></a><div class=\"overlay-content\"><figure class=\"share-fig\"><img src=\"img/product-detail-page/pdp-products/belkin-charger.png\" alt=\"Photo of Belkin AC Charger with Swivel Plug\" title=\"Belkin AC Charger with Swivel Plug\"></figure><p class=\"message\">You have shared the Belkin AC Charger with Swivel Plug with: <span class=\"recipient-email\">Example@gmail.com</span></p></div></div>"
+    },
+    "error" : {
+        "responseHTML" : "<p class=\"message\">Something went wrong. Mind trying again?</p>"
+    }
+}

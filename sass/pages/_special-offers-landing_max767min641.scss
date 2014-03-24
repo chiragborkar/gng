@@ -1,0 +1,85 @@
+    .header-promo{
+        .special-header{
+            display:none;
+        }
+    }
+    .hide-for-mobile-grid,
+    .hide-for-small-grid-down {
+        display: none !important;
+    }
+    .category-list-page #secondary-column {
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        .content-filter {
+            display: none;
+        }
+        .content-filter-touch {
+            display: block;
+        }
+    }
+    .category-list-header {
+        background-position: $bgPositionPromoSmall;
+        .header-info,
+        .category-header-promo {
+            padding: 0 15px;
+        }
+        .header-info {
+            .category-header-message { display: none; }
+        }
+        .category-header-promo {
+            float: none;
+            .promo-header {
+                font-size: 90px;
+                letter-spacing: -7px;
+                // text-align: left;
+            }
+        }
+    }
+    .category-section {
+        .slide-nav{
+            display:block;
+        }
+        .content-grid {
+            &.feature-grid {
+                .content-item {
+                    &.large {
+                        @include clearfix();
+                        @include column(12);
+                        .content-fig,
+                        .content-detail {
+                            float: none;
+                            padding: 15px;
+                        }
+                        .content-fig {
+                            margin: 0;
+                            @include column(12);
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                        .content-detail {
+                            @include column(12);
+                            padding-top: 0;
+                            .related-products {
+                                display: block;
+                            }
+                        }
+                    }
+                    &.single {
+                        width: 50%;
+                        .content-fig {
+                            img {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    &.two-wide {
+                        @include column(12);
+                    }
+                }
+            }
+        }
+    }

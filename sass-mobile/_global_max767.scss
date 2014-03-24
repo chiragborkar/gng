@@ -1,0 +1,48 @@
+#share-modal-display {
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    .overlay-content {
+        .share-fig, .share-modal {
+            float: none;
+            width: 100%;
+        }
+        .share-fig {
+            margin: 0 auto;
+            text-align: center;
+        }
+        .share-modal {
+            .button {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.lightbox-info-block
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+
+    .modal-overlay
+    {
+        width: 80%;
+        margin-left: -40%;
+    }
+}
+
+//Mini-Ipad Specific 
+@media only screen and (min-width: 768px) and (max-width: 770px) {
+    .madlib{
+        .madlib-header{
+            h2{
+                input{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}

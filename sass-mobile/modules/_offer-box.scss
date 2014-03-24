@@ -1,0 +1,60 @@
+.offer-box {
+	position:absolute;
+	list-style-type: none;
+	width:130px; height:130px;
+	@include border-radius(70px);
+	background: $colorVzwRed;
+    behavior: url(/gng/css/PIE.htc);
+
+	.offer-amt {
+		color:#fff;
+		font-size:54px;
+		line-height:54px;
+		font-family: $fontVzwMedium;
+		letter-spacing: -5px;
+		margin: -21px 0 0 20px;
+        float: left;
+	} 
+	// end amt
+
+    .offer-msg {
+        line-height: 54px;
+        font-family: "Verizon Apex Medium";
+        margin: 10px 0 0 22px;
+        font-style: italic;
+        font-size: 19px;
+        letter-spacing: -1px;
+        display: inline-block;
+        text-align: center;
+        width: 84px;
+        color: #fff;
+    } 
+    // end amt
+
+	.offer-unit{
+		display:inline-block;
+		font-size: 40px;
+		line-height: 30px;
+		font-family: $fontVzwBook;
+		font-weight:normal;
+		color:#fff;
+        float: left;
+        margin: -7px 0 0 3px;
+	}
+	// end unit
+
+	.offer-off {
+		color:#fff;
+		font-size:13px;
+		line-height: 13px;
+		text-transform: uppercase;
+		font-family: $fontVzwBold;
+		position:absolute;
+		right:23px; bottom:39px;
+		font-weight:bold;
+		letter-spacing: -1px;
+	} 
+	// end off text
+
+}
+// end offer box

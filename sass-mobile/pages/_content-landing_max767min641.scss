@@ -1,0 +1,99 @@
+.content-landing-page {
+    .page-header h1 {
+        color: $colorDarkGray;
+        letter-spacing: -2px;
+        font: {
+            family: $fontVzwBook;
+            size: 32px;
+        }   
+    }
+    .content-landing-header {
+        background-color: #f0f3f3;
+        h2 {
+            margin: 15px 0 20px 15px;
+            font: {
+                family: $fontVzwBook;
+                size: 14px;
+            }
+            .results-count {
+                display: block;
+                font: {
+                    family: $fontVzwBold;
+                }
+            }
+            .content-all {
+                display: block;
+            }
+            .content-list {
+                display: none;
+            }
+        }
+        .sort-by {
+            display: none;
+        }
+        .mobile-sort-filter {
+            display: block;
+        }
+    }
+    .category-section .content-grid.feature-grid .content-item.large .content-detail .related-products {
+        display: none;
+    }
+    .category-section {
+        .content-grid {
+            &.feature-grid {
+                .content-item {
+                    &.large {
+                        .story-social {
+                            display: none;
+                        }
+                        .content-detail {
+                            padding: 25px;
+                            .content-detail-header {
+                                .content-title {
+                                    margin: 0 0 18px 0;
+                                }
+                                .content-category {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                            .content-copy {
+                                margin-bottom: 4px;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .featured-stories {
+        .story {
+            .story-fig {
+                width: 30%;
+            }
+            .story-content {
+                width: 70%;
+                padding: 0 60px 0 15px;
+                .story-header {
+                    .pub-date {
+                        margin-bottom: 0;
+                    }
+                    h2 {
+                        margin: 0 0 9px 0;
+                    }
+                }
+            }
+            .story-social { display: none; }
+        }
+    }
+}
+.show-more-stories {
+    display: block;
+}
+
+.hide-for-mobile-grid {
+    display: none;
+}
+
+.show-for-mobile-grid {
+    display: block;
+}

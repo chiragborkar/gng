@@ -1,0 +1,120 @@
+<!-----     HTML
+
+ TAX CALCULATOR - SAVE FOR LATER BATCH 
+					<div class="tax-calc">
+						<h6>Estimate Your Tax</h6>
+					
+						<div class="calc-boxes">
+							<div class="input-zip">
+								<input type="text" name="taxZip" id="tax-zip-code">
+							</div>
+					
+							<div class="calc-button">
+								<input type="submit" value="calculate" id="tax-calc-button">
+							</div>
+						</div>
+						
+						<div class="calc-msg">Updated</div>
+					</div> -->
+
+
+
+
+<!--     SCSS
+
+
+.tax-calc {
+					position: relative;
+					margin-bottom:20px;
+
+					h6 {
+						@include cartLabel;
+						margin: 0 0 10px 0;
+						padding: 0;
+						}
+
+					.calc-boxes {
+						@include clearfix();
+						.input-zip {
+							width: 47.5%;
+							float: left;
+							height: 36px;
+
+							input[type="text"] {
+								@include cartLabel;
+								@include cartRounded;
+								width: 100%;
+								height: 100%;
+								padding:0px 0 0 8px;
+								font-family: $fontVzwBook;
+								font-size: 14px;
+								line-height: 14px;
+								}
+							}
+						.calc-button {
+							@include greyCartButton;
+							width: 47.5%;
+							float: right;
+							height: 36px;
+
+							span { padding-top:13px; }
+
+							}  /* end calc button */
+						}/* end boxes */
+
+					.calc-msg {
+						@include checkoutLabel;
+						color: $successGreen;
+						position: absolute;
+						top: 3px;
+						right: 5px;
+						display: none; }
+					} /* end tax-calc */
+
+
+
+
+
+
+
+
+-->
+
+<!--     JS
+
+
+// SAVE FOR FUTURE IMPLEMENTATION sidebar : tax calc submit
+        // validate zip code -- NEED TO DO THIS WHEN FEATURE MADE LIVE!!!!!!!
+
+        // get value
+        //  var tempValue = '24.31'; // TEMP
+
+        // button action
+        //  $jQ('#tax-calc-button').click(function(e) {
+        //      e.preventDefault();
+
+                //insert tax value
+        //          $jQ('#cart-tax').html(tempValue);
+
+                // update cart total
+        //          var cartTotal = $jQ('#cart-total').text();
+        //
+        //          pCartTotal = parseFloat(cartTotal);
+        //          pTempValue = parseFloat(tempValue);
+
+        //          cartTotal = pCartTotal + pTempValue;
+        //          $jQ('#cart-total').text(cartTotal);
+
+                // show message
+        //          $jQ('.calc-msg').show().delay(3000).fadeOut(1000);
+        //  });
+
+
+
+
+
+
+
+
+
+-->

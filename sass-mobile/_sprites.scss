@@ -1,0 +1,38 @@
+// $ui-spacing: 25px;
+// @import "ui/*.png";
+// @include all-ui-sprites;
+
+$nav-spacing: 15px;
+@import "sprites/nav/*.png";
+@include all-nav-sprites;
+
+$product-filter-spacing: 25px;
+@import "sprites/product-filter/*.png";
+@include all-product-filter-sprites;
+
+$product-listing-spacing: 25px;
+@import "sprites/product-listing/*.png";
+@include all-product-listing-sprites;
+
+$category-listing-spacing: 25px;
+@import "sprites/category-listing/*.png";
+@include all-category-listing-sprites;
+
+$social-spacing: 50px;
+@import "sprites/social/*.png";
+@include all-social-sprites;
+
+$pdp-spacing: 50px;
+@import "sprites/pdp/*.png";
+@include all-pdp-sprites;
+
+$ui-spacing: 50px;
+@import "sprites/ui/*.png";
+@include all-ui-sprites;
+
+$cart-spacing: 50px;
+@import "sprites/cart/*.png";
+@include all-cart-sprites;
+
+@import "sprites/ie/*.png";
+@include all-ie-sprites;

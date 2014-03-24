@@ -1,0 +1,14 @@
+$rowWidth: 1440px;
+$columnGutter: 0;
+$totalColumns: 12;
+$mobileTotalColumns: 4;
+$blockGridElements: 12; // Highest number of block grid elements, Maximum of 24 supported
+
+// Media Query Settings
+$screenXlarge: 1440px !default;
+$screenLarge: 1280px !default;
+$screenMedium: 1024px !default;
+$screenSmall: 768px !default;
+// $screenMobileLarge: 568px !default; // this breakpoint makes no sense and is too specific to iphone 5...
+$screenMobileLarge: 640px !default; // this breakpoint makes more sense...
+$screenMobileSmall: 320px !default;

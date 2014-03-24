@@ -1,0 +1,11 @@
+{
+    "success" : {
+        "responseHTML" : {
+        	"sizes": "<option value=\"0\" disabled=\"\">Size</option><option value=\"99\">Small (tiny)</option><option value=\"2\">Medium</option><option value=\"3\">Large</option><option value=\"4\">X Large</option>",
+    		"carousel": "<li><img src=\"img/product-detail-page/pdp-plus/dre-beats-2.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" data-xcoord=\"-175\" data-ycoord=\"-70\" data-portrait-x=\"-130\" data-portrait-y=\"-80\"></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-1.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" data-xcoord=\"-100\" data-ycoord=\"-90\" data-portrait-x=\"-60\" data-portrait-y=\"-100\"></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-3.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" data-xcoord=\"-375\" data-ycoord=\"-225\" data-portrait-x=\"-50\" data-portrait-y=\"-165\"></li>",
+    		"thumbnails": "<li><img src=\"img/product-detail-page/pdp-plus/dre-beats-2-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-1-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li><li><img src=\"img/product-detail-page/pdp-plus/dre-beats-3-thumb.png\" alt=\"Beats by Dre - On-Ear Wireless Headphones\" ><div class=\"decoration vzn-active\"></div></li>",
+			"sku": "768328",
+			"price": "<div class=\"original-price offer\"><span class=\"sale\">Sale&nbsp;</span>Reg.  $<span id=\"pdp-cart-original-price\" class=\"strike\">399.99</span></div><div class=\"actual-price\">$<span id=\"pdp-cart-actual-price\">349<span class=\"cents\">99</span></span></div>"
+    	}
+    }
+}

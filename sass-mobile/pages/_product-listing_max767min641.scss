@@ -1,0 +1,112 @@
+    #secondary-column {
+        display: none;
+    }
+
+    #main-column { margin-left: 0; }
+    .content-grid-header {
+        .wrapper {
+            padding: 10px 15px 0;
+            min-height: 160px;
+        }
+        .content-grid-heading .content-grid-category {
+            font: {
+                family: $fontVzwLight;
+                size: $sizeHeaderFontMed;
+                weight: normal;
+            }
+            color: $colorLightGray;
+            letter-spacing: -4.5px;
+            line-height: $sizeHeaderHeight;
+            margin: 0;
+            padding-bottom: 40px;
+        }
+        .content-filter-count {
+            color: $colorDarkGray;
+            font: {
+                family: $fontVzwBook;
+                weight: normal;
+                size: $sizeHeaderFilterFontSmall;
+            }
+            text-transform: capitalize;
+            margin: 25px 0 0 0;
+            strong {
+                font: {
+                    family: $fontVzwBold;
+                }
+            }
+        }
+
+        .sort-options {
+            right: 15px;
+            bottom: 10px;
+            ul { // potential for bad selector if styles are applied here...
+                li.hide-for-touch {
+                    display: none !important;
+                }
+                .show-for-touch {
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    .category-section
+    {
+        .slides
+        {
+            .first
+            {
+                border-left: 1px solid #CCCCCC;
+            }
+
+            .content-grid
+            {
+                border-left: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .content-grid {
+        &.fixed-height {
+            height: 275px;
+            border-bottom: 1px solid #CCC;
+            .content-item {
+                .content-fig img {
+                    width: 175px;
+                    min-width: 175px;
+                    max-width: 175px;
+                }
+                &.promo-detail {
+                    height: 100%;
+                }
+            }
+        }
+        .content-item {
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding: 15px;
+            .content-fig img {
+                max-width: 70%;
+            }
+            &.featured {
+                float: left;
+                width: 50%;
+                margin: 0;
+                padding: 15px;
+                .content-fig {
+                    margin: 15px 0 0;
+                    img {
+                        max-width: 70%;
+                    }
+                }
+                .content-detail {
+                    padding: 0;
+                }
+            }
+        }
+    }
+	.spec-offer-header {
+		display: none;
+	}

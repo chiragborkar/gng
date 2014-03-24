@@ -1,0 +1,8 @@
+{
+    "success" : {
+        "responseHTML" : "<img src=\"updatedImg.png\">"
+    },
+    "error" : {
+        "responseHTML" : "<img src=\"existingImg.png\">"
+    }
+}

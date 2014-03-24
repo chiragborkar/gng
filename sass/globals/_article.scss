@@ -1,0 +1,554 @@
+.article-detail-wrapper {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100001;
+    display:none;
+}
+
+.article-detail {
+	position: absolute;
+	top: 90px !important;
+	background: #fff;
+	max-width: 855px;
+	left: 50%;
+	z-index: 1002;
+	margin-left: -425px;
+	border: 1px solid #bababa;
+	.inline-item
+	{
+		display: none;
+	}
+	p.error
+	{
+		color: red;
+		margin: 5px 20px 20px;
+	}
+    .review-block {
+        padding-left: 0px;
+        float: left;
+        margin-top: -4px;
+        margin-right: 20px;
+        li{
+            float:left;
+            display: block;
+            &:first-child
+            {
+            	width:75px;
+            }
+        }
+        .ratings {
+            @include pdp-sprite(stars-temp);
+            width:100%;
+            height:13px;
+            margin-top:5px;
+        }
+        .reviews {
+            margin-left:5px;
+            line-height:14px;
+            a.review-link {
+                font-family: $fontArial;
+                font-size: 12px;
+                color: #000;
+                margin-top:6px;
+                font-weight: bold;
+                display: inline-block;
+                }
+            }
+    }
+	a.close{
+		background: url(../img/article/close.png) no-repeat;
+		position: absolute;
+		width:50px;
+		overflow: hidden;
+		text-indent: -999px;
+		height:51px;
+		display:block;
+		left: 50%;
+		margin-left: 403px;
+		top:-30px;
+		z-index:2000;
+	}
+	.ribbon{
+		position: absolute;
+		top:30px;
+		left:-30px;
+		background: url(../img/article/hot-story.png) no-repeat;
+		width:156px;
+		height:50px;
+	}
+	.article-header-image{
+		margin:20px;
+	}
+	.article-header{
+		width:100%;
+		margin-top:80px;
+		margin-bottom: 50px;
+		padding-bottom:15px;
+		border-bottom: 1px solid #f8f8f8;
+		hgroup{
+			width:75%;
+			padding:0 0 0 55px;
+			h3{
+				font-family: arial;
+				font-weight: bold;
+				font-size: 10px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			h1{
+				font-size: 32px;
+				padding-top: 0;
+				margin-top: 8px;
+				padding-bottom: 0px;
+				margin-bottom: 8px;
+				strong{
+					font-family: "Verizon Apex Bold";
+				}
+			}
+			p.credit{
+				.block{
+					width: 40px;
+					height: 10px;
+					background: #2a2d32;
+					display: inline-block;
+					margin-right: 10px;
+				}
+				a{
+					color:#0066cc;
+				}
+				.em{
+					font-style:italic;
+				}
+				font-family:arial;
+				font-size: 14px;
+			}
+		}
+
+	}
+
+
+	#article-prev{
+		position:absolute;
+		left:0;
+		top:20px;
+
+	}
+	#article-next{
+		position:absolute;
+		right:0;
+		top:20px;
+	}
+	a#prev-article{
+		background: url(../img/article/left-arrow.png) no-repeat;
+		height: 50px;
+		width: 51px;
+		display: block;
+		position: absolute;
+		left:50%;
+		margin-left: -444px;
+		top:535px;
+		z-index:2000;
+		}
+	a#next-article{
+		background: url(../img/article/right-arrow.png) no-repeat;
+		height: 50px;
+		width: 51px;
+		display: block;
+		position: absolute;
+		left: 50%;
+		margin-left: 393px;
+		top:535px;
+		z-index:2000;
+		}
+	.article-preview-container{
+		display:none;
+	}
+	.article-preview{
+
+		width:345px;
+		background:#fff;
+		border:1px solid #e5e5e5;
+		padding:20px;
+		box-shadow: 2px 2px 5px hsla(0,0%,0%,.2);
+		.article-preview-image{
+
+		}
+		.preview-header{
+			hgroup{
+				h3{
+					font-family:arial;
+					font-weight:bold;
+					font-size:10px;
+					text-transform:uppercase;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				h1{
+					font-size: 18px;
+					padding-top: 0;
+					margin-top: 8px;
+					padding-bottom: 0px;
+					margin-bottom: 8px;
+					strong{
+						font-family: "Verizon Apex Bold";
+					}
+				}
+			}
+		}
+	}
+	.article-main{
+		position: relative;
+		z-index: 1999;
+	}
+	.article-main-content{
+		float: left;
+		// width: 495px;
+		width: 61%;
+		margin-left: 60px;
+		border-right: 1px solid #2D3133;
+		padding-right: 20px;
+		a {
+			color: $actLinkBlue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		p{
+			width: 100%;
+			padding-left: 20px;
+			border-left: 1px solid #2D3133;
+			font-family: arial;
+			font-size: 14px;
+			color: #666;
+		}
+		.article-fig{
+			margin-bottom:25px;
+			figcaption{
+				margin-top:15px;
+				color:#666;
+				font-family:arial;
+				font-size:14px;
+				strong{
+					text-transform:uppercase;
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	.article-highlights{
+		float:left;
+		width:27%;
+        h2.shop-story{
+            font-size: 17px;
+            padding-left: 30px;
+            margin-top: 0;
+            margin-bottom: 70px;
+            padding-top: 0;
+        }
+		.featured-item{
+			opacity:.6;
+			margin-bottom:150px;
+			position: relative;
+
+			.indicator{
+				background: url(../img/article/article-indicator.jpg) no-repeat top right;
+				width:50px;
+				height:15px;
+				position: relative;
+				top: 85px;
+			}
+			
+			.featured-fig{
+				margin-left: 35px;
+				margin-top: 0px;
+				img
+				{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			.details{
+				@include clearfix();
+				margin-left:35px;
+				visibility: hidden;
+
+				.name{
+					font-family: arial;
+					font-size: 13px;
+					font-weight: normal;
+					color: #666;
+
+				}
+				.price{
+					font-weight:bold;
+					padding-bottom:8px;
+                    float: left;
+                    margin-right: 10px;
+                    .sale{}
+
+					.sale-tag
+                    {
+                        position: absolute;
+                        top: -30px;
+                        white-space: nowrap;
+                        height: 30px;
+                        display: block;
+
+                        img
+                        {
+                            width: auto;
+                            height: auto;
+                            display: inline-block;
+                            float: left;
+                        }
+
+                        .copy
+                        {
+                            letter-spacing: 0;
+                            display: inline-block;
+                            font-size: 11px;
+                            padding: 7px 0 0 10px;
+                            color: #F22023;
+                            font-weight: bold;
+                        }
+                    }
+				}
+				.rating{
+                    float: right;
+                }
+
+                > a
+                {
+                	float: left;
+                }
+			}
+			&.on,
+			&:hover{
+				opacity: 1;
+				.details{
+					visibility:visible;
+				}
+			}
+		}
+	}
+	.article-footer{
+		clear:both;
+		@include clearfix();
+		.article-tag-share{
+			background: #ECEDEE;
+			width: 100%;
+			height: 55px;
+			margin: 30px 0 55px;
+			ul.tags{
+				margin-left: 50px;
+				color: #666;
+				font-family: arial;
+				font-size: 12px;
+				padding-bottom: 0;
+				margin-bottom: 0;
+				padding-top: 20px;
+				float: left;
+				li{
+					a{
+						color:inherit;
+						&:hover{
+							text-decoration:underline;
+						}
+					}
+					display:inline;
+					&.title{
+						font-weight:bold;
+						text-transform:uppercase;
+					}
+				}
+			}
+			.article-share{
+				float:right;
+				height:35px;
+				margin: 10px 0 0;
+				padding:0;
+				.share{
+					&.g-plus
+					{
+						display: none;
+					}
+					width:60px;
+					height:100%;
+					border-left: 1px solid #d0d5d6;
+					display:inline-block;
+					a{
+						width: 100%;
+						height: 100%;
+						display: inline-block;
+						font-family: arial;
+						font-size: 11px;
+						color: #666;
+						position: relative;
+						span{
+							width: 100%;
+							text-align: right;
+							display: block;
+							padding-right:5px;
+						}
+					}
+					.icon{
+						//background: url('/img/sprites/pdp-s71babacc65.png') no-repeat;
+						width: 40px;
+						height: 20px;
+						position: absolute;
+						bottom: 9px;
+						left: 6px;
+					}
+				}
+				.first{}
+				.email{
+					.icon { @include pdp-sprite(pdp-email-icon);}
+				}
+				.facebook{
+					.icon { @include pdp-sprite(pdp-facebook-icon);}
+				}
+				.twitter{
+					.icon { @include pdp-sprite(pdp-twitter-icon);}
+				}
+				.g-plus{
+					.icon { @include pdp-sprite(pdp-gplus-icon);}
+				}
+				.pinterest{
+					.icon { @include pdp-sprite(pdp-pinterest-icon);}
+				}
+			}
+		}
+		.related-articles{
+			width:auto;
+			// border-top:1px solid #f8f8f8;
+			padding: 0;
+			.flex-direction-nav
+			{
+				display: none;
+			}
+			
+			.content-header {
+                display: table;
+                padding: 0 50px;
+                width: 100%;
+                padding-bottom: 15px;
+                .title,
+                .cta-container {
+                    display: table-cell;
+                    vertical-align: bottom;
+                }
+                .title {
+                    color: $colorDarkGray;
+                    font: {
+                        family: $fontVzwBook;
+                        size: 32px;
+                        weight: normal;
+                    }
+                    letter-spacing: -2px;
+                    text-transform: capitalize;
+                    vertical-align: baseline;
+                    strong {
+                        font: {
+                            family: $fontVzwBold;
+                            weight: normal;
+                        }
+                    }
+                }
+            }
+
+			.story {
+				float: left;
+				border-left: 1px solid #f8f8f8;
+				width: 280px;
+				border-top: 1px solid #f8f8f8;
+				border-bottom: 1px solid #f8f8f8;
+				.story-fig,
+				.story-content
+				{
+					margin: 12px;
+				}
+				.story-content{
+					padding-left:5px;
+					p{
+						font-size:20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.article-modal-overlay {
+	position: fixed;
+	// background-color: rgba(0, 0, 0, 0.3);
+	background-color: #000;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1001;
+}
+
+@media only screen and (max-width: $screenSmall - 1) {
+    @import "_article_max767";
+}
+
+@media only screen and (max-width: $screenMedium - 1) and (min-width: $screenSmall) {
+	.article-detail {
+		max-width: 718px !important;
+		a.close{
+			margin-left: 333px;
+		}
+		a#prev-article{
+			margin-left: -375px;
+		}
+		a#next-article{
+			margin-left: 326px;
+		}
+	}
+}
+
+@media only screen and (max-width: $screenMobileLarge) and (min-width: $screenMobileSmall) {
+   @import "_article_max640min320";
+}
+
+// ie8 fixes 
+.lt-ie9 {
+	.article-footer{
+		.article-tag-share{	
+			.article-share{
+				.email{
+				
+					.icon {
+						@include ie-sprite(email, false, 0, 0);
+					}
+				}
+				.facebook{
+					.icon {
+						@include ie-sprite(facebook, false, 0, 0);
+					}
+				}
+				.twitter{
+					.icon {
+						@include ie-sprite(twitter, false, 0, 0);
+					}
+				}
+				.g-plus{
+					.icon {
+						@include ie-sprite(g-plus, false, 0, 0);
+					 }
+				}
+				.pinterest{
+					.icon {
+						@include ie-sprite(pinterest, false, 0, 0);
+					}
+				}
+			}		
+		}
+	}	
+}

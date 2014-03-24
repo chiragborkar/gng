@@ -1,0 +1,163 @@
+.hide-for-mobile-grid,
+.hide-for-small-grid-down {
+    display: none !important;
+}
+.category-list-header {
+    height: auto;
+    // min-height: 325px;
+
+    .header-info {
+        .category-header-message { 
+            display: none; 
+        }
+    }
+    .category-header-promo {
+        float: none;
+        padding-right: 0;
+        padding-bottom: 0;
+        .promo-header {
+            font-size: 48px;
+            text-align: left;
+            // padding: 79px 0 10px 18px; // this padding doesn't fit 2 lines
+            padding: 20px 0 0 18px;
+            height: auto;
+            width: auto;
+            min-height: 1em;
+        }
+        .category-image {
+            // top: -10px;
+            // left: 10px;
+            top: 0;
+            left: 0;
+            right: 0;
+            img{
+                height: 100%;
+            }
+        }
+        .promo-info {
+            display: block;
+            padding: 0;
+            width: 100%;
+            background: transparent;
+            position: relative;
+            margin-top: -15px;
+
+            .promo-copy,
+            .promo-cta {
+                display: none;
+            }
+            span.caret {
+                margin-left: 25px;
+                margin-bottom: -2px;
+                height: 16px;
+                width: 31px;
+                background: url(../img/special-offers-landing/hero-mobile-caret.png);
+            }
+            .mobile-details {
+                background-color: #2a2d32;
+                padding: 10px 80px 20px 30px;
+                p.mobile-copy {
+                    color: $colorVzwNavBrd;
+                    padding: 15px 0 0 0;
+                    letter-spacing: -.06em;
+                    line-height: 22px;
+                    font: {
+                        family: $fontVzwBookItalic;
+                        size: 18px;
+                    }
+                }
+                p.mobile-cta {
+                    color: $colorVzwNavBrd;
+                    text-transform: uppercase;
+                    margin: 10px 0 0 0;
+                    font:  {
+                        family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        weight: bold;
+                        size: 10px;
+                    }
+                    span {
+                        background: url(../img/sprites/pdp/wht-right.png) no-repeat right center;
+                        padding-right: 10px;
+                        a.see-details {
+                            color: $colorVzwNavBrd;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.category-section {
+    .content-grid {
+        &.feature-grid {
+            .content-item {
+                &.large {
+                    @include clearfix();
+                    .content-fig,
+                    .content-detail {
+                        float: none;
+                        padding: 15px;
+                    }
+                    .content-fig {
+                        margin: 0;
+                        width: 100%;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .content-detail {
+                        padding-top: 0;
+                        .content-detail-header {
+                            .content-title {
+                                font-size: 18px;
+                            }
+                            .content-copy {
+                                font-size: 12px;
+                            }
+                        }
+                        .related-products {
+                            display: block;
+                        }
+                    }
+                }
+                &.single {
+                    display: none;
+                }
+                &.two-wide {
+                    .content-wrapper {
+                        .content-fig {
+                            margin-left: -68px;
+                            width: 200px;
+                            img {
+                                width: 200px;
+                                max-width: 200px;
+                                margin: 0;
+                            }
+                        }
+                        .content-detail {
+                            margin: 0;
+                            width: 175px;
+                            overflow: hidden;
+                            .content-cta {
+                                display: block;
+                            }
+                            .price-action {
+                                float: left;
+                                display: block;
+                                margin: 0;
+                                li {
+                                    clear: both;
+                                    display: block;
+                                }
+                                .content-action {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

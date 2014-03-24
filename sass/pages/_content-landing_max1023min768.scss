@@ -1,0 +1,70 @@
+.content-landing-page {
+    .content-landing-header {
+        h2 {
+            margin-left: 15px;
+        }
+    }
+    .category-section {
+        .content-grid {
+            &.feature-grid {
+                .content-item {
+                    &.large {
+                        .content-detail {
+                            .content-detail-header {
+                                .content-title {
+                                    margin: 0 0 18px 0;
+                                }
+                                .content-category {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                            .content-copy {
+                                margin-bottom: 4px;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    } 
+    .featured-stories {
+        .story {
+            @include column(12);
+            position: relative;
+            padding: 15px;
+            border: {
+                left: 1px solid $colorArticleBorder;
+                bottom: 1px solid $colorArticleBorder;
+            }
+            .story-fig {
+                @include column(3);
+            }
+            .story-content {
+                @include column(9);
+                width: 75%;
+                padding: 0 65px 0 15px;
+                .story-header {
+                    .pub-date {
+                        margin-bottom: 0;
+                    }
+                    h2 {
+                        margin: 0 0 9px 0;
+                    }
+                }
+            }
+            .story-social {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin: 0;
+                width: 280px;
+                .social-share-module {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 280px;
+                }
+            }
+        }
+    }    
+}

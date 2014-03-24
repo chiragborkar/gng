@@ -1,0 +1,69 @@
+{
+    "success" : {
+         "responseHTML" : "(see SUCCESS sample below)", // example SUCCESS HTML below
+         "itemCount" : 1,
+         "itemExists" : "true/false", // if items exists in cart, true; if item is new to cart, false
+    },
+    "error" : {
+        "responseHTML" : "(see ERROR sample below)" // example ERROR HTML below
+    }
+}
+
+
+/* example of **SUCCESS** HTML */
+/*
+
+<li class="minicart-item item-4" data-pos="0"><!-- item 4 of many -->
+
+    <div class="item-image-block">
+        <img class="minicart-item-image" src="img/product-detail-page/pdp-plus/dre-beats-1-thumb.png" title="Product Title">
+    </div>
+
+    <div class="item-info-block">
+        <ul>
+          <li class="minicart-item-title">
+            <a href="#" class="product-link" title="Product Name"><span class="product-title">Beats by Dre - Wireless Over-Ear Headphones</span></a>
+          </li>
+
+          <li class="item-details">
+            <div class="minicart-item-price">
+              $<span class="price">59.99</span>
+            </div>
+
+            <div class="minicart-sale offer-toggle">Sale</div>
+
+            <div class="color-size">
+              <div class="minicart-item-color">Black</div>,&nbsp;
+
+              <div class="minicart-item-size">Large</div>
+            </div>
+          </li>
+
+          <li class="item-qty">
+            Quantity: <span class="minicart-item-qty">1</span>
+          </li>
+        </ul>
+    </div><!-- end item-info block -->
+
+    <div class="minicart-edit">
+        <div class="edit">
+          <a href="cart-base.html">Edit</a>
+        </div>
+
+        <div class="remove">
+          <a href="#">Remove</a>
+        </div>
+    </div><!-- end mincart edit -->
+
+</li>
+
+*/
+
+/* example of **ERROR** HTML */
+/*
+
+<div class="error">
+  <p class="copy">ERROR MESSAGE</p>
+</div>
+
+*/

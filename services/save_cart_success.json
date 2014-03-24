@@ -1,0 +1,9 @@
+{
+	"success": {
+		"responseHTML":  "<div class=\"share-success\"><h3 class=\"share-title\">Success! You've saved your cart</h3><a href=\"#\" id=\"close-social-overlay\" class=\"close-overlay\"></a><div class=\"overlay-content\"><p class=\"message\">Email sent to: <span class=\"recipient-email\">Example@gmail.com</span><br /><a href='#'>go to devices cart &gt;</a></p></div></div>"
+	},
+
+	"error": {
+		"responseHTML": ""
+	}
+}

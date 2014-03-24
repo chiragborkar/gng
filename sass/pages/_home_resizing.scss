@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1280px) {
+  #home-page #homePageCompatibility {
+    padding-top: 30px;
+
+    .compatibility-filter {
+        padding-bottom: 90px;
+        .container {
+            float: left;
+            width: 20%;
+            margin-left: 1%;
+            padding-right: 5px;
+
+            &:last-child {
+              float: left; 
+              width: 5%; 
+              padding-top: 45px; 
+              padding-right: 12%;
+              padding-left: 18px;
+            }    
+            .viewcompprodbtn {
+              float: left; 
+              margin-top: 20px; 
+              padding-left: 5px; 
+              padding-top: 8px;
+              margin-right: 20px;
+              white-space:nowrap; 
+            }
+        }
+    }
+  }
+}

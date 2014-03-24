@@ -1,0 +1,134 @@
+.content-landing-page {
+    .page-header h1 {
+        color: $colorDarkGray;
+        letter-spacing: -2px;
+        font: {
+            family: $fontVzwBook;
+            size: 32px;
+        }
+    }
+    .content-landing-header {
+        background-color: #f0f3f3;
+        h2 {
+            margin: 15px 0 20px 15px;
+            font: {
+                family: $fontVzwBook;
+                size: 14px;
+            }
+            .results-count {
+                display: block;
+                font: {
+                    family: $fontVzwBold;
+                }
+            }
+            .content-all {
+                display: block;
+            }
+            .content-list {
+                display: none;
+            }
+        }
+        .sort-by { 
+            display: none;
+        }
+        .mobile-sort-filter { 
+            display: block;
+        }   
+    }
+    
+    .category-section .content-grid.feature-grid .content-item.large .content-detail .related-products,
+    .content-grid .content-item .content-fig img.featured-corner {
+        display: none;
+    }
+    .category-list-section {
+        .category-tabs {
+            overflow-x: scroll;
+            overflow-y: hidden; 
+            ul {
+                width: 600px;
+                overflow: hidden;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .category-section {
+        .content-grid {
+            &.feature-grid {
+                .content-item {
+                    &.large {
+                        .content-fig {
+                            .hot-story {
+                                background-image: url("../img/content-landing/hot_story_mobile.jpg");
+                            }
+                            .featured-corner,
+                            .featured-item-hover,
+                            .featured-item {
+                                display: none;
+                            }  
+                            .featured-item {
+                                &.active {
+                                    display: none !important;
+                                }
+                            }  
+                        }
+                        .story-social {
+                            display: none;
+                        }
+                        .content-detail {
+                            padding: 25px 65px 25px 25px;
+                            .content-detail-header {
+                                .content-title {
+                                    margin: 0 0 9px 0;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                }
+                                .content-category {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            .content-copy {
+                                margin-bottom: 3px;
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    }
+    .featured-stories {
+        .story {
+            .story-fig {
+                width: 40%;
+                img { }
+            }
+            .story-content {
+                position: static;
+                width: 60%;
+                padding: 0 50px 0 15px;
+                .story-header {
+                    .pub-date {
+                        margin-bottom: 8px;
+                    }
+                    h2 {
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                }
+                p {
+                    display: none;
+                }
+                .content-cta {
+                    position: absolute;
+                    bottom: 13px;
+                    left: auto; 
+                }
+            }
+            .story-social { display: none; }
+        }
+    }
+    .show-more-stories {
+        display: block;
+    }
+}    

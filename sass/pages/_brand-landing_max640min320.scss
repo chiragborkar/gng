@@ -1,0 +1,62 @@
+.brand-landing-page {
+    .category-list-header {
+        .wrapper {
+            padding: 10px;
+            height: 180px;
+            .content-filter-count {
+                margin-top: 0;
+                float: left;
+                margin-top: 10px;
+                white-space: normal;
+                font-size: 15px;
+                br {
+                    display: block;
+                }
+            }
+            .content-grid-heading {
+                border-top: 1px solid #ddd;
+                position: absolute;
+                background: transparent;
+                bottom: -56px;
+                height: 60px;
+                width: 100%;
+                left: 0;
+                padding: 0 14px 0;
+            } //.content-grid-heading
+
+            .mobile-sort-filter {
+                width: 100%;
+                padding-right: 0px;
+                min-height: 65px;
+                margin: 0;
+            }
+
+        } //.wrapper
+
+        .mobile-sort-filter .dropdown-cta  {
+            z-index: 999;
+        }
+        border-bottom: 1px solid $colorLightGrayBorder;
+        .category-header-promo {
+            .category-image {
+                top: -30px;
+                right: -15px;
+                img {
+                    width: 72%;
+                    float: right;
+                }
+            }
+            .promo-header {
+                height: 60px;
+                img {
+                    width: 33%;
+                    top: 130px;
+                    left: 0;
+                }
+            }
+            .promo-info {
+                display: none;
+            }
+        }
+    }
+}

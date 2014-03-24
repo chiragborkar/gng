@@ -1,0 +1,1 @@
+In this folder is de-scoped html that may need to be used in the October release, but is being excluded from the July release.

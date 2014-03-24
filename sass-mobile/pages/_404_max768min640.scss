@@ -1,0 +1,25 @@
+html {
+        #fourofour {
+            #breadcrumb-container {
+                margin: 15px 15px 15px 15px;
+               #breadcrumb {
+                    width: 100%;
+                    #back {
+                        padding: 10px 0 0 0;
+                        text-transform: uppercase;
+                        font: bold 10px $fontArial;
+                        color: $colorCategoryCTA;
+                    }
+                }
+            }
+            #main-column {
+                padding: 0 0 100px 0px;
+                #message-module {
+                    margin-bottom: 15px;
+                    .message {
+                        font: normal 32px/35px $fontVzwBook;
+                    }
+                }
+            }
+        }
+    }

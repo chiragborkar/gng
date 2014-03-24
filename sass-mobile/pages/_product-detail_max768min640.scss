@@ -1,0 +1,32 @@
+    #cart-block{
+        width:40%;
+        .product-title{
+            font-size:24px;
+        }
+    }
+    #carousel-block{
+        width:60%;
+        .crsl-offer-box{
+            > div{
+                position:relative;
+            }
+            width:125px;
+            height:125px;
+            .offer-amt{
+                font-size:58px;
+                margin:26px 0 0 20px;
+            }
+            .offer-unit{
+                font-size:26px;
+
+            }
+            .offer-off{
+                top: auto;
+                left: auto;
+                right: 35px;
+                bottom: 42px;
+                font-size: 12px;
+                position: absolute;
+            }
+        }
+    }

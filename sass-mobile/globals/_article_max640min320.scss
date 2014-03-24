@@ -1,0 +1,40 @@
+.article-detail {
+    .article-footer{
+        .article-tag-share
+        {
+            ul.tags 
+            {
+                padding-left: 85px;
+
+                .title
+                {
+                    margin-left: -60px;
+                    padding-right: 20px;
+                    width: 60px;
+                }
+            }
+        }
+        
+        .related-articles{
+            .content-header {
+                padding: 0 20px 15px;
+            }
+
+            .stories {
+                margin: 0 20px;
+            }
+
+            .story {
+                width: 250px;
+                border: 1px solid #CCCCCC;
+                border-right: 0;
+                
+                .story-content {
+                    p {
+                        font-size:12px;
+                    }
+                }
+            }
+        }
+    }
+}

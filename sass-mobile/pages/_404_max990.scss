@@ -1,0 +1,13 @@
+html {
+    #fourofour {
+        #main-column {
+            max-width: 646px; // 3 panels
+            min-width: 646px;
+            #message-module {
+                .message {
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+}

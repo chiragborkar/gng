@@ -1,0 +1,289 @@
+#bb-modal
+{
+	z-index: 100001;
+
+	.lightbox-info-block
+	{
+		width: 680px;
+		margin-left: -340px;
+		height: auto;
+	}
+
+	.lightbox-close
+	{
+		width: 50px;
+        height: 51px;
+        background: url(../img/article/close.png);
+	}
+
+	fieldset
+	{
+		border: 0;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	h2
+	{
+		color: $colorQuickViewTitle;
+		margin: 20px 0 30px;
+		position: relative;
+		letter-spacing: -1px;
+
+		font: {
+			family: $fontVzwBold;
+			size: 27px;
+			weight: normal;
+		}
+
+		.tooltip
+		{
+			display: none;
+			right: 70px;
+			top: 45px;
+			letter-spacing: 0;
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
+
+	.search,
+	.results
+	{
+		display: none;
+	}
+
+	.select {
+		display:inline-block;
+		position: relative;
+		margin-left: 6px;
+
+		label {
+			font-family: $fontVzwBook;
+			font-size: 27px;
+			line-height: 28px;
+			color:#afb0b2;
+			border-bottom: 1px solid #afb0b2;
+			padding-bottom: 7px;
+			background: url(../img/select-carrot.png) no-repeat right;
+			padding-right: 20px;
+			&.open {
+				//display: none;
+			}
+		}
+
+		ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+			padding: 0;
+			min-width: 235px;
+			-webkit-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+			box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+			border-radius: 2px;
+			border-top: 1px solid #e4e5e5;
+			border-left: 1px solid #e4e5e5;
+			display: inline-block;
+			z-index: 100;
+
+			li {
+				//margin: 0 15px;
+				border-top: 1px solid #f8f8f8;
+				text-align: left;
+				font-size: 27px;
+				font-weight: normal;
+				font-family: "Verizon Apex Book";
+				padding: 5px;
+				color: #9f9fa0;
+
+				&.active {
+					background: #3b3e45;
+				}
+
+				&:hover {
+					background: #3b3e45;
+				}
+			}
+
+		}
+	}
+
+	#uniform-browse-all
+	{
+		@include ctaDarkButton;
+	}
+
+	#uniform-build-your-own
+	{
+		@include ctaRedButton;
+		margin-left: 15px;
+	}
+
+	#uniform-browse-all,
+	#uniform-build-your-own
+	{
+		float: left;
+		display: inline-block;
+		margin-top: 40px;
+		height: 40px;
+		width: 145px;
+
+		span
+		{
+			font-size: 14px;
+			letter-spacing: 0;
+			padding-top: 15px;
+		}
+	}
+
+	.search {
+		display: block; // debug
+	    .selector{
+	        height: 45px;
+	        position: relative;
+	        top: 13px;
+	        left: 23px;
+	        width: 145px !important;
+
+	        span {
+	        	font-size: 12px;
+	            width: 140% !important;
+	            top: 8px;
+	        }
+	    }
+
+	    input {
+	        height: 45px;
+	        width: 73%;
+	        padding: 12px 35px 0px 6px;
+	        border-radius: 3px;
+	        border: 1px solid #ccc;
+	        background: white;
+
+	        //placehoder color
+	        &[placeholder]{
+	            $placehoder-color: #999;
+	            color: $placehoder-color;
+	            -webkit-input-placeholder { color: $placehoder-color; }
+	            -moz-placeholder { color: $placehoder-color; }
+	            -ms-input-placeholder { color: $placehoder-color; }
+	        }
+	    }
+
+	    .icon{
+	        @include nav-sprite(nav-ico-search, false, 0px, 0px);
+	        width: 25px;
+	        height: 22px;
+	        display: inline-block;
+	        margin-left: -40px;
+	    }
+	}
+
+	.cta
+	{
+		float: right;
+		opacity: .6;
+	}
+
+	.results
+	{
+		display: block; // debug
+
+		> strong
+		{
+			display: block;
+			margin: 25px 0 13px;
+			font: {
+				family: $fontVzwBook;
+				size: 18px;
+				weight: normal;
+			}
+			color: #333;
+		}
+
+		a
+		{
+			color: #4c4c4c;
+			font: {
+				family: $fontArial;
+				size: 12px;
+			}
+		}
+
+		ul
+		{
+			@include clearfix();
+			margin-bottom: 15px;
+		}
+
+		li
+		{
+			float: left;
+			position: relative;
+			width: 33%;
+			height: 80px;
+			overflow: hidden;
+			border: 1px solid #dadbdb;
+			padding: 2px;
+
+			&:hover,
+			&.active
+			{
+				border: 3px solid $colorVzwRed;
+				padding: 0;
+			}
+
+			a
+			{
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding-top: 18px;
+			}
+
+			img
+			{
+				float: left;
+				max-width: 45px;
+				margin: -5px 10px 0 0;
+			}
+		}
+
+		.pages
+		{
+			text-align: right;
+			color: #969696;
+			text-transform: uppercase;
+			font: {
+				family: $fontArial;
+				size: 12px;
+				weight: bold;
+			}
+
+			span
+			{
+				color: #000;
+			}
+
+			a
+			{
+				color: $actLinkBlue;
+			}
+
+			a.prev,
+			a.next
+			{
+				font-size: 10px;
+			}
+
+			span, a
+			{
+				display: inline-block;
+				padding: 0 5px;
+			}
+		}
+	}
+}

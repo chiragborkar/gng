@@ -1,0 +1,27 @@
+    .search-results-header{
+        .sort-by{
+            top:7px;
+        }
+        h2{
+            font-size: 16px;
+            strong.results-count{
+                display: block;
+                font-weight: 700;
+            }
+            .copy{
+                display: none;
+            }
+        }
+
+    }
+    .search-bar {
+        #search-keyword{min-height:40px;font-size: 22px;}
+        .options{
+            width:28px;
+            height:28px;
+            overflow: hidden;
+            top: 6px;
+            .close{display: none;}
+            button{@include ui-sprite(search-small, false);}
+        }
+    }

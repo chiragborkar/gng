@@ -1,0 +1,200 @@
+/*
+
+Uniform Theme: Uniform VZN
+Version: 1.8
+By: Josh Pyles modified by John Hiemstra
+License: MIT License
+---
+For use with the Uniform plugin:
+http://uniformjs.com/
+
+*/
+/*............. VZN MIXINS copied over until merge, delete later ........................*/
+
+    $cartGreyLt: #727272;
+ 	$cartGreyMd: #666666;
+ 	$cartGreyDk: #3d4146;
+
+ 	@mixin boxBrdrT { border-top: 1px solid #ccc; }
+	@mixin boxBrdrR { border-right: 1px solid #ccc; }
+	@mixin boxBrdrB { border-bottom: 1px solid #ccc; }
+	@mixin boxBrdrL { border-left: 1px solid #ccc; }
+	@mixin boxBrdrA { border: 1px solid #ccc; }
+
+	@mixin cartRounded { -webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						border-radius: 3px; }
+
+
+/*............. VZN PDP SELECT BOXES ..................................................  */
+
+ .product-detail { 
+    div.selector {
+	    @include cartRounded;
+    	min-height:45px;
+    	max-height:45px; 
+		border:0px;
+		font-weight:bold;
+        width:100% !important;
+		color: $cartGreyLt;
+		text-transform:lowercase;
+		font-size:12px;
+		line-height:60px;
+		padding: 0px 0 0 0px;
+        position:relative;
+		font-family: Arial, sans-serif !important;
+		background: #ebeeee url(../img/sprites/pdp/grey-more.png) 95% 28px no-repeat;
+		cursor:pointer;
+		@include boxBrdrA;
+
+        }
+
+    div.selector select {
+        position: absolute;
+        top: 0; left: 0;
+	    font-family: Arial, sans-serif !important;
+	    font-size: 12px; line-height:30px;
+	    min-height:45px;
+	    opacity: 0;
+
+        }
+
+    div.selector.active {
+
+        select {
+            left:10px; top:-10px;
+            font-family: Arial, sans-serif !important;
+            text-transform: lowercase;
+            font-size:14px;
+            line-height: 20px;
+            color: $cartGreyLt;
+
+            option {
+                display: block;
+
+
+                } /* end option */
+            }/* end select */
+        } /* end active */
+
+
+
+
+    div.selector span {
+        display: inline-block;
+    	height: 100%;
+	    color: $cartGreyLt;
+	    padding-left:10px;
+	    -webkit-border-radius: 3px 0 0 3px;
+	    -moz-border-radius: 3px 0 0 3px;
+	    border-radius: 3px 0 0 3px;
+        }
+
+    div.selector.disabled span {
+	    color: #bbb;
+    }
+
+
+ 
+ }/* end product-detail select*/
+
+
+
+
+/*............. CART INPUT, SELECT & BUTTONS ..................................................  */
+
+ .cart, #checkout-page { 
+    div.selector {
+	    @include cartRounded;
+	    @include boxBrdrA;
+	    background:#fff;
+    	height:36px;
+		font-weight:bold;
+        width:100% !important;
+		color: $cartGreyLt;
+		text-transform:lowercase;
+		font-size:12px;
+		line-height:45px;
+		padding: 0px 0 0 0px;
+        position:relative;
+		font-family: Arial, sans-serif !important;
+		background: #fff url(../img/sprites/pdp/grey-more.png) 95% 18px no-repeat;
+		cursor:pointer;
+        } /* end selector */
+
+    div.selector select {
+        position: absolute;
+        top: 0; left: 0;
+	    font-family: Arial, sans-serif !important;
+	    font-size: 12px; line-height:30px;
+	    min-height:45px;
+	    opacity: 0;
+		cursor:pointer;
+        }/* end select */
+
+    div.selector.active {
+
+        select {
+            left:10px; top:-10px;
+            font-family: Arial, sans-serif !important;
+            text-transform: lowercase;
+            font-size:14px;
+            line-height: 20px;
+            color: $cartGreyLt;
+
+            option {
+                display: block;
+
+
+                } /* end option */
+            }/* end select */
+        } /* end active */
+
+
+
+
+    div.selector span {
+        display: inline-block;
+        width:60% !important; height: 100%;
+	    color: $cartGreyLt;
+	    padding-left:10px;
+	   
+        }
+
+    div.selector.disabled span { }
+
+	input.text { 
+		height:36px; 
+		@include boxBrdrA;
+		@include cartRounded;
+		background: #fff url(../img/sprites/pdp/grey-more.png) 95% 18px no-repeat;
+		font-weight:bold;
+		color: $cartGreyLt;
+		text-transform:lowercase;
+		font-size:12px;
+		padding-top:13px;
+		line-height:36px;
+		cursor:pointer;
+		}
+		
+		
+/* Cart buttons -- this is already in cart.scss */
+
+	div.button.active span,
+	div.button:active span {
+	
+		}
+
+	div.button span {
+	
+		}
+
+	div.button.disabled span { }
+
+	/* Separate from above due to IE8 */
+		div.button:disabled span { }
+
+
+ }/* end cart select & input */
+
+

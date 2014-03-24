@@ -1,0 +1,10 @@
+{
+    "success": {
+        "responseHTML": "<div id='minicart-cart'><ul id='minicart-item-list'><li id='minicart-1' class='minicart-item one'><!-- item 1 of many --><div class='item-image-block'><img class='minicart-item-image' src='img/product-detail-page/pdp-plus/dre-beats-1-thumb.png' title='Product Title'></div><div class='item-info-block'><ul><li class='minicart-item-title'><a href='#' class='product-link' title='Product Name'><span class='product-title'>Beats by Dre - Wireless Over-Ear Headphones</span></a></li><li class='item-details'><div class='minicart-item-price'>$<span class='price'>59.99</span></div><div class='minicart-sale offer-toggle'>Sale</div><div class='color-size'><div class='minicart-item-color'>Black</div>,&nbsp;<div class='minicart-item-size'>Large</div></div></li><li class='item-qty'>Quantity: <span class='minicart-item-qty'>1</span></li></ul></div><!-- end item-info block --><div class='minicart-edit'><div class='edit'><a href='cart-base.html'>Edit</a></div><div class='remove'><a href='?remove=1&productID=1' class=\"data-cart-remove data-confirm-removal\">Remove</a></div></div><!-- end mincart edit --></li><!-- end minicart-item --></ul><!-- end minicart-list --> </div><!-- end minicart-cart --><div class='minicart-summary'><div class='minicart-next'><a href='#' class='prev-items-link'>Last <span id='next-item-count'>3</span> Items</a><a href='#' class='next-items-link'>Next <span id='next-item-count'>3</span> Items</a></div><div class='minicart-total'><div class='actual-sub'>$<span id='minicart-subtotal'>309.98</span></div><span class='label'>Subtotal:</span></div><!-- end total --><div class='minicart-buttons'><div class='view-cart'><a href='#' title='View Cart' class='arial'>View Cart (<div id='qty-in-mini' class='data'>2</div>)</a></div><div class='checkout'><input data-checkout='true' class='button add-cart-cta' title='Checkout' value='Checkout' type='submit'></div></div><!-- end buttons --></div><!-- end minicart summary -->",
+        "itemCount": 1
+    },
+
+    "error": {
+        "responseHTML": ""
+    }
+}
