@@ -6,7 +6,7 @@ MLS.page404 = {
         var backElem = $jQ('#back');
         backElem.click(function(e){
             history.back();
-            e.preventDefault();
+            e.preventDefault();   
         });
         */ 
 

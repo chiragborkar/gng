@@ -89,6 +89,7 @@ var contentLanding = {
                     MLS.ui.socialShare.init();
 
                     if (typeof data.success.more !== 'undefined' && data.success.more.count !== '0') {
+                    	console.log("data undefined");
                         // update data-offset
                         $loadMore.attr('href', data.success.more.url)
                             // update button "load %loadManyMore count" button
